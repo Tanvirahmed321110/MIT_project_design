@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Star Rating</title>
+        <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+        <style>
+            .rating {
+                font-size: 30px;
+                display: flex;
+                gap: 5px;
+                cursor: pointer;
+            }
+
+            .rating i {
+                transition: color 0.2s ease-in-out;
+                color: gray;
+            }
+
+            .rating i.active {
+                color: gold;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="rating" id="star-rating">
+            <i class="fa-regular fa-star" data-value="1"></i>
+            <i class="fa-regular fa-star" data-value="2"></i>
+            <i class="fa-regular fa-star" data-value="3"></i>
+            <i class="fa-regular fa-star" data-value="4"></i>
+            <i class="fa-regular fa-star" data-value="5"></i>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const stars = document.querySelectorAll("#star-rating i");
+                let currentRating = 0;
+
+                stars.forEach(star => {
+                    star.addEventListener("mouseover", function () {
+                        highlightStars(this.dataset.value);
+                    });
+
+                    star.addEventListener("click", function () {
+                        currentRating = this.dataset.value;
+                        setRating(currentRating);
+                    });
+
+                    star.addEventListener("mouseout", function () {
+                        resetStars();
+                    });
+                });
+
+                function highlightStars(rating) {
+                    stars.forEach(star => {
+                        star.classList.toggle("active", star.dataset.value <= rating);
+                    });
+                }
+
+                function setRating(rating) {
+                    stars.forEach(star => {
+                        star.classList.toggle("active", star.dataset.value <= rating);
+                    });
+                }
+
+                function resetStars() {
+                    stars.forEach(star => {
+                        star.classList.toggle("active", star.dataset.value <= currentRating);
+                    });
+                }
+            });
+        </script>
+
+    </body>
+
+</html>

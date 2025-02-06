@@ -1,0 +1,3577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home_Page</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <!--  common css -->
+        <link rel="stylesheet" href="./static/css/common.css">
+        <!-- home page css -->
+        <link rel="stylesheet" href="./static/css/pages/home.css">
+    </head>
+
+    <body>
+        <!-- =============================================== -->
+        <!-- ==========    Header Section  Start    ======== -->
+        <!-- =============================================== -->
+        <header>
+
+
+            <!--________________  Header Top Here _______________-->
+            <div class="header-top my-d-md-none my-bg-primary-hover">
+                <div class="my-container">
+                    <div class="header-top-area my-d-lg-none my-flex-center ">
+                        <ul class="my-flex-center my-gap-4 my-fs-xs my-fw-medium">
+                            <li>
+                                <a href="#">Laptop Deals</a>
+                            </li>
+                            <li>
+                                <a href="#">Desktop Deals</a>
+                            </li>
+                            <li>
+                                <a href="#">CC Deals</a>
+                            </li>
+                            <li>
+                                <a href="#">Pre-Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate Form</a>
+                            </li>
+                            <li>
+                                <a href="#">Service Re</a>
+                            </li>
+                            <li>
+                                <a href="#">Service Request</a>
+                            </li>
+                            <li>
+                                <a href="#">Serial Search</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Happy Customer</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team Members</a>
+                            </li>
+                            <li>
+                                <a href="#">Payment Methods</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--____________________  Mobile Header  ____________________  -->
+            <div class="mobile-header my-d-none my-d-md-block">
+
+
+                <div class="my-container">
+                    <!--_____ For Header Top _____ -->
+                    <div class="my-flex-between ">
+                        <!-- logo -->
+                        <a href="../index.html">
+                            <img class="w-30" src="./static/images/logo.png" alt="">
+                        </a>
+
+                        <!-- menu button -->
+                        <button class="menu-icon" id="mobile-menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+
+
+                    <!--_____ For Bottom Header Fixed _____-->
+                    <div class="mobile-header-bottom ">
+                        <div class="my-container my-flex-between my-align-center">
+                            <ul class="my-d-flex my-gap-2 my-align-center left-icons">
+
+                                <!-- wise list -->
+                                <li class="my-tooltip">
+                                    <span class="icon my-text-white">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <div class="base-round active">2</div>
+                                    <!-- Tooltip -->
+                                    <span class="show-text">wish list items</span>
+                                </li>
+
+
+                                <!-- wise list -->
+                                <li class="my-tooltip">
+                                    <span class="icon my-text-white">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </span>
+                                    <div class="base-round active">1</div>
+                                    <!-- Tooltip -->
+                                    <span class="show-text">compalre</span>
+                                </li>
+
+
+                                <!-- card list -->
+                                <li class="my-tooltip shopping-cart-modal-open" id="">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <div class="base-round">0</div>
+
+                                    <!-- tooltip text -->
+                                    <span class="show-text">All add to card item</span>
+                                </li>
+                            </ul>
+
+
+                            <div class="build my-flex-center my-p-relative">
+                                <button class="my-btn build-btn"> Build</button>
+
+                                <div class="build-dropdown build my-align-center">
+                                    <button class="my-btn build-btn pc-build">PC Build</button>
+                                    <span>|</span>
+                                    <button class="my-btn build-btn cc-build">CC Build</button>
+                                </div>
+                            </div>
+
+
+                            <div class="right">
+                                <div class="my-text-center my-text-white-off my-fw-medium ">
+                                    <p class="my-text-white my-mb-1">Account</p>
+                                    <span class="my-fs-md"><i class="fa-regular fa-circle-user"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--_____ For category _____-->
+            <div class="all-category" id="all-category">
+
+                <!-- Head -->
+                <div>
+                    <h3 class="my-p-2">All Category</h3>
+                    <button id="all-category-close" class="my-btn my-primary-btn close-btn-right modal-close-btn"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Gaming item
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Dell
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 1.1.1</a></li>
+                                        <li><a href="#">Item 1.1.2</a></li>
+                                        <li><a href="#">Item 1.1.3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Hp
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 1.2.1</a></li>
+                                        <li><a href="#">Item 1.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Monitor
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 2.1.1</a></li>
+                                        <li><a href="#">Item 2.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    LG
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 2.2.1</a></li>
+                                        <li><a href="#">Item 2.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Laptop
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    iPhone
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.1.1</a></li>
+                                        <li><a href="#">Item 3.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung Galaxy
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.2.1</a></li>
+                                        <li><a href="#">Item 3.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        PC Set
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Dell
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 1.1.1</a></li>
+                                        <li><a href="#">Item 1.1.2</a></li>
+                                        <li><a href="#">Item 1.1.3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Hp
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 1.2.1</a></li>
+                                        <li><a href="#">Item 1.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        TV
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 2.1.1</a></li>
+                                        <li><a href="#">Item 2.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    LG
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 2.2.1</a></li>
+                                        <li><a href="#">Item 2.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Phone
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    iPhone
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.1.1</a></li>
+                                        <li><a href="#">Item 3.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung Galaxy
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.2.1</a></li>
+                                        <li><a href="#">Item 3.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        CC TV
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Dell
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 1.1.1</a></li>
+                                        <li><a href="#">Item 1.1.2</a></li>
+                                        <li><a href="#">Item 1.1.3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Hp
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 1.2.1</a></li>
+                                        <li><a href="#">Item 1.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Mobile
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 2.1.1</a></li>
+                                        <li><a href="#">Item 2.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    LG
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 2.2.1</a></li>
+                                        <li><a href="#">Item 2.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Networking
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    iPhone
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.1.1</a></li>
+                                        <li><a href="#">Item 3.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung Galaxy
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.2.1</a></li>
+                                        <li><a href="#">Item 3.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Year Phone
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    iPhone
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.1.1</a></li>
+                                        <li><a href="#">Item 3.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung Galaxy
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.2.1</a></li>
+                                        <li><a href="#">Item 3.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Other
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    iPhone
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.1.1</a></li>
+                                        <li><a href="#">Item 3.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung Galaxy
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.2.1</a></li>
+                                        <li><a href="#">Item 3.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- catrgory item -->
+                <div class="category">
+                    <button class="open-btn">
+                        Networking
+                        <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    iPhone
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.1.1</a></li>
+                                        <li><a href="#">Item 3.1.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="subcategory-btn">
+                                    Samsung Galaxy
+                                    <span class="plus-minus-btn"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <div class="nested-dropdown">
+                                    <ul>
+                                        <li><a href="#">Item 3.2.1</a></li>
+                                        <li><a href="#">Item 3.2.2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--________________  Header Meddil Here _______________-->
+            <div class="header-medile ">
+                <div class="my-container">
+                    <div class="header-medile-area my-flex-between">
+
+                        <!-- Left -->
+                        <div class="left my-flex-between ">
+                            <!-- logo -->
+                            <a href="../index.html">
+                                <img class="w-30" src="./static/images/logo.png" alt="">
+                            </a>
+
+
+                            <!-- Search -->
+                            <div class="search">
+                                <form action="#" class="subcribe my-d-flex my-align-center">
+                                    <input type="text" placeholder="Search Products">
+                                    <button class="my-btn my-primary-btn">Search</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                        <!-- _____Header Midel Right_____ -->
+                        <div class="right my-d-flex my-justify-end my-align-center my-gap-8">
+                            <ul class="my-d-flex my-gap-1 my-align-center right-icons">
+
+                                <!-- wise list -->
+                                <li class="my-tooltip">
+                                    <span class="icon my-text-white">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <div class="base-round active">2</div>
+                                    <!-- Tooltip -->
+                                    <span class="show-text">wish list items</span>
+                                </li>
+
+
+                                <!-- wise list -->
+                                <li class="my-tooltip">
+                                    <span class="icon my-text-white">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </span>
+                                    <div class="base-round active">1</div>
+                                    <!-- Tooltip -->
+                                    <span class="show-text">compalre</span>
+                                </li>
+
+
+                                <!-- card list -->
+                                <li class="my-tooltip shopping-cart-modal-open" id="shopping-cart-btns">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <div class="base-round">0</div>
+
+                                    <!-- tooltip text -->
+                                    <span class="show-text">All add to card item</span>
+                                </li>
+                            </ul>
+
+                            <!-- user login -->
+                            <div class="my-d-flex my-align-center my-gap-3" id="user-btn">
+                                <span class="my-fs-lg">
+                                    <i class="fa-regular fa-user"></i>
+                                </span>
+
+                                <div>
+                                    <p class="my-text-white-off">Account</p>
+                                    <div class="my-text-white-off my-fs-xs">
+                                        <div class="my-d-flex my-align-center my-gap-1">
+                                            <button class="hover-underline">login</button> /
+                                            <button class="hover-underline">register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="build my-flex-center">
+                                <button class="my-btn build-btn ">PC Bulid</button>
+                                <span>|</span>
+                                <button class="my-btn build-btn ">CC Bulid</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--________________  Header Medile Bottom Here  _______________-->
+                    <div class="header-medile-bottom my-mt-5">
+                        <div class="my-flex-center my-gap-6 my-text-white">
+                            <div class="item">
+                                <a href="#">Happy Hours</a>
+                            </div>
+                            <div class="item">
+                                <a href="#">Other</a>
+                            </div>
+                            <div class="item">
+                                <a href="#">MIT Care</a>
+                            </div>
+                            <div class="item">
+                                <a href="#">Other page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- ============================================== -->
+        <!-- ==========     Header Section  End    ======== -->
+        <!-- ============================================== -->
+
+
+
+
+
+
+
+
+
+
+
+        <main>
+
+            <!-- ============================================== -->
+            <!-- ==========     Hero Section Start     ======== -->
+            <!-- ============================================== -->
+            <section class="hero my-mt-0">
+                <div class="my-container">
+                    <div class="hero-area">
+
+                        <!--_________________  Category Here ________________  -->
+                        <div class="category">
+                            <div class="left my-p-relative">
+
+                                <!-- all department button -->
+                                <div class="all-department-btn my-btn my-align-center my-gap-4" id="all-department-btn">
+                                    <i class="fas fa-bars"></i>
+
+                                    <div class="my-flex-center my-gap-4">
+                                        <span>All Category</span>
+                                        <span class="my-mt-1"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+
+
+                                <!--_____  all-department items  ______-->
+                                <div class="all-department my-card " id="all-department-sidebar">
+                                    <ul class="wrapper">
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative  my-flex-between my-gap-0 single-dept ">
+
+                                            <!-- Main hover -->
+                                            <div class=" my-flex-between my-w-100">
+                                                <p>Desktop</p>
+                                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                            </div>
+
+                                            <!-- main dropdown -->
+                                            <div class="dropdown">
+                                                <ul class="col">
+                                                    <li>
+                                                        <div class="my-flex-between">
+                                                            <span>Desktop Offer</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <!-- sub hover -->
+                                                        <div class=" my-flex-between my-w-100">
+                                                            <p>MIT PC</p>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </div>
+
+                                                        <!-- dropdown -->
+                                                        <ul class="dropdown my-flex-column my-gap-1">
+                                                            <li><a href="#">Intel PC</a></li>
+                                                            <li><a href="#">Ryzen PC</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <!-- sub hover -->
+                                                        <div class="my-flex-between my-w-100">
+                                                            <p>Gaming PC</p>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </div>
+
+                                                        <!-- dropdown -->
+                                                        <ul class="dropdown my-flex-column my-gap-1">
+                                                            <li><a href="#">Intel PC</a></li>
+                                                            <li><a href="#">Ryzen PC</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">Corporate/Office PC</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <!-- sub hover -->
+                                                        <div class="my-flex-between my-w-100">
+                                                            <p>PC Combo</p>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </div>
+
+                                                        <!-- dropdown -->
+                                                        <ul class="dropdown my-flex-column my-gap-1">
+                                                            <li><a href="#">AMD Combo</a></li>
+                                                            <li><a href="#">GPU Combo</a></li>
+                                                            <li><a href="#">Intel Combo</a></li>
+                                                        </ul>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <!-- sub hover -->
+                                                        <div class="my-flex-between my-w-100">
+                                                            <p>Brand PC</p>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </div>
+
+                                                        <!-- dropdown -->
+                                                        <ul class="dropdown my-flex-column my-gap-1">
+                                                            <li><a href="#">HP</a></li>
+                                                            <li><a href="#">Dell</a></li>
+                                                            <li><a href="#">Lenovo</a></li>
+                                                            <li><a href="#">Asus</a></li>
+                                                            <li><a href="#">MSI</a></li>
+                                                            <li><a href="#">Apple</a></li>
+                                                            <li><a href="#">Walton</a></li>
+                                                            <li><a href="#">Value-Top</a></li>
+                                                            <li><a href="#">Teclast</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Porable Mini PC</a></li>
+                                                    <li><a href="#">Photography</a></li>
+                                                    <li><a href="#">Gaming Product</a></li>
+                                                    <li><a href="#">Networking</a></li>
+                                                    <li><a href="#">TV</a></li>
+                                                    <li><a href="#">Converter & Cable</a></li>
+                                                    <li><a href="#">Home Appliance</a></li>
+                                                    <li><a href="#">Software</a></li>
+                                                    <li class="">
+                                                        <a href="#">Toys</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Laptop </p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                            <div class="dropdown">
+                                                <ul class="col">
+                                                    <li><a href="#">Baby Toy</a></li>
+                                                    <li><a href="#">Baby Cream</a></li>
+                                                    <li><a href="#">Baby Watch</a></li>
+                                                    <li><a href="#">Baby Skin Care</a></li>
+                                                    <li><a href="#">Baby Pampash</a></li>
+                                                    <li><a href="#">Baby Saban</a></li>
+                                                    <li><a href="#">Baby Tissue</a></li>
+                                                    <li><a href="#">Baby Oil Soft</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Monitor</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Monitor</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Monitor</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Component</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Networking</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>UPS Collection</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Phone Accesries </p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>LED Tv</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Tablet</p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Laptop </p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Software </p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+
+                                        <!-- single dept -->
+                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
+                                            <p>Other Devicve </p>
+                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--_________________  Banner Here  ________________  -->
+                        <div class="banner">
+
+                            <div class="slider-banner swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide my-flex-center my-h-100">
+                                        <a href="#" class="my-d-block my-h-100">
+                                            <img class="my-h-100 "
+                                                src="
+                                                https://www.startech.com.bd/image/cache/catalog/home/offer-banner-982x500.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide my-flex-center my-h-100">
+                                        <a href="#" class="my-d-block my-h-100">
+                                            <img class="my-h-100"
+                                                src="https://www.startech.com.bd/image/cache/catalog/home/offer-banner-982x500.webp"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide my-flex-center my-h-100">
+                                        <a href="#" class="my-d-block my-h-100">
+                                            <img class="my-h-100"
+                                                src="https://www.startech.com.bd/image/cache/catalog/home/offer-banner-982x500.webp"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================================ -->
+            <!-- ==========     Hero Section End     ======== -->
+            <!-- ============================================ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- =============================================== -->
+            <!-- ==========     Offer Section Start     ======== -->
+            <!-- =============================================== -->
+            <section class="offer-section">
+                <div class="my-container">
+                    <!-- Offer Area -->
+                    <div class="special-offer my-grid-3 my-grid-md-1 my-gap-3 my-mt-0">
+                        <div class="item">
+                            <div class="content">
+                                <h4>OFFER 20%</h4>
+                                <p>
+                                    We at Star Tech love gaming. Therefore, we aim to provide a holistic gaming
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <h4>OFFER 24%</h4>
+                                <p>
+                                    We at Star Tech love gaming. Therefore, we aim to provide a holistic gaming
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <h4>OFFER 24%</h4>
+                                <p>
+                                    We at Star Tech love gaming. Therefore, we aim to provide a holistic gaming
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================================= -->
+            <!-- ==========     Offer Section End     ======== -->
+            <!-- ============================================= -->
+
+
+
+
+
+
+
+
+
+
+            <!-- ============================================== -->
+            <!-- ==========     Marquee Section Start     ======== -->
+            <!-- ============================================== -->
+            <section>
+                <div class="my-container ">
+                    <div class="marque-text my-bg-white my-radius-pill">
+                        <marquee behavior="" class="my-p-3 my-mx-4" direction="">02, January, Tuesday, all outlets are
+                            open
+                            except Multiplan Branch. Additionally, our online activities are open and
+                            operational.</marquee>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- ================================================ -->
+            <!-- ==========     Feature Section Start     ======== -->
+            <!-- ================================================= -->
+            <section class="section-margin feature">
+                <div class="my-container ">
+                    <div class="feature-category">
+                        <div class="section-head">
+                            <h3>Feature Category</h3>
+                            <p>our feature category</p>
+                        </div>
+
+                        <div class="feature-category-area my-radius-md my-d-flex flex-wrap my-gap-6 my-mt-6">
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/drone-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Drone</h5>
+                            </a>
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/portable-ip-camera-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Camera</h5>
+                            </a>
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/smart-watch-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Snart Watch</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/tv-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">TV</h5>
+                            </a>
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/printer-paper-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Pinter Peper</h5>
+                            </a>
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/gaming-console-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Gaming Item</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/earbuds-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Headphone</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/gaming-console-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Gaming Item</h5>
+                            </a>
+
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/smart-watch-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Snart Watch</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/tv-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">TV</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/tv-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">TV</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/tv-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">TV</h5>
+                            </a>
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/printer-paper-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Pinter Peper</h5>
+                            </a>
+
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/gaming-console-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Gaming Item</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/earbuds-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Headphone</h5>
+                            </a>
+                            <!-- single item -->
+                            <a href="#" class="my-card item my-flex-column  my-gap-2 my-align-center">
+                                <img class=""
+                                    src="https://www.startech.com.bd/image/cache/catalog/category-thumb/gaming-console-48x48.png"
+                                    alt="">
+                                <h5 class="my-fw-bold">Gaming Item</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =============================================== -->
+            <!-- ==========     Feature Section End     ======== -->
+            <!-- =============================================== -->
+
+
+
+
+
+
+
+
+
+
+            <!-- ========================================================== -->
+            <!-- ==========     Feature Products Section Start     ======== -->
+            <!-- ========================================================== -->
+
+            <section class="section-margin">
+                <div class="my-container">
+                    <div class="feature-product-area">
+                        <div class="section-head">
+                            <h3>Feature Products</h3>
+                            <p>our feature Product</p>
+                        </div>
+
+                        <div class="products my-mt-6 my-grid-4 my-grid-sm-1 my-grid-md-2 my-gap-4">
+                            <!-- Product Cart 1 -->
+                            <div class="product-cart-area  my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://content.ibuypower.com/cdn-cgi/image/width=384,format=auto,quality=75/https://content.ibuypower.com/Images/Components/27645/gaming-pc-01-Y40MC002-main-400-Solo.png?v=9f26bf7675e2300f24c931f8fbbc546f787945ae"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">in stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>33000.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>34500.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Cart 2 (same as Product Cart 1) -->
+                            <div class="product-cart-area my-card">
+                                <div class="product-cart ">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/biostar-h81mhv3-lga-1150-socket-ddr3-motherboard-31715229673.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">in stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.6</div>
+                                                <div class="total-rating my-fs-xs">(14)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>19500.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>19000.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Cart 3 (same as Product Cart 1) -->
+                            <div class="product-cart-area  my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/value-top-vt-b706-mini-tower-black-micro-atx-11723871819.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">in stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.6</div>
+                                                <div class="total-rating my-fs-xs">(9)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>22010.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>23500.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Cart 4 (same as Product Cart 1) -->
+                            <div class="product-cart-area my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base stock-out new">out of stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5> Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.7</div>
+                                                <div class="total-rating my-fs-xs">(3)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>18000.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>18900.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product Cart 1 -->
+                            <div class="product-cart-area  my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://content.ibuypower.com/cdn-cgi/image/width=384,format=auto,quality=75/https://content.ibuypower.com/Images/Components/27645/gaming-pc-01-Y40MC002-main-400-Solo.png?v=9f26bf7675e2300f24c931f8fbbc546f787945ae"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new stock-out">out of stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>33000.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>34500.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Cart 2 (same as Product Cart 1) -->
+                            <div class="product-cart-area my-card">
+                                <div class="product-cart ">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/biostar-h81mhv3-lga-1150-socket-ddr3-motherboard-31715229673.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">in stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.6</div>
+                                                <div class="total-rating my-fs-xs">(14)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>19500.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>19000.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Cart 3 (same as Product Cart 1) -->
+                            <div class="product-cart-area  my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/value-top-vt-b706-mini-tower-black-micro-atx-11723871819.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new stock-out">out of stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.6</div>
+                                                <div class="total-rating my-fs-xs">(9)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>22010.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>23500.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Cart 4 (same as Product Cart 1) -->
+                            <div class="product-cart-area my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">Stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5> Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.7</div>
+                                                <div class="total-rating my-fs-xs">(3)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>18000.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>18900.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product Cart 1 -->
+                            <div class="product-cart-area  my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://content.ibuypower.com/cdn-cgi/image/width=384,format=auto,quality=75/https://content.ibuypower.com/Images/Components/27645/gaming-pc-01-Y40MC002-main-400-Solo.png?v=9f26bf7675e2300f24c931f8fbbc546f787945ae"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new stock-out">out of stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>33000.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>34500.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Cart 2 (same as Product Cart 1) -->
+                            <div class="product-cart-area my-card">
+                                <div class="product-cart ">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/biostar-h81mhv3-lga-1150-socket-ddr3-motherboard-31715229673.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">in stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.6</div>
+                                                <div class="total-rating my-fs-xs">(14)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>19500.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>19000.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Cart 3 (same as Product Cart 1) -->
+                            <div class="product-cart-area  my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/value-top-vt-b706-mini-tower-black-micro-atx-11723871819.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new stock-out">out of stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5>AMD Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.6</div>
+                                                <div class="total-rating my-fs-xs">(9)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>22010.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>23500.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Cart 4 (same as Product Cart 1) -->
+                            <div class="product-cart-area my-card">
+                                <div class="product-cart">
+                                    <a href="./Pages/product.html" class="images">
+                                        <img class="display-image"
+                                            src="https://www.ryans.com/storage/products/main/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="product">
+                                    </a>
+
+                                    <!-- Hide icons -->
+                                    <ul class="hide-icons my-flex-column my-gap-1">
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-eye"></i>
+                                            <div class="show-text">Quick View</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-random"></i>
+                                            <div class="show-text">Compare Product</div>
+                                        </li>
+                                        <li class="hide-icon my-tooltip my-flex-center">
+                                            <i class="fa fa-heart"></i>
+                                            <div class="show-text">Add to Love List</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="base">Save 15%</div>
+                                    <div class="base new">Stock</div>
+
+                                    <!-- Product Content -->
+                                    <div class="product-content">
+                                        <div class="my-mt-2">
+                                            <a href="./Pages/product.html" class="name">
+                                                <h5> Ryzen 5 3400G Processor Desktop PC</h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Rating -->
+                                        <div class="rating my-mt-5 my-align-center my-w-100 my-d-flex my-gap-2">
+                                            <a href="#" class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                            </a>
+                                            <div class="total-avg my-align-center my-d-flex my-gap-2">
+                                                <div class="avg">4.7</div>
+                                                <div class="total-rating my-fs-xs">(3)</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-mt-1 my-d-flex my-align-center my-gap-2">
+                                            <h3 class="new-price my-fw-bolder">
+                                                <span>18000.00/-</span>
+                                            </h3>
+                                            <del class="old-price my-fs-sm">
+                                                <span>18900.00/-</span>
+                                            </del>
+                                        </div>
+
+                                        <!-- Sold and Available -->
+                                        <div class="sold-available my-mt-5">
+                                            <div class="sold uppercase my-flex-between">
+                                                <span class="my-fs-xs">Already Sold: <strong>12</strong></span>
+                                                <span class="my-fs-xs">Available: <strong>3</strong></span>
+                                            </div>
+                                            <div class="available-range">
+                                                <div class="range"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="add-to-cart my-mt-8 my-flex-between">
+                                            <button class="my-btn my-btn-outline"><span>Add To PC Build</span></button>
+                                            <button class="my-btn my-primary-btn"><span>Add To Cart</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add more products as needed using the same structure -->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================================= -->
+            <!-- ==========     Feature Product Section End     ======== -->
+            <!-- ======================================================= -->
+
+
+
+
+
+
+            <!-- ============================================== -->
+            <!-- ==========     Visit Our Shop Start   ======== -->
+            <!-- ============================================== -->
+            <section class="section-margin">
+                <div class="my-container">
+                    <div class="visit-shop">
+                        <div class="my-d-flex visit-shop-content my-align-sm-start my-flex-sm-column my-h-100 my-p-5">
+                            <div class="left my-flex-center my-gap-4">
+                                <span class="my-text-white-off my-fs-xl"><i class="fa-solid fa-location-dot"></i></span>
+                                <div class="my-text-white-off">
+                                    <h3 class="my-text-white-off">Physical Stores</h3>
+                                    <p class="my-mt-0">Visit Our Store and Get Your Desired IT Product</p>
+                                </div>
+                            </div>
+
+                            <div class=" right">
+                                <a href="#" class="my-btn my-primary-btn my-btn-pill my-gap-4 ">Find Our Store
+                                    <span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- ==========     Visit Our Shop End   ======== -->
+            <!-- ============================================ -->
+
+
+
+
+
+            <!-- ====================================================== -->
+            <!-- ==========     Brands Section  Start  Here    ======== -->
+            <!-- ====================================================== -->
+            <section class="brand-section ">
+                <div class="my-container">
+                    <div class="section-head">
+                        <h3>Our Brands</h3>
+                        <p>we have 20+ brand</p>
+                    </div>
+                    <div class=" aos-init aos-animate my-mt-2 my-mt-6">
+                        <div class="marquee ">
+
+                            <div class="marqueeone ">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v3.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+
+                                <img src="https://www.effortlessmortgage.ca/assets/img/vendor/c/v6.png"
+                                    class="partner-imgs" alt="find the lowest mortgage rates">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ===================================================== -->
+            <!-- ==========     Brands Section  Start  End    ======== -->
+            <!-- ===================================================== -->
+
+
+
+
+
+
+
+
+            <!-- ========================================================= -->
+            <!-- ==========     Achivment Section  Start  Start    ======== -->
+            <!-- ========================================================== -->
+            <section class="section-margin">
+                <div class="my-container">
+                    <div class="achivment">
+
+                        <div class="section-head">
+                            <h3>Our Achievement</h3>
+                            <p>Explore Achievement </p>
+                        </div>
+
+                        <div class="items my-grid-4 my-grid-md-2  my-gap-6 my-mt-6">
+
+                            <!-- single item -->
+                            <div class="item">
+                                <div class="my-card my-text-center">
+                                    <h4>Total Products</h4>
+                                    <h2 class="my-mt-4 counter" data-target="1040">0 <span>+</span></h2>
+                                </div>
+                            </div>
+
+                            <!-- single item -->
+                            <div class="item">
+                                <div class="my-card my-text-center">
+                                    <h4>Total Sell</h4>
+                                    <h2 class="my-mt-4 counter" data-target="200">0 <span>+</span></h2>
+                                </div>
+                            </div>
+
+                            <!-- single item -->
+                            <div class="item">
+                                <div class="my-card my-text-center">
+                                    <h4>Total Customer</h4>
+                                    <h2 class="my-mt-4 counter" data-target="500">0 <span>+</span></h2>
+                                </div>
+                            </div>
+
+                            <!-- single item -->
+                            <div class="item">
+                                <div class="my-card my-text-center">
+                                    <h4>Total Sell</h4>
+                                    <h2 class="my-mt-4 counter" data-target="2000">0 <span>+</span></h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================================== -->
+            <!-- ==========     Achivment Section  Start  End    ======== -->
+            <!-- ======================================================== -->
+
+
+
+
+
+
+
+
+
+            <!-- ========================================================= -->
+            <!-- ==========     Subcribe Section  Start  Start    ======== -->
+            <!-- ========================================================= -->
+            <section class="section-margin ">
+                <div class="my-container my-h-100">
+                    <div class="subcibe-discount-area my-flex-center my-gap-4 my-h-100  ">
+
+                        <div
+                            class="my-align-center subcibe-discount-content my-w-100 my-p-5 my-flex-sm-column my-h-100  my-gap-10">
+                            <div class="">
+                                <h2 class="my-text-white-off">Subcribe Now</h2>
+                                <p class="info">Join our email subscription now to get updates on promotions and
+                                    coupons.</p>
+
+                            </div>
+                            <form action="#">
+                                <input type="text" placeholder="Type Email">
+                                <a href="#" class="my-btn my-primary-btn"><span>Sign UP</span></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================================== -->
+            <!-- ==========     Subcribe Section  Start  End     ======== -->
+            <!-- ======================================================== -->
+
+
+
+
+
+
+
+
+
+            <!-- ========================================================== -->
+            <!-- ==========    Testimonial Section  Start  Start   ======== -->
+            <!-- ========================================================== -->
+            <section>
+                <div class="student-testimonial">
+                    <div class="my-container">
+
+                        <div class="section-head my-ml-2">
+                            <h3>Our Clients Say!</h3>
+                            <p>what is our client say</p>
+                        </div>
+
+                        <div class="testimonial swiper my-mt-6">
+                            <div class="swiper-wrapper">
+
+                                <!-- Single Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item my-bg-white my-radius-md my-p-5">
+                                        <!-- Profile -->
+                                        <div class="profile my-flex-column my-align-center">
+                                            <img class="profile-img-xl" src="./static/images/profilepng.png"
+                                                alt="profile">
+                                            <div class="my-text-center my-mt-2">
+                                                <h5>Sarah Johnson</h5>
+                                                <p>Web Developer</p>
+                                            </div>
+                                        </div>
+                                        <!-- Testimonial Content -->
+                                        <div
+                                            class="testimonial-content my-flex-column my-gap-2 my-mt-4 my-bg-white-off my-p-4">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <h5>Amazing Service!</h5>
+                                            <p class="my-mt-2">
+                                                The product quality exceeded my expectations. The team was super
+                                                responsive and helpful!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item my-bg-white my-radius-md my-p-5">
+                                        <!-- Profile -->
+                                        <div class="profile my-flex-column my-align-center">
+                                            <img class="profile-img-xl" src="./static/images/profile1.png"
+                                                alt="profile">
+                                            <div class="my-text-center my-mt-2">
+                                                <h5>James Anderson</h5>
+                                                <p>Marketing Manager</p>
+                                            </div>
+                                        </div>
+                                        <!-- Testimonial Content -->
+                                        <div
+                                            class="testimonial-content my-flex-column my-gap-2 my-mt-4 my-bg-white-off my-p-4">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <h5>Good But Needs Improvement</h5>
+                                            <p class="my-mt-2">
+                                                The service was good, but I think there's room for improvement in
+                                                delivery speed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item my-bg-white my-radius-md my-p-5">
+                                        <!-- Profile -->
+                                        <div class="profile my-flex-column my-align-center">
+                                            <img class="profile-img-xl" src="./static/images/profile2.png"
+                                                alt="profile">
+                                            <div class="my-text-center my-mt-2">
+                                                <h5>Emily Carter</h5>
+                                                <p>UI/UX Designer</p>
+                                            </div>
+                                        </div>
+                                        <!-- Testimonial Content -->
+                                        <div
+                                            class="testimonial-content my-flex-column my-gap-2 my-mt-4 my-bg-white-off my-p-4">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h5>Perfect for Designers</h5>
+                                            <p class="my-mt-2">
+                                                I love the sleek design and smooth functionality. Highly recommended!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item my-bg-white my-radius-md my-p-5">
+                                        <!-- Profile -->
+                                        <div class="profile my-flex-column my-align-center">
+                                            <img class="profile-img-xl" src="./static/images/profile1.png"
+                                                alt="profile">
+                                            <div class="my-text-center my-mt-2">
+                                                <h5>Michael Brown</h5>
+                                                <p>Entrepreneur</p>
+                                            </div>
+                                        </div>
+                                        <!-- Testimonial Content -->
+                                        <div
+                                            class="testimonial-content my-flex-column my-gap-2 my-mt-4 my-bg-white-off my-p-4">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <h5>Great Investment</h5>
+                                            <p class="my-mt-2">
+                                                I’ve been using this for months now, and it’s definitely worth the
+                                                price!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item my-bg-white my-radius-md my-p-5">
+                                        <!-- Profile -->
+                                        <div class="profile my-flex-column my-align-center">
+                                            <img class="profile-img-xl" src="./static/images/profile2.png"
+                                                alt="profile">
+                                            <div class="my-text-center my-mt-2">
+                                                <h5>Lisa Adams</h5>
+                                                <p>Freelancer</p>
+                                            </div>
+                                        </div>
+                                        <!-- Testimonial Content -->
+                                        <div
+                                            class="testimonial-content my-flex-column my-gap-2 my-mt-4 my-bg-white-off my-p-4">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h5>Absolutely Love It!</h5>
+                                            <p class="my-mt-2">
+                                                This has made my workflow so much easier. The features are exactly what
+                                                I needed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item my-bg-white my-radius-md my-p-5">
+                                        <!-- Profile -->
+                                        <div class="profile my-flex-column my-align-center">
+                                            <img class="profile-img-xl" src="./static/images/profile2.png"
+                                                alt="profile">
+                                            <div class="my-text-center my-mt-2">
+                                                <h5>Lisa Adams</h5>
+                                                <p>Freelancer</p>
+                                            </div>
+                                        </div>
+                                        <!-- Testimonial Content -->
+                                        <div
+                                            class="testimonial-content my-flex-column my-gap-2 my-mt-4 my-bg-white-off my-p-4">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h5>Absolutely Love It!</h5>
+                                            <p class="my-mt-2">
+                                                This has made my workflow so much easier. The features are exactly what
+                                                I needed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================================== -->
+            <!-- ==========    Testimonial Section  Start  End   ======== -->
+            <!-- ======================================================== -->
+
+
+
+
+
+
+
+
+
+
+            <!-- ================================================= -->
+            <!-- ==========    Seo  Section  Start Here   ======== -->
+            <!-- ================================================= -->
+            <section>
+                <div class="my-container">
+                    <div class="seo-area my-flex-column my-gap-6">
+                        <div>
+                            <h3>Best Laptop in Bangladesh</h3>
+                            <p class="my-mt-2">
+                                MIT is the most popular
+                                <a class=" my-fw-bold" href="#">Laptop Brand Shop in BD</a>.
+                                Star Tech Laptop Shop
+                                has the
+                                perfect device, whether you are a
+                                freelancer, officegoer, or student. Gamers love our collection of Gaming Laptops because
+                                we always bring the latest
+                                laptops in Bangladesh. As the best laptop shop in BD, a customer’s budget is our first
+                                concern. We bring the latest
+                                Intel Laptop and AMD Laptop under budget for every customer - from starters to expert
+                                users. Star Tech is considered the
+                                most trusted <a class=" my-fw-bold" href="#">laptop</a> shop in BD,
+                                allowing you to buy the best laptops
+                                from top laptop
+                                brands in the world. Along with the
+                                best laptop brands,
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Best Monitor in Bangladesh</h3>
+                            <p class="my-mt-2">
+                                MIT is the most popular
+                                <a class=" my-fw-bold" href="#">Laptop Brand Shop in BD</a>.
+                                Star Tech Laptop Shop
+                                has the
+                                perfect device, whether you are a
+                                freelancer, officegoer, or student. Gamers love our collection of Gaming Laptops because
+                                we always bring the latest
+                                laptops in Bangladesh. As the best laptop shop in BD, a customer’s budget is our first
+                                concern. We bring the latest
+                                Intel Laptop and AMD Laptop under budget for every customer - from starters to expert
+                                users. Star Tech is considered the
+                                most trusted <a class=" my-fw-bold" href="#">laptop</a> shop in BD,
+                                allowing you to buy the best laptops
+                                from top laptop
+                                brands in the world. Along with the
+                                best laptop brands,
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Hp Laptop Price in Bangladesh</h3>
+                            <p class="my-mt-2">
+                                MIT is the Hp , dell , waltop other
+                                <a class=" my-fw-bold" href="#">Laptop Brand Shop in BD</a>.
+
+                                has the
+                                perfect device, whether you are a
+                                freelancer, officegoer, or student. Gamers love our collection of Gaming Laptops because
+                                we always bring the latest
+                                laptops in Bangladesh. As the best laptop shop in BD, a customer’s budget is our first
+                                concern. We bring the latest
+                                Intel Laptop and AMD Laptop under budget for every customer - from starters to expert
+                                users. Star Tech is considered the
+                                most trusted <a class=" my-fw-bold" href="#">laptop</a> shop in BD,
+                                allowing you to buy the best laptops
+                                from top laptop
+                                brands in the world. Along with the
+                                best laptop brands,
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Monitor Price in Bangladesh</h3>
+                            <p class="my-mt-2">
+                                we are provide , best monitor lg,mst,hp
+                                <a class=" my-fw-bold" href="#">Laptop Brand Shop in BD</a>.
+
+                                has the
+                                perfect device, whether you are a
+                                freelancer, officegoer, or student. Gamers love our collection of Gaming Laptops because
+                                we always bring the latest
+                                laptops in Bangladesh. As the best laptop shop in BD, a customer’s budget is our first
+                                concern. We bring the latest
+                                Intel Laptop and AMD Laptop under budget for every customer - from starters to expert
+                                users. Star Tech is considered the
+                                most trusted <a class=" my-fw-bold" href="#">laptop</a> shop in BD,
+                                allowing you to buy the best laptops
+                                from top laptop
+                                brands in the world. Along with the
+                                best laptop brands,
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Best Price, Product, After-sales Customer Service, & Fastest Delivery</h3>
+                            <p class="my-mt-2">
+                                has taken care of its customers since the beginning. Whether a customer is purchasing or
+                                inquiring, our customers get
+                                the highest priority. We deliver the <a class="my-fw-bold" href="#">best product</a> for
+                                the best price
+                                with extended
+                                after-sales <a href="" class="my-fw-bold">support & the highest</a>
+                                standard of customer service. We offer your desired product within the fastest delivery
+                                timeframe. With our nationwide
+                                presence, we cover all 64 districts of Bangladesh. Our distribution hubs are located in
+                                Dhaka, Chattogram, Khulna,
+                                Rangpur, Gazipur, Rajshahi, and Mymensingh. We also have over 15 dedicated service
+                                centers and are proud to offer
+                                computer home service for the first time in Bangladesh. The plan to expand our
+                                operations in other cities is already in
+                                motion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =============================================== -->
+            <!-- ==========    Seo  Section  End Here   ======== -->
+            <!-- =============================================== -->
+
+        </main>
+
+
+
+
+
+
+        <!-- ==================================================== -->
+        <!-- ==========    Fotter Section  Start  Here   ======== -->
+        <!-- ==================================================== -->
+        <footer class="my-mt-10">
+            <div class="my-container">
+                <div class="footer-area my-grid-3 my-grid-md-2 my-grid-sm-1 my-gap-10">
+
+                    <!-- Singe grid item -->
+                    <div>
+                        <h4 class="footer-title">Our Business</h4>
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html">
+                                <h2 class="my-text-white-off">MIT</h2>
+                            </a>
+                        </div>
+
+                        <div class="my-mt-4">
+                            <h5>Always Here for You.</h5>
+                            <p>
+                                "We always strive to provide the best products. Your support is extremely important to
+                                us."
+                                Thank you for visit our
+                                website
+                            </p>
+
+                            <p class="my-mt-4">
+                                Hello ipsum dolor sit amet consectetur adipisicing elit. Fugit sed quisquam ex.
+                            </p>
+                        </div>
+
+
+                        <div class="my-mt-7">
+                            <h4 class="my-text-white-off"> Join Now</h4>
+
+                            <form action="#" class="subcribe my-d-flex my-mt-2">
+                                <input type="email" placeholder="Type your email">
+                                <button class="my-btn my-btn my-primary-btn"><span>Subcribe</span></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Singe grid item -->
+                    <div class="pages">
+                        <h4 class="footer-title">About More</h4>
+                        <div class="my-grid-2 my-gap-4">
+                            <ul class="my-flex-column my-gap-3">
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Shipping Info
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Refund
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Happy Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Top Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Happy Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Top Products
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                            <ul class="my-flex-column my-gap-3">
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Shipping Info
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Refund
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Happy Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Top Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Happy Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        Top Products
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Singe grid item -->
+                    <div>
+                        <h4 class="footer-title">
+                            Contact Info
+                        </h4>
+
+                        <div class="my-flex-column my-gap-4">
+                            <div class="my-d-flex my-align-center my-gap-3">
+                                <span class="profile-img-lg"><i class="fa-solid fa-mobile-screen"></i></span>
+                                <div>
+                                    <p>0187262627782</p>
+                                    <p>0187262627781</p>
+                                </div>
+                            </div>
+                            <div class="my-d-flex my-align-center my-gap-3">
+                                <span class="profile-img-lg"><i class="fa-regular fa-envelope"></i></span>
+                                <div>
+                                    <p>example@gmail.com</p>
+                                    <p>example2@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="my-d-flex my-align-center my-gap-3">
+                                <span class="profile-img-lg"><i class="fa-solid fa-location-dot"></i></span>
+                                <div>
+                                    <p>House 122,Block A, Road 12</p>
+                                    <p>Mirpur Dhaka</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-mt-8">
+                            <h4 class="my-text-white-off">Follow Us</h4>
+                            <ul class="my-social my-d-flex my-gap-2 my-mt-2">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="my-container">
+                <div
+                    class="footer-bottom  my-mt-8 my-border-top my-flex-sm-column my-gap-4 my-align-start my-flex-between  my-pt-4">
+                    <p class="my-fw-normal">
+                        copy right ©design by xsellencebdltd <a class="my-text-orange"
+                            href="#">https://www.xsellencebdltd.com/</a>
+                    </p>
+
+                    <div>
+                        <ul class="my-d-flex my-align-center my-gap-4">
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ================================================== -->
+        <!-- ==========    Fotter Section  End  Here   ======== -->
+        <!-- ================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ================================================ -->
+        <!-- ==========    Cart Modal  Start  Here   ======== -->
+        <!-- ================================================ -->
+        <div class="my-modal shopping-cart-modal " id="shopping-cart-modal">
+
+            <button class=" modal-close-btn close-btn my-btn">
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </button>
+
+            <div class="modal-content">
+                <div class="header my-bg-white-off my-flex-between my-align-end">
+                    <div>
+                        <h3>Shopping Cart.</h3>
+                        <p class="my-mt-">Dhaka Bangladesh</p>
+                    </div>
+
+                    <div>
+                        <p class="my-fw-bold"><span id="total-cart-item">9</span> items</p>
+                    </div>
+                </div>
+                <div class="modal-body my-has-scrollbar">
+                    <div class="body-content">
+
+                        <!-- notice -->
+                        <div class="my-notice">
+                            <p>Get discount <strong>12%</strong> go to
+                                <a href="#"> checkout</a>
+                            </p>
+                        </div>
+
+                        <!-- all cart items -->
+                        <div class="items my-mt-1 my-flex-column my-gap-0">
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/product-img3.webp" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/product-img3.webp" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/product-img4.webp" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/product-img4.webp" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--_______  single cart item  _______-->
+                            <div class="item my-flex-between my-gap-4">
+
+                                <div class="left my-d-flex my-align-start my-gap-4">
+                                    <!-- image -->
+                                    <div class="img">
+                                        <img src="./static/images/product-img4.webp" alt="card-1">
+                                    </div>
+
+                                    <!-- information -->
+                                    <div class="my-align-start my-gap-2 my-flex-column info">
+                                        <div>
+                                            <h6>
+                                                <a class="" href="./Pages/product.html">New 2024 Pc</a>
+                                            </h6>
+                                        </div>
+
+                                        <!-- delete button -->
+                                        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i>
+                                            <span class="my-fs-xs">Delete</span></button>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="right my-flex-between my-gap-4">
+
+                                    <!-- quantity buttons -->
+                                    <div class="my-d-flex quantity-buttons">
+                                        <input type="button" value="-" class="minus-btn">
+                                        <input type="number" step="1" max="10" class="input-field" value="1">
+                                        <input type="button" value="+" class="plus-btn">
+                                    </div>
+
+                                    <!-- price -->
+                                    <div class="price my-flex-column my-gap-2">
+                                        <!-- new price -->
+                                        <div class="new-price my-fs-md my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <h6>288.00</h6>
+                                        </div>
+
+                                        <!-- old price -->
+                                        <del class="old-price my-fs-xs my-align-center ">
+                                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                            <p class="my-fs-xs">299.00
+                                            </p>
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer my-flex-between">
+                    <button class="my-btn my-primary-btn"><a href="index.html">Continue
+                            Shopping</a></button>
+                    <button class="my-secendary-btn my-btn"><span>Update
+                            Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script type="module">
+            import {
+                openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF,
+            } from './static/js/utilitis.js';
+
+            closeButtonF()
+
+            // shopping cart
+            openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
+
+
+            // For Testimonial Slider
+            var swiper = new Swiper(".testimonial", {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                loop: true,
+                speed: 1200,
+                autoplay: {  // Correct autoplay setting
+                    delay: 2000, // 3 seconds delay
+                    disableOnInteraction: false, // Keeps autoplay after interaction
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: { // Ensures mobile screens show 1 slide
+                        slidesPerView: 1,
+                    },
+                    556: {
+                        slidesPerView: 1,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                    },
+                    1080: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+                new Swiper(".slider-banner", {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            });
+
+
+
+
+
+
+            // Toggle category dropdowns and icon
+            document.querySelectorAll('.open-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const dropdown = this.nextElementSibling; // The dropdown div
+                    const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon
+
+                    // Close all other dropdowns and reset their icons
+                    document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active'); // Close other dropdowns
+                            const otherIcon = otherDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
+                            if (otherIcon) {
+                                otherIcon.classList.remove('fa-minus'); // Change icon to plus
+                                otherIcon.classList.add('fa-plus');
+                            }
+                        }
+                    });
+
+                    // Toggle the current dropdown
+                    dropdown.classList.toggle('active');
+
+                    // Toggle the icon for the current dropdown
+                    if (dropdown.classList.contains('active')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
+
+
+
+            // Toggle subcategory dropdowns and icon
+            document.querySelectorAll('.subcategory-btn').forEach(subcategory => {
+                subcategory.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent navigation
+                    const nestedDropdown = this.nextElementSibling; // The nested dropdown div
+                    const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon for nested dropdown
+
+                    // Close all other nested dropdowns and reset their icons
+                    document.querySelectorAll('.nested-dropdown').forEach(otherNestedDropdown => {
+                        if (otherNestedDropdown !== nestedDropdown) {
+                            otherNestedDropdown.classList.remove('active'); // Close other nested dropdowns
+                            const otherIcon = otherNestedDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
+                            otherIcon.classList.remove('fa-minus');
+                            otherIcon.classList.add('fa-plus');
+                        }
+                    });
+
+                    // Toggle the current nested dropdown
+                    nestedDropdown.classList.toggle('active');
+
+                    // Toggle the icon for the current nested dropdown
+                    if (nestedDropdown.classList.contains('active')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
+
+
+
+            toggleF('all-category', 'mobile-menu-icon');
+
+
+
+
+            // Counter animation
+            function animateCounter(counter) {
+                const target = +counter.getAttribute("data-target");
+                const duration = 2000; // Animation duration in milliseconds
+                const steps = 100; // Total number of animation steps
+                const increment = target / steps; // Increment per step
+                let current = 0;
+                const interval = duration / steps; // Time between each increment
+
+                const updateCount = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.innerText = Math.floor(current); // Update counter text
+                        setTimeout(updateCount, interval);
+                    } else {
+                        counter.innerText = target; // Ensure it ends exactly at the target
+                    }
+                };
+
+                updateCount();
+            }
+
+            // Observer to trigger the counter when visible
+            const counters = document.querySelectorAll(".counter");
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Reset counter and start animation
+                            entry.target.innerText = "0";
+                            animateCounter(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.5 }
+            );
+
+            counters.forEach(counter => observer.observe(counter));
+        </script>
+    </body>
+
+</html>

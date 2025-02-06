@@ -1,0 +1,111 @@
+/*_____________________________
+____||  Cart Page Start  ||____
+_______________________________*/
+.area {
+    display: grid;
+    grid-template-columns: 3fr 1.1fr;
+    gap: 40px;
+}
+
+
+.products-area-table .delete-btn:hover {
+    color: var(--gray);
+}
+
+
+
+
+
+
+/*___________________________________________
+____||  Login and Register Page Start  ||____
+____________________________________________*/
+.login-other .right .my-card {
+    box-shadow: unset;
+    max-width: 400px;
+    padding: 24px 20px;
+    border-radius: 2px;
+}
+
+.login-other .left img {
+    width: 300px;
+}
+
+
+.login-other .or {
+    width: 100%;
+}
+
+.or .right,
+.or .left {
+    width: 100%;
+    background-color: var(--border-color2);
+    height: 1px;
+}
+
+.other-login-option button {
+    border: 1px solid var(--border-color2);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+
+
+.other-login-option button:hover {
+    background-color: var(--border-color);
+}
+
+
+@media (max-width:991px) {
+    .area.my-grid-2 {
+        margin: 0 auto;
+        gap: 24px !important;
+    }
+
+    .login-other .left img {
+        margin: 0 auto;
+    }
+
+    .login-other .right .my-card {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+
+    /* For Cart Page */
+    .area {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media (max-width:556px) {
+    .products-area-table {
+        max-width: 600px;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .products-area-table li {
+        width: 800px;
+    }
+
+    .products-area-table .quantity-buttons {
+        width: 120px;
+    }
+
+    .products-area-table .details {
+        width: 200px !important;
+        word-wrap: nowrap;
+        text-wrap: nowrap;
+    }
+
+    .products-area-table .col {
+        margin-right: 12px;
+        word-wrap: nowrap;
+        text-wrap: nowrap;
+    }
+}
