@@ -63,6 +63,25 @@ export function toggleF(sidebarId, buttonId) {
 
 
 
+// export function deleteAllF(deleteParent, deleteButtons, deleteItem) {
+//     const parent = document.querySelector(deleteParent)
+//     if (!parent) return;
+
+//     const buttons = parent.querySelectorAll(deleteButtons)
+//     const items = parent.querySelectorAll(deleteItem)
+
+
+//     buttons.forEach((btn, index) => {
+//         btn.addEventListener('click', function () {
+//             if (items[index]) {
+//                 items[index].remove()
+//             }
+//         })
+//     })
+// }
+
+
+
 
 
 
@@ -143,26 +162,21 @@ export function openSearchDropdown() {
 
 // delete function
 export function deleteF(itemClass, btnsClass) {
-    const items = document.querySelectorAll(itemClass)
-    const btns = document.querySelectorAll(btnsClass)
-
-    if (btns.length === 0 || items.length === 0) {
-        console.error("No items or buttons found with the provided selectors.");
-        return;
-    }
-
-    btns.forEach((btn, index) => {
+    const buttons = document.querySelectorAll(btnsClass)
+    buttons.forEach((btn) => {
         btn.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent any default behavior (if needed)
+            event.preventDefault();
             event.stopPropagation();
 
-            if (items[index]) {
-                items[index].remove();
+            const item = btn.closest(itemClass);
+            console.log(item)
+            if (item) {
+                item.remove();
             } else {
-                console.warn("No corresponding item found for this button.");
+                console.warn("No parent item found for this button.");
             }
-        })
-    })
+        });
+    });
 }
 
 deleteF('.shopping-cart-modal .item', '.shopping-cart-modal .delete-btn')

@@ -131,7 +131,19 @@ _______________________________*/
 
 
 
-
+/* mobile-search-input */
+.mobile-search-input.active {
+    display: block;
+    position: fixed;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 84%;
+    max-width: 640px;
+    z-index: 6;
+    background-color: var(--white-off);
+}
 
 
 
