@@ -169,7 +169,79 @@ ______________________________________*/
 }
 
 
+.filter-btn {
+    display: none;
+}
 
+.sidebar-close-btn {
+    display: none;
+}
+
+.shop-head-bottom {
+    justify-content: end;
+    width: 40%;
+}
+
+
+
+
+
+/*_____________________________________
+  ____||   Responsive For 991px  ||____
+______________________________________*/
+@media (max-width:991px) {
+    .brigtcamp {
+        border-radius: 8px;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-200%);
+        box-shadow: var(--shadow-1);
+        width: 100%;
+        max-width: 340px;
+        transition: .3s linear;
+        z-index: 4;
+        height: 100dvh;
+        overflow-y: auto;
+        background-color: var(--border-color);
+        padding: 12px;
+        padding-top: 34px;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .shop-body-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+
+    /* filter-btn */
+    .filter-btn {
+        display: flex;
+    }
+
+    .sidebar-close-btn {
+        display: flex;
+    }
+
+    .shop-content .head h4 {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .shop-head-bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
 
 
 
