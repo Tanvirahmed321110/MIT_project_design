@@ -183,6 +183,27 @@ deleteF('.shopping-cart-modal .item', '.shopping-cart-modal .delete-btn')
 
 
 
+// quick view
+function quickViewF(buttons) {
+    const btns = document.querySelectorAll(buttons)
+
+    if (btns) {
+        btns.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const modal = document.querySelector('.qucik-view-modal')
+
+                console.log(modal)
+                if (modal) {
+                    modal.classList.add('active')
+                }
+            })
+        })
+    }
+}
+quickViewF('.quick-view-btn')
+
+
 
 
 // funciton active
