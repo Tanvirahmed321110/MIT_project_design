@@ -1,0 +1,55 @@
+.build-area .head .item {
+    /* color: var(--gray); */
+    text-align: center;
+    font-size: var(--fs-sm);
+    background-color: var(--border-color);
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.build-area .head .item:hover {
+    color: var(--secondary-color);
+}
+
+.build-area .head .item:hover i {
+    color: var(--primary-color);
+}
+
+
+
+/* select-product */
+.select-product .left {
+    flex-grow: 1;
+}
+
+/*_____________  select-product ______________*/
+.select-product .right {
+    width: 300px;
+    min-width: 200px;
+
+}
+
+.select-product {
+    border-color: var(--border-color);
+}
+
+.select-product .required {
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    color: var(--border-color);
+    font-size: 13px;
+}
+
+/* hide content */
+.build-area .hide {
+    height: 12px;
+    width: 120px;
+    margin-top: 4px;
+    background-color: var(--border-color);
+}
+
+.build-area .left-hide {
+    width: 100%;
+}

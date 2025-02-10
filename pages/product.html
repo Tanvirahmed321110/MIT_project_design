@@ -2810,6 +2810,17 @@
 
 
 
+        <!-- ____________ Message Button ___________ -->
+        <div class="message-btn active my-flex-center ">
+            <a class="my-flex-center" href="https://wa.me/01701957294" target="_blank">
+                <i class="fa-regular fa-message"></i>
+            </a>
+        </div>
+
+        <!-- ____________ Up Button ___________ -->
+        <a class="my-flex-center message-btn up-btn active my-flex-center" href="#">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
 
 
 
@@ -2822,7 +2833,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="module">
-            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown } from '../static/js/utilitis.js';
+            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown, bigImageChangeF } from '../static/js/utilitis.js';
 
             closeButtonF()
 
@@ -2830,20 +2841,8 @@
             openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
 
 
-            // image change
-            function bigImageChangeF() {
-                const bigImage = document.getElementById('big-img')
-                const smallImgs = document.querySelectorAll('.small-images img')
-
-                activeF('.small-images img')
-
-                smallImgs.forEach(img => {
-                    img.addEventListener('click', function () {
-                        bigImage.src = this.src
-                    })
-                })
-            }
-            bigImageChangeF()
+            // big image change
+            bigImageChangeF('big-img', '.small-images img')
 
 
 
@@ -2889,7 +2888,7 @@
 
 
 
-
+            // related slider
             document.addEventListener("DOMContentLoaded", function () {
                 new Swiper(".related-products", {
                     slidesPerView: 1,  // Default: Show 1 slide on small screens
@@ -2943,10 +2942,6 @@
                     }
                 });
             });
-
-
-
-
 
 
 

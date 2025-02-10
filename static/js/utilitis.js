@@ -206,6 +206,43 @@ quickViewF('.quick-view-btn')
 
 
 
+
+// big image change
+export function bigImageChangeF(bigImg, smallImgsSelector) {
+    const bigImage = document.getElementById(bigImg)
+    const smallImgs = document.querySelectorAll(smallImgsSelector)
+
+    activeF('.small-images img')
+
+    if (bigImage && smallImgs) {
+        smallImgs.forEach(img => {
+            img.addEventListener('click', function () {
+                bigImage.src = this.src
+            })
+        })
+    }
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const upBtn = document.querySelector(".up-btn");
+
+    if (upBtn) {
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 400) {
+                upBtn.classList.add("active"); // Show button
+            } else {
+                upBtn.classList.remove("active"); // Hide button
+            }
+        });
+    }
+});
+
+
+
+
 // funciton active
 export function activeF(selector) {
     const items = document.querySelectorAll(selector)
