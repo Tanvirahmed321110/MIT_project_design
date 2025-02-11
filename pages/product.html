@@ -1079,8 +1079,8 @@
                 <div class="my-container">
                     <div class="product-details-main-area my-grid-2 my-grid-md-1 my-gap-4">
                         <!--______________  Image  _____________ -->
-                        <div class="my-w-100 image-area  my-bg-white my-shadow-sm my-p-4 my-p-3-sm my-radius-md">
-                            <div class="image ">
+                        <div class="my-w-100 image-area my-flex-column  my-bg-white  my-p-4 my-p-3-sm ">
+                            <div class="image  ">
                                 <div class="big-image">
                                     <img src="../static/images/product-img3.webp" id="big-img" alt="">
                                 </div>
@@ -1109,12 +1109,20 @@
                                         alt="">
                                 </div>
                             </div>
+
+
+                            <!-- Banner -->
+                            <div class="my-mt-50 my-flex-center product-banner my-w-100">
+                                <a href="#" class="my-flex-center">
+                                    <img src="https://www.ryans.com/storage/media_gallery/Falgun-Fest-2025-Up-to-50000-tk-Discount-offer-head_1739005121.webp"
+                                        alt="">
+                                </a>
+                            </div>
                         </div>
 
 
                         <!--______________  Right Details  _____________ -->
-                        <div
-                            class="right-details my-p-5 my-p-3-sm my-radius-md my-bg-white my-shadow-sm my-flex-column my-gap-6">
+                        <div class="right-details my-p-5 my-p-3-sm  my-bg-white my-shadow-sm my-flex-column my-gap-6">
                             <!-- title -->
                             <h4>
                                 HP 15-fc0166AU AMD Ryzen 5 7520U 8GB DDR5, 512GB SSD 15.6 Inch FHD Display Moonlight
@@ -1139,15 +1147,50 @@
 
                                 <!-- SKU -->
                                 <div
-                                    class="my-d-flex my-gap-4 my-mt-2 my-fit-content my-align-center my-border my-p-2 my-radius-sm sku-area">
+                                    class="my-d-flex my-gap-4 my-mt-2 my-fit-content my-align-center  my-radius-md sku-area">
                                     <div>
-                                        <strong>SKU:</strong>
-                                        324324234KBN
+                                        <strong>Product Id:</strong>
+                                        #4323423423
                                     </div>
+                                </div>
+                                <div class="instock tag my-mt-2">in stock</div>
+                            </div>
 
-                                    <div class="instock tag ">in stock</div>
+
+
+                            <!-- Quick Detials -->
+                            <div class="quick-details">
+                                <h4>Quick Detials</h4>
+                                <ul class="my-mt-2">
+                                    <li>Processor Type. - Ryzen 5</li>
+                                    <li>Generation - Ryzen</li>
+                                    <li>RAM - 8GB</li>
+                                    <li>Storage - 512GB SSD</li>
+                                    <li>Graphics Memory - Shared</li>
+                                    <li>Display Size (Inch) - 15.6</li>
+                                </ul>
+                            </div>
+
+
+
+
+
+                            <!-- for ram , color , size -->
+                            <div class="my-mt-2">
+                                <h5>Ram</h5>
+                                <div class="varient-items my-d-flex my-align-center my-gap-2 my-mt-1">
+                                    <div class="item active">
+                                        4 GB
+                                    </div>
+                                    <div class="item">
+                                        16 GB
+                                    </div>
+                                    <div class="item">
+                                        32 GB
+                                    </div>
                                 </div>
                             </div>
+
 
 
                             <!-- price -->
@@ -1164,25 +1207,12 @@
                                     </div>
                                 </div>
 
-                                <div class="tag instock  my-mt-2">Save Tk <span>3020</span></div>
-                            </div>
-
-                            <div class="quick-details">
-                                <h4>Quick Detials</h4>
-                                <ul class="my-mt-2">
-                                    <li>Processor Type. - Ryzen 5</li>
-                                    <li>Generation - Ryzen</li>
-                                    <li>RAM - 8GB</li>
-                                    <li>Storage - 512GB SSD</li>
-                                    <li>Graphics Memory - Shared</li>
-                                    <li>Display Size (Inch) - 15.6</li>
-                                    <li>Licensed Application - Microsoft Offic</li>
-                                </ul>
+                                <div class="tag save  my-mt-2">Save Tk <span>3020</span> on online order</div>
                             </div>
 
 
-                            <div>
-                                <div class="my-d-flex my-align-center my-flex-sm-column my-gap-3">
+                            <div class="btn-quantity my-mt-1">
+                                <div>
                                     <!-- quantity buttons -->
                                     <div class="my-d-flex quantity-buttons">
                                         <input type="button" value="-" id="minus-btn" class="minus-btn">
@@ -1190,11 +1220,10 @@
                                             value="1">
                                         <input type="button" value="+" class="plus-btn" id="plus-btn">
                                     </div>
+                                </div>
 
-                                    <!-- add to cart button -->
-                                    <button class="my-btn my-btn-sm my-bg-gray my-text-white-off">Add To Cart</button>
+                                <div class="my-d-flex my-align-center my-flex-sm-column my-gap-2 my-mt-2">
                                     <!-- compare button-->
-
                                     <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
                                         Compare
                                         <div class="show-text">Add to compare</div>
@@ -1205,23 +1234,57 @@
                                         <i class="fa-regular fa-heart"></i>
                                         <div class="show-text">Add to wishlist</div>
                                     </button>
+
+
                                 </div>
 
-                                <button class="my-btn my-secendary-btn  my-radius-sm my-w-100 my-mt-3">Buy Now</button>
+                                <div class="my-flex-between my-gap-3 my-mt-2">
+                                    <!-- add to cart button -->
+                                    <button class="my-btn my-w-50 my-btn-outline my-bg-white-off">Add To
+                                        Cart</button>
+                                    <!-- Buy Now -->
+                                    <button class="my-btn my-secendary-btn my-w-50 buy-now-btn my-radius-sm  ">Buy
+                                        Now</button>
+                                </div>
                             </div>
 
-                            <!-- Print and Mail Button -->
-                            <div class="my-d-flex my-align-center my-gap-2">
-                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <div class="show-text">Gamil</div>
-                                </button>
+                            <!-- Print and Mail Button share -->
+                            <div class="share">
+                                <h5 class="my-text-gray share-header"> Share
+                                    <i class="fa-regular  fa-share-from-square"></i>
+                                </h5>
+                                <div class="my-d-flex my-align-center my-gap-2 my-my-2">
+                                    <!-- gmail -->
+                                    <button
+                                        class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <div class="show-text">Gamil</div>
+                                    </button>
 
-                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
-                                    id="print-btn">
-                                    <i class="fa-solid fa-print"></i>
-                                    <div class="show-text">Print Now</div>
-                                </button>
+                                    <!-- print -->
+                                    <button
+                                        class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                        id="print-btn">
+                                        <i class="fa-solid fa-print"></i>
+                                        <div class="show-text">Print Now</div>
+                                    </button>
+
+                                    <!-- what's app -->
+                                    <button
+                                        class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                        id="print-btn">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <div class="show-text">what's app</div>
+                                    </button>
+
+                                    <!-- messenger -->
+                                    <button
+                                        class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                        id="print-btn">
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <div class="show-text">messenger</div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -1527,9 +1590,9 @@
 
 
                             <!--________________ Customer questions _________________ -->
-                            <div class="p-video my-mt-10" id="p-qa" id="p-qa">
+                            <div class="p-question-ans my-mt-10" id="p-qa" id="p-qa">
                                 <div class="head">
-                                    <h4 class="">QUESTION & ANSWER</h4>
+                                    <h4 class="">Question and Answer</h4>
                                 </div>
 
                                 <div class="">
@@ -1863,104 +1926,209 @@
 
 
 
-                        <!--_________________ Right Similar products __________________-->
-                        <div class="right-similar-products">
-                            <div class="head">
-                                <h4 class="">Similar Products</h4>
+                        <div>
+                            <!--_________________ Right Similar products __________________-->
+                            <div class="right-similar-products">
+                                <div class="head">
+                                    <h4 class="">Similar Products</h4>
+                                </div>
+                                <div class="my-mt-2 my-flex-column my-gap-2">
+
+                                    <!-- Single similar products -->
+                                    <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
+                                        <img class="w-25"
+                                            src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="">
+
+                                        <div class="my-flex-column my-gap-3">
+                                            <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
+                                            <h5>TK 26540</h5>
+                                            <p class="my-text-gray">save TK 1300 on online order</p>
+                                            <div class="my-d-flex my-gap-2">
+                                                <button
+                                                    class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
+                                                    +
+                                                </button>
+                                                <!-- compare button-->
+
+                                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                                    Compare
+                                                    <div class="show-text">Add to compare</div>
+                                                </button>
+
+                                                <!-- wishlist button -->
+                                                <button
+                                                    class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!-- Single similar products -->
+                                    <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
+                                        <img class="w-25" src="../static/images/product-img4.webp" alt="">
+
+                                        <div class="my-flex-column my-gap-3">
+                                            <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
+                                            <h5>TK 26540</h5>
+                                            <p class="my-text-gray">save TK 1300 on online order</p>
+                                            <div class="my-d-flex my-gap-2">
+                                                <button
+                                                    class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
+                                                    +
+                                                </button>
+                                                <!-- compare button-->
+
+                                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                                    Compare
+                                                    <div class="show-text">Add to compare</div>
+                                                </button>
+
+                                                <!-- wishlist button -->
+                                                <button
+                                                    class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!-- Single similar products -->
+                                    <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
+                                        <img class="w-25" src="../static/images/product-img3.webp" alt="">
+
+                                        <div class="my-flex-column my-gap-3">
+                                            <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
+                                            <h5>TK 26540</h5>
+                                            <p class="my-text-gray">save TK 1300 on online order</p>
+                                            <div class="my-d-flex my-gap-2">
+                                                <button
+                                                    class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
+                                                    +
+                                                </button>
+                                                <!-- compare button-->
+
+                                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                                    Compare
+                                                    <div class="show-text">Add to compare</div>
+                                                </button>
+
+                                                <!-- wishlist button -->
+                                                <button
+                                                    class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="my-mt-2 my-flex-column my-gap-2">
 
-                                <!-- Single similar products -->
-                                <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
-                                    <img class="w-25"
-                                        src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
-                                        alt="">
 
-                                    <div class="my-flex-column my-gap-3">
-                                        <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
-                                        <h5>TK 26540</h5>
-                                        <p class="my-text-gray">save TK 1300 on online order</p>
-                                        <div class="my-d-flex my-gap-2">
-                                            <button
-                                                class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
-                                                +
-                                            </button>
-                                            <!-- compare button-->
 
-                                            <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
-                                                Compare
-                                                <div class="show-text">Add to compare</div>
-                                            </button>
+                            <!--_________________ Recent view products __________________-->
+                            <div class="right-similar-products my-mt-10">
+                                <div class="head">
+                                    <h4 class="">Recent view</h4>
+                                </div>
+                                <div class="my-mt-2 my-flex-column my-gap-2">
 
-                                            <!-- wishlist button -->
-                                            <button
-                                                class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
-                                                <i class="fa-solid fa-eye"></i>
-                                                <div class="show-text">Quick View</div>
-                                            </button>
+                                    <!-- Single similar products -->
+                                    <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
+                                        <img class="w-25"
+                                            src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            alt="">
+
+                                        <div class="my-flex-column my-gap-3">
+                                            <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
+                                            <h5>TK 26540</h5>
+                                            <p class="my-text-gray">save TK 1300 on online order</p>
+                                            <div class="my-d-flex my-gap-2">
+                                                <button
+                                                    class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
+                                                    +
+                                                </button>
+                                                <!-- compare button-->
+
+                                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                                    Compare
+                                                    <div class="show-text">Add to compare</div>
+                                                </button>
+
+                                                <!-- wishlist button -->
+                                                <button
+                                                    class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
 
-                                <!-- Single similar products -->
-                                <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
-                                    <img class="w-25" src="../static/images/product-img4.webp" alt="">
+                                    <!-- Single similar products -->
+                                    <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
+                                        <img class="w-25" src="../static/images/product-img4.webp" alt="">
 
-                                    <div class="my-flex-column my-gap-3">
-                                        <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
-                                        <h5>TK 26540</h5>
-                                        <p class="my-text-gray">save TK 1300 on online order</p>
-                                        <div class="my-d-flex my-gap-2">
-                                            <button
-                                                class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
-                                                +
-                                            </button>
-                                            <!-- compare button-->
+                                        <div class="my-flex-column my-gap-3">
+                                            <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
+                                            <h5>TK 26540</h5>
+                                            <p class="my-text-gray">save TK 1300 on online order</p>
+                                            <div class="my-d-flex my-gap-2">
+                                                <button
+                                                    class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
+                                                    +
+                                                </button>
+                                                <!-- compare button-->
 
-                                            <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
-                                                Compare
-                                                <div class="show-text">Add to compare</div>
-                                            </button>
+                                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                                    Compare
+                                                    <div class="show-text">Add to compare</div>
+                                                </button>
 
-                                            <!-- wishlist button -->
-                                            <button
-                                                class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
-                                                <i class="fa-solid fa-eye"></i>
-                                                <div class="show-text">Quick View</div>
-                                            </button>
+                                                <!-- wishlist button -->
+                                                <button
+                                                    class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
 
-                                <!-- Single similar products -->
-                                <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
-                                    <img class="w-25" src="../static/images/product-img3.webp" alt="">
+                                    <!-- Single similar products -->
+                                    <a href="./product.html" class="my-card my-d-flex my-align-center my-gap-4">
+                                        <img class="w-25" src="../static/images/product-img3.webp" alt="">
 
-                                    <div class="my-flex-column my-gap-3">
-                                        <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
-                                        <h5>TK 26540</h5>
-                                        <p class="my-text-gray">save TK 1300 on online order</p>
-                                        <div class="my-d-flex my-gap-2">
-                                            <button
-                                                class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
-                                                +
-                                            </button>
-                                            <!-- compare button-->
+                                        <div class="my-flex-column my-gap-3">
+                                            <h5>Lenovo IdeaPad D330 10IGL Intel CDC N4020 ...</h5>
+                                            <h5>TK 26540</h5>
+                                            <p class="my-text-gray">save TK 1300 on online order</p>
+                                            <div class="my-d-flex my-gap-2">
+                                                <button
+                                                    class="my-btn my-btn-sm my-bg-gray my-text-white-off  my-secendary-btn">Add
+                                                    +
+                                                </button>
+                                                <!-- compare button-->
 
-                                            <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
-                                                Compare
-                                                <div class="show-text">Add to compare</div>
-                                            </button>
+                                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                                    Compare
+                                                    <div class="show-text">Add to compare</div>
+                                                </button>
 
-                                            <!-- wishlist button -->
-                                            <button
-                                                class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
-                                                <i class="fa-solid fa-eye"></i>
-                                                <div class="show-text">Quick View</div>
-                                            </button>
+                                                <!-- wishlist button -->
+                                                <button
+                                                    class="my-btn my-fs-xs my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1980,7 +2148,7 @@
             <!-- ============================================================ -->
             <!-- ==========    Related Products Section  End  Here   ======== -->
             <!-- ============================================================ -->
-            <section>
+            <section class="my-d-none">
                 <div class="my-container">
                     <div class="head">
                         <h4>Related Prodcuts</h4>

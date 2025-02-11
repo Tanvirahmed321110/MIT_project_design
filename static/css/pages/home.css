@@ -1,51 +1,9 @@
-/*____________________________________
-  ____||    Feature Start Here   ____||
-_____________________________________*/
-.feature-category-area {
-    background-color: var(--white);
-    padding: 22px;
-}
-
-.feature .my-container {
-    padding-top: 0;
-}
-
-.feature-category-area .item {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background-color: var(--white-off);
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    transition: transform .2s linear;
-}
-
-.feature-category-area .item h5 {
-    font-size: var(--fs-sm);
-    text-align: center;
-    width: 100%;
-}
-
-.feature-category-area .item:hover {
-    transform: scale(.96);
-    outline: 1px solid var(--border-color2);
-}
-
-.feature-category-area .item img {
-    width: 40px;
-}
-
-
-
 /*___________________    Hero Category ___________________  */
 
 /*_______  all-department  _______*/
 .hero-area .all-department {
-    min-width: 300px;
     width: 100%;
     overflow: auto;
-    min-height: 445px;
 }
 
 .all-department.my-card {
@@ -93,7 +51,6 @@ _____________________________________*/
 }
 
 /* dropdown */
-
 .all-department .dropdown {
     opacity: 0;
     position: absolute;
@@ -109,8 +66,6 @@ _____________________________________*/
     transform: translateX(-25px);
     transition: .2s linear;
     z-index: -1;
-    min-width: 280px;
-    max-width: 400px;
     width: 100%;
     border-radius: 8px;
 }
@@ -222,7 +177,7 @@ _____________________________________*/
 
 .hero-area {
     display: flex;
-    gap: 2%;
+    gap: 10px;
 }
 
 .hero-area .all-department-btn {
@@ -271,14 +226,27 @@ _____________________________________*/
 
 
 
+/*_________  Banner _________ */
 .banner {
     display: flex;
-    width: 72%;
+    flex-grow: 1;
     height: 490px;
 }
 
 .hero-area .category {
-    width: 26%;
+    width: 280px;
+}
+
+.hero-area .category .left {
+    width: 280px;
+}
+
+.hero-area .all-department.my-card {
+    width: 280px;
+}
+
+.hero-area .single-dept {
+    width: 100%;
 }
 
 .hero-area .swiper-slide a {
@@ -314,6 +282,9 @@ _____________________________________*/
     height: 495px;
 }
 
+.swiper-slide a {
+    width: 100%;
+}
 
 
 
@@ -408,6 +379,7 @@ ____________________________________*/
 .achivment .item {
     padding: 4px;
     border: 2px solid var(--white);
+    border-radius: 8px;
 }
 
 .achivment .my-card {
@@ -420,6 +392,7 @@ ____________________________________*/
     flex-direction: column;
     border-radius: 0;
     height: 170px;
+    border-radius: 6px;
 }
 
 .achivment .item h4 {
@@ -429,6 +402,49 @@ ____________________________________*/
 
 
 
+
+
+/*____________________________________
+  ____||    Feature Start Here   ____||
+_____________________________________*/
+.feature-category-area {
+    background-color: var(--white);
+    padding: 22px;
+}
+
+.feature .my-container {
+    padding-top: 0;
+}
+
+.feature-category-area .item {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--white-off);
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    transition: transform .2s linear;
+}
+
+.feature-category-area .item h5 {
+    font-size: var(--fs-sm);
+    text-align: center;
+    width: 100%;
+}
+
+.feature-category .all-category-btn:hover {
+    color: var(--primary-color);
+}
+
+.feature-category-area .item:hover {
+    transform: scale(.96);
+    outline: 1px solid var(--border-color2);
+}
+
+.feature-category-area .item img {
+    width: 40px;
+}
 
 
 
