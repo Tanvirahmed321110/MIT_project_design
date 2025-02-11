@@ -445,7 +445,7 @@ tr {
 
 /*______  Display  ______*/
 .my-d-none {
-    display: none;
+    display: none !important;
 }
 
 .my-d-grid {

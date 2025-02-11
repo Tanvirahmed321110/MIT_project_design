@@ -54,6 +54,11 @@ _______________________________*/
     border-radius: 12px;
 }
 
+
+.header-medile .my-container {
+    padding-bottom: 16px;
+}
+
 .header-medile .subcribe button {
     background: unset;
     background-color: var(--secondary-color);
