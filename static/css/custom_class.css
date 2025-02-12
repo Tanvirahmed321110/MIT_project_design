@@ -102,7 +102,7 @@ a:active {
 
 p {
     font-size: var(--fs-sm);
-    line-height: 20px;
+    line-height: 22px;
     margin-bottom: 0 !important;
     font-weight: var(--fw-500);
 }
@@ -1558,7 +1558,7 @@ tr {
 
 
 /*________  Responsive for xs  Device  ________*/
-@media (max-width:576px) {
+@media (max-width:556px) {
     .my-p-2-xs {
         padding: 8px;
     }
@@ -1604,7 +1604,7 @@ tr {
     }
 
     .my-grid-xs-1 {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 
     .my-grid-xs-2 {

@@ -65,7 +65,15 @@
 
 
 
+/*___________________  For CC Build Page __________________ */
+.left select {
+    max-width: 300px;
+    border-color: var(--border-color2);
+}
 
+.left select {
+    font-size: var(--fs-sm);
+}
 
 
 

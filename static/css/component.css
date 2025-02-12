@@ -1382,7 +1382,7 @@ input[type="radio"]:checked::after {
     padding: 10px;
     padding-top: 6px;
     margin-top: 10px !important;
-    height: 240px;
+    /* height: 240px; */
 }
 
 .product-content .my-btn {

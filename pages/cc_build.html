@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PC_Build_Page</title>
+        <title>CC_Build_Page</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <!--  common css -->
         <link rel="stylesheet" href="../static/css/common.css">
@@ -1107,7 +1107,7 @@
                         <!-- head medile -->
                         <div class="head my-y-2 my-flex-between my-gap-4 my-flex-sm-column my-mt-6">
                             <div>
-                                <h5>PC Builder - Build your own PC - MIT</h5>
+                                <h5>CC Builder - Build your own CC - MIT</h5>
                                 <div class="my-d-flex my-align-center my-gap-2 my-mt-2">
                                     <input type="checkbox" name="hide" id="hide">
                                     <label for="hide" class="my-fs-sm">Hide Unconfigured Components</label>
@@ -1131,8 +1131,7 @@
 
                             <!-- Name of Component -->
                             <div class="core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-fw-medium ">
-                                Core
-                                Components
+                                CC Build
                             </div>
 
 
@@ -1143,6 +1142,66 @@
                                 <!-- When user choose product -->
                                 <div class="choose-products">
 
+                                    <!--______ Single Select Product default _____-->
+                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
+
+                                        <!-- Left -->
+                                        <div class="left my-d-flex my-align-center my-gap-3">
+                                            <select class="my-input-control">
+                                                <option value="1">Camera</option>
+                                                <option value="2">CC Camera</option>
+                                                <option value="3">IP Camera</option>
+                                            </select>
+                                        </div>
+
+
+                                        <!-- Right -->
+                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
+                                            <div>
+                                                <h5 class="my-d-none">13,500<i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
+                                            </div>
+
+                                            <!-- when item is empty -->
+                                            <button class="my-btn my-secendary-btn">Choose</button>
+
+                                            <!-- when item is fill -->
+                                            <button class="my-btn my-d-none"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </div>
+                                    </div>
+
+
+                                    <!--______ Single Select Product default _____-->
+                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
+
+                                        <!-- Left -->
+                                        <div class="left my-d-flex my-align-center my-gap-3">
+                                            <select class="form-select">
+                                                <option value="5">Video Recorder</option>
+                                                <option value="6">DVR</option>
+                                                <option value="7">NVR</option>
+                                                <option value="8">XVR</option>
+                                            </select>
+                                        </div>
+
+
+                                        <!-- Right -->
+                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
+                                            <div>
+                                                <h5 class="my-d-none">13,500<i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
+                                            </div>
+
+                                            <!-- when item is empty -->
+                                            <button class="my-btn my-secendary-btn">Choose</button>
+
+                                            <!-- when item is fill -->
+                                            <button class="my-btn my-d-none"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </div>
+                                    </div>
+
                                     <!--______ Single Select Product defult _____-->
                                     <div class="select-product my-py-2 my-border-bottom default my-flex-between">
 
@@ -1153,17 +1212,23 @@
 
                                             <div class="my-w-100">
                                                 <div class="my-d-flex my-gap-2">
-                                                    <h6>CPU </h6><span class="required">required</span>
+                                                    <h6>Camera </h6>
                                                 </div>
 
                                                 <!-- when item  is empty -->
                                                 <div class="left-hide hide my-d-none"></div>
 
                                                 <!-- when item is fill -->
-                                                <p class="my-fs-xs">
-                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
-                                                    Graphics
-                                                </p>
+                                                <div>
+                                                    <p class="my-fs-xs">
+                                                        AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
+                                                        Graphics
+                                                    </p>
+                                                    <button
+                                                        class=" my-btn-ouline my-mt-2 my-flex-center my-border my-text-gray my-p-2 my-px-2 my-radius-sm">+
+                                                        Add
+                                                        More</button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -1184,7 +1249,7 @@
                                         </div>
                                     </div>
 
-                                    <!--______ Single Select Product defult _____-->
+                                    <!--______ Single Select Product when select _____-->
                                     <div class="select-product my-py-2 my-border-bottom default my-flex-between">
 
                                         <!-- Left -->
@@ -1194,17 +1259,23 @@
 
                                             <div class="my-w-100">
                                                 <div class="my-d-flex my-gap-2">
-                                                    <h6>CPU </h6><span class="required">required</span>
+                                                    <h6>Camera </h6>
                                                 </div>
 
                                                 <!-- when item  is empty -->
                                                 <div class="left-hide hide my-d-none"></div>
 
                                                 <!-- when item is fill -->
-                                                <p class="my-fs-xs">
-                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
-                                                    Graphics
-                                                </p>
+                                                <div>
+                                                    <p class="my-fs-xs">
+                                                        AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
+                                                        Graphics
+                                                    </p>
+                                                    <button
+                                                        class=" my-btn-ouline my-mt-2 my-flex-center my-border my-text-gray my-p-2 my-px-2 my-radius-sm">+
+                                                        Add
+                                                        More</button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -1225,250 +1296,86 @@
                                         </div>
                                     </div>
 
-                                </div>
+                                    <!--______ Single Select Product when select _____-->
+                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
+
+                                        <!-- Left -->
+                                        <div class="left my-d-flex my-align-center my-gap-3">
+                                            <img class="w-15 my-p-1 my-bg-white-off"
+                                                src="../static/images/product-img3.webp" alt="">
+
+                                            <div class="my-w-100">
+                                                <div class="my-d-flex my-gap-2">
+                                                    <h6>Camera </h6>
+                                                </div>
+
+                                                <!-- when item  is empty -->
+                                                <div class="left-hide hide my-d-none"></div>
+
+                                                <!-- when item is fill -->
+                                                <div>
+                                                    <p class="my-fs-xs">
+                                                        AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
+                                                        Graphics
+                                                    </p>
+                                                    <button
+                                                        class=" my-btn-ouline my-mt-2 my-flex-center my-border my-text-gray my-p-2 my-px-2 my-radius-sm">+
+                                                        Add
+                                                        More</button>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/motherboard-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Motherbhoard </h6><span class="required">required</span>
+                                        <!-- Right -->
+                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
+                                            <div>
+                                                <!-- when item is empty -->
+                                                <div class="hide my-d-none"></div>
+                                                <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
                                             </div>
 
-                                            <div class="left-hide hide"></div>
+                                            <!-- when item is empty -->
+                                            <button class="my-btn my-secendary-btn my-d-none">Choose</button>
+
+                                            <!-- when item is fill -->
+                                            <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                     </div>
 
+                                    <!--______ Single Select Product default _____-->
+                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
 
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
+                                        <!-- Left -->
+                                        <div class="left my-d-flex my-align-center my-gap-3">
+                                            <select class="form-select">
+                                                <option value="5">Power Source</option>
+                                                <option value="6">DVR</option>
+                                                <option value="7">NVR</option>
+                                                <option value="8">XVR</option>
+                                            </select>
                                         </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
 
 
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/cooler-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>CUP Cooler </h6><span class="required">required</span>
+                                        <!-- Right -->
+                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
+                                            <div>
+                                                <h5 class="my-d-none">13,500<i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
                                             </div>
 
-                                            <div class="left-hide hide"></div>
+                                            <!-- when item is empty -->
+                                            <button class="my-btn my-secendary-btn">Choose</button>
+
+                                            <!-- when item is fill -->
+                                            <button class="my-btn my-d-none"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                     </div>
 
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
                                 </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/ssd-drive-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>SSD </h6><span class="required">required</span>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/hdd-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>HDD </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
                             </div>
 
-                            <!-- Peripherals And Others -->
-                            <div class=" core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-mt-2
-                                my-fw-medium ">
-                                Peripherals & Others
-                            </div>
-
-                            <!-- Products -->
-                            <div class="select-products my-mt-2">
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/monitor-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Monitor </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/ups2-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>UPS</h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-
-
-                            <!--Accessories -->
-                            <div class=" core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-mt-2
-                                my-fw-medium ">
-                                Accessories
-                            </div>
-
-                            <!-- selecte products -->
-                            <div class="select-products my-mt-2">
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/mouse-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Mouse </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide my-d-sm-none"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/keyboard-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Key Board</h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                            </div>
 
                         </div>
 

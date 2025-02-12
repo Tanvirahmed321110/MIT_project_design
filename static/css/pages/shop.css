@@ -31,12 +31,12 @@
 ______________________________________*/
 .shop-body-area {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 24px;
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
 }
 
 .sidebar {
-    width: 320px;
+    width: 100%;
 }
 
 .shop-content {
@@ -67,6 +67,19 @@ ______________________________________*/
 }
 
 
+
+/*____  show desc ____*/
+.shop-content .product-cart .show-desc {
+    top: -80px;
+}
+
+.shop-content .product-cart .desc:hover .show-desc {
+    top: -100px;
+}
+
+.shop-content .information {
+    color: var(--gray);
+}
 
 /*____________________  Shop Sidebar __________________ */
 .sidebar-area .item {
@@ -195,7 +208,7 @@ ______________________________________*/
     }
 
     .sidebar {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         transform: translateX(-200%);
