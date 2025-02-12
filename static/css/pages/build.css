@@ -30,6 +30,10 @@
 
 }
 
+.select-product .right .my-d-none {
+    display: none;
+}
+
 .select-product {
     border-color: var(--border-color);
 }
@@ -52,4 +56,38 @@
 
 .build-area .left-hide {
     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:769px) {
+    .build-area {
+        padding: 12px;
+    }
+
+    .select-product .right {
+        width: fit-content;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0px;
+    }
+
+    .select-product .right .hide {
+        display: none;
+    }
 }

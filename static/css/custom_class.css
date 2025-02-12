@@ -218,6 +218,10 @@ tr {
     text-align: right;
 }
 
+.my-text-justify {
+    text-align: justify;
+}
+
 .my-mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -445,7 +449,7 @@ tr {
 
 /*______  Display  ______*/
 .my-d-none {
-    display: none !important;
+    display: none;
 }
 
 .my-d-grid {

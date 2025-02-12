@@ -1077,7 +1077,7 @@
                     <div class="build-area my-border2 my-bg-white my-p-5 my-radius-sm">
 
                         <!-- head top -->
-                        <div class="head my-y-2 my-flex-between my-gap-4 my-border-bottom my-pb-1">
+                        <div class="head my-y-2 my-flex-between my-gap-4 my-flex-sm-column my-border-bottom my-pb-1">
                             <a href="#" class="logo">
                                 <img class="w-30" src="../static/images/logo.png" alt="">
                             </a>
@@ -1105,7 +1105,7 @@
                         </div>
 
                         <!-- head medile -->
-                        <div class="head my-y-2 my-flex-between my-gap-4 my-mt-6">
+                        <div class="head my-y-2 my-flex-between my-gap-4 my-flex-sm-column my-mt-6">
                             <div>
                                 <h5>PC Builder - Build your own PC - TechLand</h5>
                                 <div class="my-d-flex my-align-center my-gap-2 my-mt-2">
@@ -1125,9 +1125,12 @@
                         </div>
 
 
+
+                        <!-- defult and choose items -->
                         <div class="my-mt-8">
-                            <div
-                                class="core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-fw-medium my-fs-md">
+
+                            <!-- Name of Component -->
+                            <div class="core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-fw-medium ">
                                 Core
                                 Components
                             </div>
@@ -1136,84 +1139,92 @@
                             <!-- Products -->
                             <div class="select-products my-mt-2">
 
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
 
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="../static/images/product-img4.webp" alt="">
+                                <!-- When user choose product -->
+                                <div class="choose-products">
 
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h5>CPU </h5><span class="required">required</span>
+                                    <!--______ Single Select Product defult _____-->
+                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
+
+                                        <!-- Left -->
+                                        <div class="left my-d-flex my-align-center my-gap-3">
+                                            <img class="w-15 my-p-1 my-bg-white-off"
+                                                src="../static/images/product-img4.webp" alt="">
+
+                                            <div class="my-w-100">
+                                                <div class="my-d-flex my-gap-2">
+                                                    <h6>CPU </h6><span class="required">required</span>
+                                                </div>
+
+                                                <!-- when item  is empty -->
+                                                <div class="left-hide hide my-d-none"></div>
+
+                                                <!-- when item is fill -->
+                                                <p class="my-fs-xs">
+                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
+                                                    Graphics
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Right -->
+                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
+                                            <div>
+                                                <!-- when item is empty -->
+                                                <div class="hide my-d-none"></div>
+                                                <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
                                             </div>
 
-                                            <!-- when item  is empty -->
-                                            <div class="left-hide hide my-d-none"></div>
+                                            <!-- when item is empty -->
+                                            <button class="my-btn my-secendary-btn my-d-none">Choose</button>
 
                                             <!-- when item is fill -->
-                                            <p class="my-fs-xs">
-                                                AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3 Graphics
-                                            </p>
+                                            <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                     </div>
 
+                                    <!--______ Single Select Product defult _____-->
+                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
 
-                                    <!-- Right -->
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <!-- when item is empty -->
-                                            <div class="hide my-d-none"></div>
-                                            <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
+                                        <!-- Left -->
+                                        <div class="left my-d-flex my-align-center my-gap-3">
+                                            <img class="w-15 my-p-1 my-bg-white-off"
+                                                src="../static/images/product-img4.webp" alt="">
+
+                                            <div class="my-w-100">
+                                                <div class="my-d-flex my-gap-2">
+                                                    <h6>CPU </h6><span class="required">required</span>
+                                                </div>
+
+                                                <!-- when item  is empty -->
+                                                <div class="left-hide hide my-d-none"></div>
+
+                                                <!-- when item is fill -->
+                                                <p class="my-fs-xs">
+                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
+                                                    Graphics
+                                                </p>
+                                            </div>
                                         </div>
 
-                                        <!-- when item is empty -->
-                                        <button class="my-btn my-secendary-btn my-d-none">Choose</button>
 
-                                        <!-- when item is fill -->
-                                        <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="../static/images/product-img4.webp" alt="">
-
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h5>CPU </h5><span class="required">required</span>
+                                        <!-- Right -->
+                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
+                                            <div>
+                                                <!-- when item is empty -->
+                                                <div class="hide my-d-none"></div>
+                                                <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
                                             </div>
 
-                                            <!-- when item  is empty -->
-                                            <div class="left-hide hide my-d-none"></div>
+                                            <!-- when item is empty -->
+                                            <button class="my-btn my-secendary-btn my-d-none">Choose</button>
 
                                             <!-- when item is fill -->
-                                            <p class="my-fs-xs">
-                                                AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3 Graphics
-                                            </p>
+                                            <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
                                         </div>
                                     </div>
 
-
-                                    <!-- Right -->
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <!-- when item is empty -->
-                                            <div class="hide my-d-none"></div>
-                                            <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
-                                        </div>
-
-                                        <!-- when item is empty -->
-                                        <button class="my-btn my-secendary-btn my-d-none">Choose</button>
-
-                                        <!-- when item is fill -->
-                                        <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                    </div>
                                 </div>
 
 
@@ -1227,7 +1238,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>Motherbhoard </h5><span class="required">required</span>
+                                                <h6>Motherbhoard </h6><span class="required">required</span>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1254,7 +1265,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>CUP Cooler </h5><span class="required">required</span>
+                                                <h6>CUP Cooler </h6><span class="required">required</span>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1281,7 +1292,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>SSD </h5><span class="required">required</span>
+                                                <h6>SSD </h6><span class="required">required</span>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1308,7 +1319,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>HDD </h5>
+                                                <h6>HDD </h6>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1329,14 +1340,12 @@
 
                             <!-- Peripherals And Others -->
                             <div class=" core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-mt-2
-                                my-fw-medium my-fs-md">
+                                my-fw-medium ">
                                 Peripherals & Others
                             </div>
 
                             <!-- Products -->
                             <div class="select-products my-mt-2">
-
-
 
                                 <!--______ Single Select Product defult _____-->
                                 <div class="select-product my-py-2 my-border-bottom default my-flex-between">
@@ -1348,7 +1357,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>Monitor </h5>
+                                                <h6>Monitor </h6>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1375,7 +1384,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>UPS</h5>
+                                                <h6>UPS</h6>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1398,13 +1407,12 @@
 
                             <!--Accessories -->
                             <div class=" core my-text-uppercase my-text-white-off my-bg-gray my-p-1 my-mt-2
-                                my-fw-medium my-fs-md">
+                                my-fw-medium ">
                                 Accessories
                             </div>
 
-                            <!-- Products -->
+                            <!-- selecte products -->
                             <div class="select-products my-mt-2">
-
 
 
                                 <!--______ Single Select Product defult _____-->
@@ -1417,7 +1425,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>Mouse </h5>
+                                                <h6>Mouse </h6>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1427,7 +1435,7 @@
 
                                     <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
                                         <div>
-                                            <div class="hide"></div>
+                                            <div class="hide my-d-sm-none"></div>
                                         </div>
                                         <button class="my-btn my-secendary-btn">Choose</button>
                                     </div>
@@ -1444,7 +1452,7 @@
                                             alt="">
                                         <div class="my-w-100">
                                             <div class="my-d-flex my-gap-2">
-                                                <h5>Key Board</h5>
+                                                <h6>Key Board</h6>
                                             </div>
 
                                             <div class="left-hide hide"></div>
@@ -1459,7 +1467,6 @@
                                         <button class="my-btn my-secendary-btn">Choose</button>
                                     </div>
                                 </div>
-
 
                             </div>
 

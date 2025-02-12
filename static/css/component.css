@@ -232,7 +232,7 @@
 .my-btn-sm {
     cursor: pointer;
     user-select: none;
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     padding: 13px 20px;
     font-family: var(--font-inter);
     display: flex;

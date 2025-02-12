@@ -1077,7 +1077,7 @@
             <!-- ================================================================== -->
             <section class="product-details-main">
                 <div class="my-container">
-                    <div class="product-details-main-area my-grid-2 my-grid-md-1 my-gap-4">
+                    <div class="product-details-main-area my-grid-2 my-grid-md-1 my-gap-4 my-bg-white ">
                         <!--______________  Image  _____________ -->
                         <div class="my-w-100 image-area my-flex-column  my-bg-white  my-p-4 my-p-3-sm ">
                             <div class="image  ">
@@ -1159,9 +1159,9 @@
 
 
                             <!-- Quick Detials -->
-                            <div class="quick-details">
+                            <div class="quick-details my-mt-3">
                                 <h4>Quick Detials</h4>
-                                <ul class="my-mt-2">
+                                <ul class="my-mt-3">
                                     <li>Processor Type. - Ryzen 5</li>
                                     <li>Generation - Ryzen</li>
                                     <li>RAM - 8GB</li>
@@ -1169,12 +1169,22 @@
                                     <li>Graphics Memory - Shared</li>
                                     <li>Display Size (Inch) - 15.6</li>
                                 </ul>
+
+                                <div class="my-fit-content">
+                                    <div class="helpline my-mt-3 ">
+                                        <span class="my-fs-md"><i class=" fa-solid fa-headset"></i></span>
+                                        <div>
+                                            <div>Helpline</div>
+                                            <div class="my-mt-1">0665544144</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
 
 
                             <!-- price -->
-                            <div class="price ">
+                            <div class="price my-mt-3">
                                 <!-- for ram , color , size -->
                                 <div class="">
                                     <h5>Ram</h5>
@@ -1191,7 +1201,8 @@
                                     </div>
                                 </div>
 
-                                <div class="my-d-flex  price-area my-gap-2 my-mt-2">
+                                <!-- price sale and regular -->
+                                <div class="my-d-flex  price-area my-gap-2 my-mt-4">
                                     <!-- special price -->
                                     <div class="new-price my-fit-content my-px-4 my-bg-white-off my-p-2 my-radius-sm">
                                         <p>Special Price </p>
@@ -1203,12 +1214,15 @@
                                     </div>
                                 </div>
 
-                                <div class="tag save  my-mt-2">Save Tk <span>3020</span> on online order</div>
+                                <div class="tag save my-bg-white-off my-text-gray  my-mt-4">Save Tk <span>3020</span> on
+                                    online order
+                                </div>
                             </div>
 
 
-                            <div class="btn-quantity my-mt-1">
-                                <div>
+                            <!-- Quantity -->
+                            <div class="btn-quantity my-mt-3">
+                                <div class="my-d-flex my-gap-6 my-align-center ">
                                     <!-- quantity buttons -->
                                     <div class="my-d-flex quantity-buttons">
                                         <input type="button" value="-" id="minus-btn" class="minus-btn">
@@ -1216,30 +1230,31 @@
                                             value="1">
                                         <input type="button" value="+" class="plus-btn" id="plus-btn">
                                     </div>
+
+                                    <!-- compare and wishlist btn -->
+                                    <div class="my-d-flex my-align-center my-gap-2 ">
+                                        <!-- compare button-->
+                                        <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                            Compare
+                                            <div class="show-text">Add to compare</div>
+                                        </button>
+
+                                        <!-- wishlist button -->
+                                        <button class="my-btn my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <div class="show-text">Add to wishlist</div>
+                                        </button>
+                                    </div>
+
                                 </div>
 
-                                <div class="my-d-flex my-align-center my-gap-2 my-mt-2">
-                                    <!-- compare button-->
-                                    <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
-                                        Compare
-                                        <div class="show-text">Add to compare</div>
-                                    </button>
 
-                                    <!-- wishlist button -->
-                                    <button class="my-btn my-btn-sm overflow-unset  my-border2 my-tooltip">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <div class="show-text">Add to wishlist</div>
-                                    </button>
-
-
-                                </div>
-
-                                <div class="my-flex-between my-gap-3 my-mt-2">
+                                <div class="my-d-flex my-gap-3 my-mt-4">
                                     <!-- add to cart button -->
-                                    <button class="my-btn my-w-50 my-btn-outline my-bg-white-off">Add To
+                                    <button class="my-btn  my-btn-outline my-bg-white-off">Add To
                                         Cart</button>
                                     <!-- Buy Now -->
-                                    <button class="my-btn my-secendary-btn my-w-50 buy-now-btn my-radius-sm  ">Buy
+                                    <button class="my-btn my-secendary-btn buy-now-btn my-radius-sm  ">Buy
                                         Now</button>
                                 </div>
                             </div>
@@ -1318,142 +1333,99 @@
 
 
                             <!--________________ Specifications______________ -->
-                            <div class="p-specifications my-bg-white my-border my-p-5 my-p-3-sm" id="p-specifications"
-                                id="p-specifications">
-                                <ul>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">Brand</div>
-                                        <div class="value my-w-50">HP</div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">Model</div>
-                                        <div class="value my-w-50">
-                                            HP 15-fc0166AU
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Laptop Series
-                                        </div>
-                                        <div class="value my-w-50">
-                                            15
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">Brand</div>
-                                        <div class="value my-w-50">HP</div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">Model</div>
-                                        <div class="value my-w-50">
-                                            HP 15-fc0166AU
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            CPU Cache
-                                        </div>
-                                        <div class="value my-w-50">
-                                            6MB
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Touch Screen
-                                        </div>
-                                        <div class="value my-w-50">
-                                            No
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            RAM
-                                        </div>
-                                        <div class="value my-w-50">
-                                            8GB
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            CPU Cache
-                                        </div>
-                                        <div class="value my-w-50">
-                                            6MB
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Touch Screen
-                                        </div>
-                                        <div class="value my-w-50">
-                                            No
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            RAM Type
-                                        </div>
-                                        <div class="value my-w-50">
-                                            DDR5
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Touch Screen
-                                        </div>
-                                        <div class="value my-w-50">
-                                            No
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            ROM
-                                        </div>
-                                        <div class="value my-w-50">
-                                            256GB
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            RAM Type
-                                        </div>
-                                        <div class="value my-w-50">
-                                            DDR5
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            CPU Cache
-                                        </div>
-                                        <div class="value my-w-50">
-                                            6MB
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Touch Screen
-                                        </div>
-                                        <div class="value my-w-50">
-                                            No
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Weight (Kg)
-                                        </div>
-                                        <div class="value my-w-50">
-                                            1.59 kg
-                                        </div>
-                                    </li>
-                                    <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
-                                        <div class="key my-w-50 my-fw-bold my-text-secendary">
-                                            Warranty Details
-                                        </div>
-                                        <div class="value my-w-50">
-                                            2 year (Battery, Adapter 1 year)
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="p-specifications my-bg-white my-border my-p-5 my-p-3-sm my-flex-column my-gap-5"
+                                id="p-specifications" id="p-specifications">
+
+                                <!-- item -->
+                                <div>
+                                    <h5 class="">Display Features</h5>
+                                    <ul>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">Display Resulation
+                                            </div>
+                                            <div class="value my-w-50">1990</div>
+                                        </li>
+
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Screen Size
+                                            </div>
+                                            <div class="value my-w-50">
+                                                15.6 Inch
+                                            </div>
+                                        </li>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Touch Screen
+                                            </div>
+                                            <div class="value my-w-50">
+                                                No
+                                            </div>
+                                        </li>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Panel Type
+                                            </div>
+                                            <div class="value my-w-50">
+                                                TFT LCD
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- item -->
+                                <div class="my-mt-2">
+                                    <h5 class="  ">Graphics</h5>
+                                    <ul>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50 my-text-secendary">GPU Chipset
+                                            </div>
+                                            <div class="value my-w-50">Intel UHD Graphics</div>
+                                        </li>
+
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                GPU Memory Type
+                                            </div>
+                                            <div class="value my-w-50">
+                                                Shared
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- item -->
+                                <div class="my-mt-2">
+                                    <h5 class=" ">Networking & Connectivity</h5>
+                                    <ul>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50 my-text-secendary">LAN
+                                            </div>
+                                            <div class="value my-w-50">Yes</div>
+                                        </li>
+
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Wi-Fi
+                                            </div>
+                                            <div class="value my-w-50">
+                                                Realtek 8822 CE WLAN
+                                            </div>
+                                        </li>
+
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Bluetooth
+                                            </div>
+                                            <div class="value my-w-50">
+                                                Bluetooth 5.0
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
 
 
@@ -1468,7 +1440,7 @@
                                 <div class="my-p-5 my-bg-white my-flex-column my-gap-6 my-p-3-sm">
                                     <div>
                                         <h4 class="">Features of HP 15-fc0166AU Laptop In Bangladesh</h4>
-                                        <p class="my-mt-3">
+                                        <p class="my-mt-3 my-text-justify">
                                             Laptop Brand - Hp, Laptop Series - 15, Laptop Model - HP 15-fc0166AU,
                                             Processor
                                             Brand - AMD, Processor Type - Ryzen 5,
@@ -1550,7 +1522,7 @@
                                     </div>
                                     <div>
                                         <h4 class="">What is the price of HP 15-fc0166AU Laptop In Bangladesh? </h4>
-                                        <p class="my-mt-3">
+                                        <p class="my-mt-3 my-text-justify">
                                             The price of HP 15-fc0166AU Laptop starts from 68,800 . The price may vary
                                             due to your customization and product
                                             availability. You can buy HP 15-fc0166AU Laptop from our website or visit
@@ -3007,6 +2979,10 @@
 
             // big image change
             bigImageChangeF('big-img', '.small-images img')
+
+
+            // active class for varient ram
+            activeF('.varient-items .item')
 
 
 
