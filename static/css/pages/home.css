@@ -14,7 +14,7 @@
 }
 
 .all-department p {
-    font-size: 15px !important;
+    font-size: 13.5px !important;
 }
 
 .hero-area .all-department .wrapper::-webkit-scrollbar {
@@ -86,7 +86,7 @@
 }
 
 .all-department li i {
-    font-size: var(--fs-xs);
+    font-size: 12px;
 }
 
 
@@ -184,13 +184,11 @@
     background-color: var(--primary-color);
     color: var(--white);
     padding: 14px 18px;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     width: 100%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-
-
 
 .hero-area .my-nav-item {
     font-size: var(--fs-md);
