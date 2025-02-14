@@ -105,6 +105,38 @@ ________________________________________*/
     color: var(--white)
 }
 
+
+
+
+
+
+
+
+/*_________________________________
+____||  Contact  Page Start  ||____
+___________________________________*/
+.contact-area .profile-img-lg {
+    border: 1px solid var(--border-color2);
+}
+
+.contact-area .left {
+    max-width: 300px;
+    height: fit-content;
+    font-size: 16px;
+    padding-bottom: 20px !important;
+    background-color: var(--white);
+}
+
+.contact-area .left p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.contact-area .left i {
+    color: var(--gray);
+}
+
+
 @media (max-width:991px) {
     .area.my-grid-2 {
         margin: 0 auto;

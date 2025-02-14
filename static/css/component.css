@@ -373,7 +373,7 @@
     border-radius: 8px;
     transition: .15s linear;
     font-family: var(--font-inter);
-    max-width: 540px;
+    max-width: 640px;
     width: 100%;
     color: var(--gray);
     background-color: transparent;
@@ -2537,7 +2537,7 @@ ___________________________________*/
 \*________________________________*/
 @media (max-width:991px) {
     .brigtcamp {
-        max-width: 650px;
+        max-width: 680px;
         margin: 0 auto;
         margin-top: 6px;
     }
