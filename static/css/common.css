@@ -9,7 +9,6 @@ _______________________________*/
 .header-top {
     padding: 0;
     color: var(--border-color);
-    background-color: var(--secondary-hover);
 }
 
 .header-top .my-container {
@@ -34,7 +33,9 @@ _______________________________*/
 
 /*_________________  Header Medile  _________________*/
 .header-medile {
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    background-color: var(--white);
+    color: var(--secondary-hover);
 }
 
 .header-medile-area {
@@ -46,7 +47,7 @@ _______________________________*/
 .search .subcribe {
     width: 560px;
     position: relative;
-    padding: 2px;
+    padding: 4px;
     padding-left: 6px;
 }
 
@@ -56,46 +57,53 @@ _______________________________*/
 
 
 .header-medile .my-container {
-    padding-bottom: 16px;
+    padding: 16px;
 }
 
 .header-medile .subcribe button {
     background: unset;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-hover);
     top: 0 !important;
     color: var(--border-color);
 }
 
 .header-medile .subcribe button:hover {
-    background-color: var(--secondary-hover);
+    background-color: var(--secondary-color);
+}
+
+
+.header-medile .account p,
+.header-medile .account div {
+    color: var(--secondary-hover);
 }
 
 .header-medile .right i {
-    color: var(--white-off) !important;
+    color: var(--secondary-hover);
 }
 
 .header-medile .right .icon,
 .mobile-header-bottom .icon {
     width: 40px;
-    color: gainsboro;
-    border: 1px solid var(--white-off);
+    color: var(--gray);
+    border: 1px solid var(--border-color);
     height: 40px !important;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    color: var(--secondary-color);
 }
 
 .header-medile .build,
 .mobile-header-bottom .build {
-    background: linear-gradient(270deg, #016bf8, #0f3f83);
+    background: linear-gradient(270deg, #358afa, #1a5ebd);
     background-size: 200% 200%;
     animation: built-btn-animation 2s linear infinite;
     border-radius: 8px;
     width: 180px;
     word-wrap: normal;
     text-wrap: nowrap;
-    color: var(--border-color);
+    color: var(--white);
     padding: 2px;
 }
 
@@ -109,8 +117,8 @@ _______________________________*/
 
 /*_________________  header medile bottom  ____________________*/
 .header-medile-bottom .item a {
-    font-size: var(--fs-sm);
-    color: var(--border-color);
+    font-size: 15px !important;
+    color: var(--secondary-hover);
     position: relative;
     padding: 0px 2px;
 }
@@ -122,7 +130,7 @@ _______________________________*/
     left: 50%;
     width: 0%;
     height: 1px;
-    background-color: var(--border-color2);
+    background-color: var(--gray);
     transition: .2s linear;
 }
 
@@ -404,7 +412,7 @@ _______________________________*/
 }
 
 
-.all-department .all-department-btn {
+.all-department-btn {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 14px 18px;
@@ -412,6 +420,9 @@ _______________________________*/
     width: 100%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -740,6 +751,7 @@ _______________________________*/
 
 footer {
     background-color: var(--secondary-color);
+    background-color: #303030;
     padding: 34px;
     padding-bottom: 14px;
     color: var(--border-color2);

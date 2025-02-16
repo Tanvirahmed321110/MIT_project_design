@@ -376,14 +376,15 @@ ________________________________*/
 ____________________________________*/
 .achivment .item {
     padding: 4px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--border-color2);
+    background-color: var(--white);
     border-radius: 8px;
 }
 
 .achivment .my-card {
     box-shadow: unset;
     background-color: unset;
-    border: 2px solid var(--white);
+    border: 2px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,6 +507,11 @@ ____________________________________*/
 
 
 
+
+
+/*_____________________________________
+  ||     Testimonial Section Here     ||
+_______________________________________*/
 .testimonial .swiper-slide {
     margin-right: 0px !important;
 }
@@ -514,6 +520,12 @@ ____________________________________*/
     padding: 16px 8px;
     padding-bottom: 8px;
     margin: 0 8px;
+    background-color: #5b9ef6 !important;
+}
+
+.testimonial-item .profile p {
+    font-size: var(--fs-xs);
+    color: #5a5757 !important;
 }
 
 .testimonial-item .rating i {
@@ -542,12 +554,13 @@ ____________________________________*/
 .testimonial-content p {
     height: 70px;
     overflow: hidden;
+    color: var(--gray);
 }
 
 .testimonial-content::after {
     content: '';
     position: absolute;
-    top: -20px;
+    top: -19px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
@@ -558,9 +571,21 @@ ____________________________________*/
     box-shadow: var(--shadow-2);
 }
 
+.feature-product-area .product-content .my-btn.my-primary-btn {
+    background: white !important;
+    border: 1px solid var(--border-color2);
+    color: var(--secondary-hover);
+    padding: 10px 14px;
+}
 
+.feature-product-area .product-content .my-btn.my-primary-btn:hover {
+    background: var(--primary-hover-color) !important;
+    color: var(--white);
+}
 
-
+.seo-area p {
+    color: #767676;
+}
 
 
 @media (max-width:991px) {
