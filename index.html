@@ -795,12 +795,12 @@
 
                             <!-- user login -->
                             <div class="my-d-flex my-align-center my-gap-3" id="user-btn">
-                                <span class="my-fs-lg">
+                                <span class="my-fs-lg my-fw-bold">
                                     <i class="fa-regular fa-user"></i>
                                 </span>
 
                                 <div class="my-text-gray account">
-                                    <p class="my-text-white-off">Account</p>
+                                    <p class="my-fw-bold">Account</p>
                                     <div class="my-text-white-off my-fs-xs">
                                         <div class="my-d-flex my-align-center my-gap-1">
                                             <button class="hover-underline">login</button> /
@@ -3976,12 +3976,12 @@
                     <span><i class="fa-solid fa-xmark"></i></span>
                 </button>
 
-                <div class="product-details-main-area my-grid-2 my-grid-md-1 my-gap-4  my-has-scrollbar">
+                <div class="product-details-main-area my-grid-2 my-grid-md-1 my-gap-4 my-bg-white ">
                     <!--______________  Image  _____________ -->
-                    <div class="my-w-100 image-area  my-bg-white my-shadow-sm my-p-4 my-p-3-sm my-radius-md">
-                        <div class="image ">
-                            <div class="big-image">
-                                <img src="../static/images/product-img3.webp" id="big-img" alt="">
+                    <div class="my-w-100  image-area my-flex-column   my-p-4 my-p-3-sm ">
+                        <div class="image  ">
+                            <div class="big-image ">
+                                <img class="my-border" src="../static/images/product-img3.webp" id="big-img" alt="">
                             </div>
 
                             <!-- small images -->
@@ -4007,12 +4007,20 @@
                                     alt="">
                             </div>
                         </div>
+
+
+                        <!-- Banner -->
+                        <div class="my-mt-50 my-flex-center product-banner my-w-100">
+                            <a href="#" class="my-flex-center">
+                                <img src="https://www.ryans.com/storage/media_gallery/Falgun-Fest-2025-Up-to-50000-tk-Discount-offer-head_1739005121.webp"
+                                    alt="">
+                            </a>
+                        </div>
                     </div>
 
 
                     <!--______________  Right Details  _____________ -->
-                    <div
-                        class="right-details my-p-5 my-p-3-sm my-radius-md my-bg-white my-shadow-sm my-flex-column my-gap-6">
+                    <div class="right-details my-p-5 my-p-3-sm  my-bg-white my-shadow-sm my-flex-column my-gap-6">
                         <!-- title -->
                         <h4>
                             HP 15-fc0166AU AMD Ryzen 5 7520U 8GB DDR5, 512GB SSD 15.6 Inch FHD Display Moonlight
@@ -4037,20 +4045,62 @@
 
                             <!-- SKU -->
                             <div
-                                class="my-d-flex my-gap-4 my-mt-2 my-fit-content my-align-center my-border my-p-2 my-radius-sm sku-area">
+                                class="my-d-flex my-gap-4 my-mt-2 my-fit-content my-align-center  my-radius-md sku-area">
                                 <div>
-                                    <strong>SKU:</strong>
-                                    324324234KBN
+                                    <strong>Product Id:</strong>
+                                    #4323423423
                                 </div>
+                            </div>
+                            <div class="instock tag my-mt-2">in stock</div>
+                        </div>
 
-                                <div class="instock tag ">in stock</div>
+
+
+                        <!-- Quick Detials -->
+                        <div class="quick-details my-mt-3">
+                            <h4>Quick Detials</h4>
+                            <ul class="my-mt-3">
+                                <li>Processor Type. - Ryzen 5</li>
+                                <li>Generation - Ryzen</li>
+                                <li>RAM - 8GB</li>
+                                <li>Storage - 512GB SSD</li>
+                                <li>Graphics Memory - Shared</li>
+                                <li>Display Size (Inch) - 15.6</li>
+                            </ul>
+
+                            <div class="my-fit-content">
+                                <div class="helpline my-mt-3 ">
+                                    <span class="my-fs-md"><i class=" fa-solid fa-headset"></i></span>
+                                    <div>
+                                        <div>Helpline</div>
+                                        <div class="my-mt-1">0665544144</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
 
+
                         <!-- price -->
-                        <div class="price ">
-                            <div class="my-d-flex  price-area my-gap-2">
+                        <div class="price my-mt-3">
+                            <!-- for ram , color , size -->
+                            <div class="">
+                                <h5>Ram</h5>
+                                <div class="varient-items my-d-flex my-align-center my-gap-2 my-mt-1">
+                                    <div class="item active">
+                                        4 GB
+                                    </div>
+                                    <div class="item">
+                                        16 GB
+                                    </div>
+                                    <div class="item">
+                                        32 GB
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- price sale and regular -->
+                            <div class="my-d-flex  price-area my-gap-2 my-mt-4">
                                 <!-- special price -->
                                 <div class="new-price my-fit-content my-px-4 my-bg-white-off my-p-2 my-radius-sm">
                                     <p>Special Price </p>
@@ -4062,25 +4112,15 @@
                                 </div>
                             </div>
 
-                            <div class="tag instock  my-mt-2">Save Tk <span>3020</span></div>
-                        </div>
-
-                        <div class="quick-details">
-                            <h4>Quick Detials</h4>
-                            <ul class="my-mt-2">
-                                <li>Processor Type. - Ryzen 5</li>
-                                <li>Generation - Ryzen</li>
-                                <li>RAM - 8GB</li>
-                                <li>Storage - 512GB SSD</li>
-                                <li>Graphics Memory - Shared</li>
-                                <li>Display Size (Inch) - 15.6</li>
-                                <li>Licensed Application - Microsoft Offic</li>
-                            </ul>
+                            <div class="tag save my-bg-white-off my-text-gray  my-mt-4">Save Tk <span>3020</span> on
+                                online order
+                            </div>
                         </div>
 
 
-                        <div>
-                            <div class="my-d-flex my-align-center my-flex-sm-column my-gap-3">
+                        <!-- Quantity -->
+                        <div class="btn-quantity my-mt-3">
+                            <div class="my-d-flex my-gap-6 my-align-center ">
                                 <!-- quantity buttons -->
                                 <div class="my-d-flex quantity-buttons">
                                     <input type="button" value="-" id="minus-btn" class="minus-btn">
@@ -4089,37 +4129,67 @@
                                     <input type="button" value="+" class="plus-btn" id="plus-btn">
                                 </div>
 
-                                <!-- add to cart button -->
-                                <button class="my-btn my-btn-sm my-bg-gray my-text-white-off">Add To Cart</button>
-                                <!-- compare button-->
+                                <!-- compare and wishlist btn -->
+                                <div class="my-d-flex my-align-center my-gap-2 ">
+                                    <!-- compare button-->
+                                    <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                        Compare
+                                        <div class="show-text">Add to compare</div>
+                                    </button>
 
-                                <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
-                                    Compare
-                                    <div class="show-text">Add to compare</div>
-                                </button>
+                                    <!-- wishlist button -->
+                                    <button class="my-btn my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div class="show-text">Add to wishlist</div>
+                                    </button>
+                                </div>
 
-                                <!-- wishlist button -->
-                                <button class="my-btn my-btn-sm overflow-unset  my-border2 my-tooltip">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <div class="show-text">Add to wishlist</div>
-                                </button>
                             </div>
 
-                            <button class="my-btn my-secendary-btn  my-radius-sm my-w-100 my-mt-3">Buy Now</button>
+
+                            <div class="my-d-flex my-gap-3 my-mt-4">
+                                <!-- add to cart button -->
+                                <button class="my-btn  my-btn-outline my-bg-white-off">Add To
+                                    Cart</button>
+                                <!-- Buy Now -->
+                                <button class="my-btn my-secendary-btn buy-now-btn my-radius-sm  ">Buy
+                                    Now</button>
+                            </div>
                         </div>
 
-                        <!-- Print and Mail Button -->
-                        <div class="my-d-flex my-align-center my-gap-2">
-                            <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline">
-                                <i class="fa-regular fa-envelope"></i>
-                                <div class="show-text">Gamil</div>
-                            </button>
+                        <!-- Print and Mail Button share -->
+                        <div class="share">
+                            <h5 class="my-text-gray share-header"> Share
+                                <i class="fa-regular  fa-share-from-square"></i>
+                            </h5>
+                            <div class="my-d-flex my-align-center my-gap-2 my-my-2">
+                                <!-- gmail -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <div class="show-text">Gamil</div>
+                                </button>
 
-                            <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
-                                id="print-btn">
-                                <i class="fa-solid fa-print"></i>
-                                <div class="show-text">Print Now</div>
-                            </button>
+                                <!-- print -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                    id="print-btn">
+                                    <i class="fa-solid fa-print"></i>
+                                    <div class="show-text">Print Now</div>
+                                </button>
+
+                                <!-- what's app -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                    id="print-btn">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <div class="show-text">what's app</div>
+                                </button>
+
+                                <!-- messenger -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                    id="print-btn">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                    <div class="show-text">messenger</div>
+                                </button>
+                            </div>
                         </div>
                     </div>
 

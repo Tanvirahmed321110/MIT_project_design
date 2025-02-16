@@ -38,6 +38,7 @@ _______________________________*/
     color: var(--secondary-hover);
 }
 
+
 .header-medile-area {
     display: grid;
     grid-template-columns: 58% 40%;
@@ -85,7 +86,7 @@ _______________________________*/
 .mobile-header-bottom .icon {
     width: 40px;
     color: var(--gray);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color2);
     height: 40px !important;
     display: flex;
     align-items: center;
@@ -112,10 +113,18 @@ _______________________________*/
 }
 
 
-
+.header-medile .base-round {
+    background-color: var(--secondary-hover);
+}
 
 
 /*_________________  header medile bottom  ____________________*/
+.header-medile-bottom {
+    padding-top: 12px !important;
+    border-top: 1px solid var(--border-color);
+    margin-top: 16px;
+}
+
 .header-medile-bottom .item a {
     font-size: 15px !important;
     color: var(--secondary-hover);
@@ -190,7 +199,7 @@ _______________________________*/
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(12, 11, 11, 0.465);
+    background-color: rgba(26, 62, 130, 0.396);
 }
 
 .special-offer .content {
@@ -557,9 +566,13 @@ _______________________________________________________________*/
     gap: 1%;
 }
 
+.qucik-view-modal .modal-content {
+    height: 100dvh;
+}
+
 .qucik-view-modal .product-details-main-area {
     overflow-y: scroll;
-    height: 600px;
+    height: 100%;
 }
 
 .product-details-main .my-container {
@@ -1039,7 +1052,7 @@ _________________________________________*/
 
     .qucik-view-modal .product-details-main-area {
         overflow-y: scroll;
-        height: 600px;
+        height: 100%;
         grid-template-columns: 1fr;
     }
 }

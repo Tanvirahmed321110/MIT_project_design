@@ -515,7 +515,7 @@ tr {
 }
 
 .my-text-gray {
-    color: var(--gray);
+    color: #5a5959;
 }
 
 .my-text-primary {
@@ -543,7 +543,7 @@ tr {
 }
 
 .my-text-secondary {
-    color: var(--secondary-color);
+    color: var(--secondary-hover);
 }
 
 
