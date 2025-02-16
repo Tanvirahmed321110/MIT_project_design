@@ -251,18 +251,18 @@ _______________________________*/
     font-size: 15px !important;
 }
 
-.hero-area .all-department .wrapper::-webkit-scrollbar {
+.category .all-department .wrapper::-webkit-scrollbar {
     width: 0px;
     background-color: transparent;
 }
 
 
-.hero-area .all-department .wrapper::-webkit-scrollbar-thumb {
+.category .all-department .wrapper::-webkit-scrollbar-thumb {
     width: 8px;
     background-color: var(--border-color2);
 }
 
-.hero-area .all-department .wrapper:hover::-webkit-scrollbar {
+.category .all-department .wrapper:hover::-webkit-scrollbar {
     width: 5px;
     background-color: transparent;
 }
@@ -274,13 +274,13 @@ _______________________________*/
     border-radius: 2px;
 }
 
-.hero-area .my-dropdown li {
+.category .my-dropdown li {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 3px;
 }
 
 
-.hero-area .my-dropdown li:hover a {
+.category .my-dropdown li:hover a {
     color: var(--primary-color)
 }
 
@@ -510,12 +510,25 @@ _______________________________*/
 
 .other-page-category .all-department-btn {
     color: var(--border-color);
-    padding: 9px 12px;
+    padding: 12px 12px;
     font-size: 14px;
     position: absolute;
     left: 0;
-    bottom: -14px;
+    bottom: -16px;
     border: 1px solid var(--border-color);
+    width: 300px;
+}
+
+.other-page-category .dropdown {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-radius: 0;
+}
+
+.other-page-category .all-department.my-card {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-radius: 0;
 }
 
 .other-page-category.category:hover .all-department {
@@ -750,8 +763,7 @@ _______________________________________________________________*/
 _______________________________*/
 
 footer {
-    background-color: var(--secondary-color);
-    background-color: #303030;
+    background-color: var(--dark);
     padding: 34px;
     padding-bottom: 14px;
     color: var(--border-color2);
