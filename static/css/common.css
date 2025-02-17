@@ -36,6 +36,7 @@ _______________________________*/
     background-color: var(--secondary-color);
     background-color: var(--white);
     color: var(--secondary-hover);
+    box-shadow: var(--shadow-1);
 }
 
 
@@ -423,7 +424,7 @@ _______________________________*/
 
 .all-department-btn {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--gray);
     padding: 14px 18px;
     font-size: var(--fs-lg);
     width: 100%;
@@ -523,9 +524,13 @@ _______________________________*/
     font-size: 14px;
     position: absolute;
     left: 0;
-    bottom: -16px;
-    border: 1px solid var(--border-color);
+    bottom: -17px;
     width: 300px;
+    background-color: var(--red);
+    border: 1px solid var(--border-color);
+    color: var(--dark);
+    /* color: var(--border-color); */
+    box-shadow: var(--shadow-2);
 }
 
 .other-page-category .dropdown {

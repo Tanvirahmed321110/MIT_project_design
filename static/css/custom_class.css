@@ -252,6 +252,10 @@ tr {
     border-bottom: 1px solid var(--border-color2);
 }
 
+.my-border-right {
+    border-right: 1px solid var(--border-color);
+}
+
 /*_____ Title  _____*/
 .my-section-title {
     font-size: var(--fs-xxl);
@@ -353,6 +357,14 @@ tr {
 
 .w-35 {
     width: 140px;
+}
+
+.w-40 {
+    width: 160px;
+}
+
+.w-45 {
+    width: 180px;
 }
 
 .max-250 {
@@ -1288,6 +1300,9 @@ tr {
     row-gap: 40px;
 }
 
+.my-flex-grow-1 {
+    flex: 1;
+}
 
 
 

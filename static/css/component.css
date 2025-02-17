@@ -357,6 +357,8 @@
     margin: 5px 0;
 }
 
+
+
 .my-input-control textarea {
     transition: .15s;
     border: 1px solid var(--border-color2);
@@ -386,6 +388,11 @@ textarea::placeholder {
     color: #a39e9e;
     font-size: var(--fs-sm);
     font-family: inherit;
+}
+
+.my-input-control:hover input,
+.my-input-control:hover textarea {
+    outline: 2px solid #0aad0a4d;
 }
 
 .my-input-control input:focus,

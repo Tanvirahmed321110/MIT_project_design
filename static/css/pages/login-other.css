@@ -140,6 +140,8 @@ ___________________________________*/
 .checkout-layout .my-card {
     border-radius: 4px;
     border: none;
+    max-width: unset;
+    min-width: unset;
 }
 
 .checkout-layout input[type="text"],
@@ -150,7 +152,9 @@ ___________________________________*/
 }
 
 .checkout-layout select {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color2);
+    color: var(--secondary-color);
+    font-size: var(--fs-sm);
 }
 
 .checkout-layout {
@@ -168,6 +172,77 @@ ___________________________________*/
     width: 8px;
     height: 8px;
 }
+
+
+
+
+
+
+
+
+/*_____________ checkout layout right _________________*/
+.checkout-layout .subcribe {
+    background-color: var(--white);
+    border: 2px solid var(--border-color);
+    padding: 5px;
+    width: 50%;
+}
+
+
+.checkout-layout table {
+    border: 1px solid var(--white-off);
+}
+
+.checkout-layout table tr {
+    border: 1px solid var(--white-off);
+}
+
+.checkout-layout td {
+    min-width: 110px;
+}
+
+.checkout-layout table th {
+    background-color: var(--white-off);
+    font-size: var(--fs-md);
+    padding: 12px 0;
+    color: var(--gray);
+}
+
+
+/* image */
+table .img-wrapper img {
+    margin: 0 auto !important;
+}
+
+table a:hover {
+    color: var(--primary-color);
+}
+
+/* quantity */
+table .quantity button {
+    padding: 10px !important;
+    border-radius: 3px;
+}
+
+table .quantity button:hover {
+    color: var(--primary-color);
+}
+
+
+/* note-submit */
+.note-submit textarea {
+    border-radius: 4px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
 
 /*_________________________________
 ____||  Contact  Page Start  ||____
@@ -215,9 +290,35 @@ ___________________________________*/
     .area {
         grid-template-columns: 1fr;
     }
+
+    .checkout-layout {
+        grid-template-columns: 100%;
+    }
+
+
+    /* table */
+    .shopping-cart-area {
+        overflow-x: auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .shopping-cart-area table {
+        min-width: 700px;
+        display: block;
+    }
 }
 
+@media (max-width:769px) {
 
+    .checkout-layout .my-input-control .w-40 {
+        width: 80px !important;
+    }
+
+    .checkout-layout .my-input-control input {
+        width: calc(100% - 100px);
+    }
+}
 
 
 @media (max-width:556px) {
@@ -245,5 +346,13 @@ ___________________________________*/
         margin-right: 12px;
         word-wrap: nowrap;
         text-wrap: nowrap;
+    }
+
+    .checkout-layout .my-input-control input {
+        max-width: unset;
+    }
+
+    .checkout-layout .subcribe {
+        width: 100%;
     }
 }

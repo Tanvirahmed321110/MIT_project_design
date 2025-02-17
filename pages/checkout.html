@@ -1070,21 +1070,14 @@
 
 
 
-            <!-- ================================================================== -->
-            <!-- ==========    Product Detilas Main Section  Start  Here   ======== -->
-            <!-- ================================================================== -->
+            <!-- ====================================================== -->
+            <!-- ==========    Checkout Section  Start  Here   ======== -->
+            <!-- ====================================================== -->
             <section class="checkout">
                 <div class="my-container">
                     <div class="checkout-area">
-                        <p class="my-text-gray  my-radius-sm">
-                            অস্থিতিশীল বাজার পরিস্থিতির কারনে কোনো পণ্যের বর্তমান বাজার মূল্য/সর্বোচ্চ খুচরা মূল্যের
-                            সাথে অসঙ্গতিপূর্ণ থাকলে সেই
-                            পন্যের অর্ডারটি সম্পন্ন অথবা বাতিল করতে সম্মানিত ক্রেতাকে অবগত করার জন্য আমাদের প্রতিনিধিগণ
-                            যোগাযোগ/মেইল করবে।
-                        </p>
 
-
-                        <div class="checkout-layout my-mt-4">
+                        <form action="#" class="checkout-layout my-mt-0">
                             <!-- Left address info -->
                             <div class="left my-flex-column my-gap-5 ">
 
@@ -1114,19 +1107,19 @@
 
                                         <!--  Name  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="name">Name*</label>
-                                            <input type="text" id="name" name="name">
+                                            <label class="w-40" for="name">Name*</label>
+                                            <input type="text" id="name" name="name" placeholder="Name">
                                         </div>
 
                                         <!--  Email  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="email">Email*</label>
-                                            <input type="email" id="email" name="email">
+                                            <label class="w-40" for="email">Email*</label>
+                                            <input type="email" id="email" name="email" placeholder="Email">
                                         </div>
 
                                         <!--  Phone  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="phone">Phone*</label>
+                                            <label class="w-40" for="phone">Phone*</label>
                                             <input type="number" id="phone" name="phone">
                                         </div>
                                     </div>
@@ -1139,14 +1132,14 @@
 
                                         <!--  Address 1  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="address_1">Address 1*</label>
-                                            <input type="text" id="address_1" name="address_1">
+                                            <label class="w-40" for="address_1">Address 1*</label>
+                                            <input type="text" id="address_1" name="address_1" placeholder="Address 1">
                                         </div>
 
                                         <!--  City  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="city">City*</label>
-                                            <input type="email" id="city" name="city">
+                                            <label class="w-40" for="city">City*</label>
+                                            <input type="email" id="city" name="city" placeholder="City">
                                         </div>
 
                                         <div class="my-mt-3">
@@ -1178,20 +1171,22 @@
 
                                         <!--  Address 1  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="address_1">Name*</label>
-                                            <input type="text" id="address_1" name="address_1">
+                                            <label class="w-40" for="address_1">Name*</label>
+                                            <input type="text" id="address_1" name="address_1" placeholder="Name">
                                         </div>
 
                                         <!--  Address 1  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="shipping_address_name">Address 1*</label>
-                                            <input type="text" id="shipping_address_name" name="shipping_address_name">
+                                            <label class="w-40" for="shipping_address_name">Address 1*</label>
+                                            <input type="text" id="shipping_address_name" name="shipping_address_name"
+                                                placeholder="Address 1">
                                         </div>
 
                                         <!--  City  -->
                                         <div class="my-input-control my-flex-between my-w-100 my-gap-2">
-                                            <label class="w-35" for="shipping_address_city">City*</label>
-                                            <input type="email" id="shipping_address_city" name="shipping_address_city">
+                                            <label class="w-40" for="shipping_address_city">City*</label>
+                                            <input type="email" id="shipping_address_city" name="shipping_address_city"
+                                                placeholder="City">
                                         </div>
 
                                         <div class="my-mt-3">
@@ -1213,11 +1208,301 @@
 
                             </div>
 
-                            <!-- right -->
-                            <div class="right">
-                                hello
+                            <!--__________________  right  ____________________-->
+                            <div class="right my-flex-column my-gap-5">
+
+                                <!-- right top -->
+                                <div
+                                    class=" my-card my-flex-between my-flex-start my-flex-md-column my-justify-between my-gap-6">
+                                    <div>
+                                        <div class="">
+                                            <h4 class="my-uppercase">Shipping Method
+                                        </div>
+
+                                        <!-- Shipping Method -->
+                                        <div class="my-mt-3">
+                                            <div class="my-d-flex my-gap-3 my-align-center">
+                                                <div class="my-fs-lg profile-img-lg">
+                                                    <i class="fa-solid fa-truck-fast"></i>
+                                                </div>
+
+                                                <div class="my-flex-grow-1">
+                                                    <label class="my-flex-between my-gap-2 ">
+                                                        <input type="radio" name="shipping_method" checked>
+                                                        <span class="shipping-quote-title my-flex-grow-1">Product and
+                                                            Location
+                                                            Dependent Shipping Cost</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="">
+                                        <h4 class="my-uppercase">Payment Method</h4>
+                                        <div class="my-mt-3">
+
+                                            <!-- card cedit -->
+                                            <div class="my-d-flex my-gap-3 my-align-center">
+                                                <div class="my-fs-lg profile-img-lg">
+                                                    <i class="fa-solid fa-money-bill"></i>
+                                                </div>
+                                                <div class="my-flex-grow-1">
+                                                    <label class="my-flex-between my-gap-2 ">
+                                                        <input type="radio" name="payment_method" value="SSLCommerce">
+                                                        <p>Pay with
+                                                            Credit Card / Debit Card / bKash / DDBL Nexsus
+                                                            Card</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- cash on -->
+                                            <div class="my-d-flex my-gap-3 my-mt-2 my-align-center">
+                                                <div class="my-fs-lg profile-img-lg">
+                                                    <i class="fa-solid fa-credit-card"></i>
+                                                </div>
+                                                <div>
+                                                    <label class="my-flex-between my-gap-2">
+                                                        <input type="radio" name="payment_method">
+                                                        <span>Cash
+                                                            On
+                                                            Delivery</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- coupon code -->
+                                <div class="coupon-code my-card my-flex-between my-flex-xs-column my-align-xs-start">
+                                    <h5 class="my-uppercase">Enter your coupon here
+                                    </h5>
+                                    <div class="subcribe my-d-flex my-mt-2">
+                                        <input type="email" placeholder="Enter coupon code">
+                                        <button class="my-btn my-btn my-secendary-btn"><span>Submit</span></button>
+                                    </div>
+                                </div>
+
+
+                                <!-- Shopping cart -->
+                                <div class="my-card">
+                                    <h5 class="my-uppercase">Shopping Cart</h5>
+                                    <div class="my-mt-3 shopping-cart-area my-has-scrollbar">
+
+                                        <!-- select product table -->
+                                        <table class="my-w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th>Image</th>
+                                                    <th class="my-text-left">Product Name</th>
+                                                    <th>Quantity</th>
+                                                    <th>Unit Price</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <!-- single order item -->
+                                                <tr>
+                                                    <td class="my-text-center img-wrapper">
+                                                        <a href="./product.html">
+                                                            <img class="w-12" src="../static/images/product-img3.webp"
+                                                                alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="./product.html">Huion 420/H420 Professional Graphics
+                                                            Drawing Tablet</a>
+                                                    </td>
+                                                    <td class="quantity my-flex-center my-gap-2 my-mt-1">
+                                                        <input class="w-12" type="number" value="2">
+                                                        <button class="my-p-2 my-btn my-border my-px-3 my-radius-sm"><i
+                                                                class="fa-solid fa-trash-can"></i></button>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md">1200<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md"> 2400<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- single order item -->
+                                                <tr>
+                                                    <td class="my-text-center img-wrapper">
+                                                        <a href="./product.html">
+                                                            <img class="w-12" src="../static/images/product-img4.webp"
+                                                                alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="./product.html">Huion 420/H420 Professional Graphics
+                                                            Drawing Tablet</a>
+                                                    </td>
+                                                    <td class="quantity my-flex-center my-gap-2 my-mt-1">
+                                                        <input class="w-12" type="number" value="1">
+                                                        <button class="my-p-2 my-btn my-border my-px-3 my-radius-sm"><i
+                                                                class="fa-solid fa-trash-can"></i></button>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md">1300<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md"> 1300<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- single order item -->
+                                                <tr>
+                                                    <td class="my-text-center img-wrapper">
+                                                        <a href="#">
+                                                            <img class="w-12" src="../static/images/product-img4.webp"
+                                                                alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="./product.html">Huion GS2202 Kamvas fsdfsd dg fg fdsg2
+                                                            sdf sadfg2
+                                                            Plus 21.5-inch
+                                                            Graphics Drawing Tablet</a>
+                                                    </td>
+                                                    <td class="quantity my-flex-center my-gap-2 my-mt-1">
+                                                        <input class="w-12" type="number" value="1">
+                                                        <button class="my-p-2 my-btn my-border my-px-3 my-radius-sm"><i
+                                                                class="fa-solid fa-trash-can"></i></button>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md">1300<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md"> 1300<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- single order item -->
+                                                <tr>
+                                                    <td class="my-text-center img-wrapper">
+                                                        <a href="./product.html">
+                                                            <img class="w-12"
+                                                                src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                                                alt="">
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="./product.html">Huion GS2202 Kamvas fsdfsd dg fg fdsg2
+                                                            sdf sadfg2
+                                                            Plus 21.5-inch
+                                                            Graphics Drawing Tablet</a>
+                                                    </td>
+                                                    <td class="quantity my-flex-center my-gap-2 my-mt-1">
+                                                        <input class="w-12" type="number" value="1">
+                                                        <button class="my-p-2 my-btn my-border my-px-3 my-radius-sm"><i
+                                                                class="fa-solid fa-trash-can"></i></button>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md">17000<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                    <td class="my-text-center">
+                                                        <p class="my-fs-md"> 17000<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- sub total -->
+                                                <tr>
+                                                    <td colspan="3" class="my-text-right my-border-right">
+                                                        <h5 class="my-p-2">Sub Total</h5>
+                                                    </td>
+                                                    <td colspan="2" class="my-text-right my-pr-5">
+                                                        <p class="my-fs-md"> 17000<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- Discount -->
+                                                <tr>
+                                                    <td colspan="3" class="my-text-right my-border-right">
+                                                        <h5 class="my-p-2">Discount</h5>
+                                                    </td>
+                                                    <td colspan="2" class="my-text-right my-pr-5">
+                                                        <p class="my-fs-md"> 00<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- Shipping -->
+                                                <tr>
+                                                    <td colspan="3" class="my-text-right my-border-right">
+                                                        <h5 class="my-p-2">Shipping</h5>
+                                                    </td>
+                                                    <td colspan="2" class="my-text-right my-pr-5">
+                                                        <p class="my-fs-md"> 100<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- Total -->
+                                                <tr>
+                                                    <td colspan="3" class="my-text-right my-border-right">
+                                                        <h5 class="my-p-2">Total</h5>
+                                                    </td>
+                                                    <td colspan="2" class="my-text-right my-pr-5">
+                                                        <h5 class="my-fs-lg"> 21100<i
+                                                                class="fa-solid my-fs-sm fa-bangladeshi-taka-sign"></i>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                                <!-- note and submit button -->
+                                <div class="my-card note-submit">
+                                    <div class="my-input-control">
+                                        <textarea name="" placeholder="Order note" id=""></textarea>
+                                    </div>
+                                    <div>
+                                        <label class="my-flex-between my-align-start my-gap-4 my-mt-5" for="subscribe">
+                                            <input class="my-mt-1" type="checkbox" id="subscribe">
+                                            <p>
+                                                I wish to subscribe to the Computer Village newsletter. I have read and
+                                                agree to the Privacy Policy I have read and
+                                                agree to the <a class="my-fw-bold my-text-primary"
+                                                    href="./terms_condition.html">Terms & Conditions</a> and
+                                                Return & <a class="my-fw-bold my-text-primary"
+                                                    href="./return.html">Return Policy</a>
+                                            </p>
+                                        </label>
+                                    </div>
+
+                                    <!-- confirm order button -->
+                                    <button class="my-btn my-secendary-btn my-mt-5">Confirm Order</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -1268,10 +1553,10 @@
                         <div class="my-mt-7">
                             <h4 class="my-text-white-off"> Join Now</h4>
 
-                            <form action="#" class="subcribe my-d-flex my-mt-2">
+                            <div class="subcribe my-d-flex my-mt-2">
                                 <input type="email" placeholder="Type your email">
                                 <button class="my-btn my-btn my-primary-btn"><span>Subcribe</span></button>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
@@ -1466,6 +1751,26 @@
 
 
 
+
+
+
+
+
+        <div class="my-modal " id="checkout-modal">
+            <div class="modal-content">
+                <!-- close button -->
+                <button class="my-btn modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                <p class="my-text-gray my-radius-sm my-p-5 my-mt-4">
+                    অস্থিতিশীল বাজার পরিস্থিতির কারনে কোনো পণ্যের বর্তমান বাজার মূল্য/সর্বোচ্চ খুচরা মূল্যের
+                    সাথে অসঙ্গতিপূর্ণ থাকলে সেই
+                    পন্যের অর্ডারটি সম্পন্ন অথবা বাতিল করতে সম্মানিত ক্রেতাকে অবগত করার জন্য আমাদের প্রতিনিধিগণ
+                    যোগাযোগ/মেইল করবে।
+                </p>
+                <h5 class="my-p-4">Thank You</h5>
+
+            </div>
+        </div>
 
 
 
@@ -1912,6 +2217,13 @@
             openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
 
 
+            // checkout modal
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(function () {
+                    document.getElementById("checkout-modal").classList.add("active");
+                }, 3000);
+
+            })
 
         </script>
     </body>
