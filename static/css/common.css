@@ -526,11 +526,12 @@ _______________________________*/
     left: 0;
     bottom: -17px;
     width: 300px;
-    background-color: var(--red);
-    border: 1px solid var(--border-color);
+    background-color: transparent;
+    border: 1px solid var(--border-color2);
     color: var(--dark);
+    border-bottom: none;
     /* color: var(--border-color); */
-    box-shadow: var(--shadow-2);
+    /* box-shadow: var(--shadow-2); */
 }
 
 .other-page-category .dropdown {

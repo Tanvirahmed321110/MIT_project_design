@@ -271,6 +271,21 @@ ________________________________________*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*_________________________________
 ____||  Contact  Page Start  ||____
 ___________________________________*/
@@ -294,6 +309,40 @@ ___________________________________*/
 .contact-area .left i {
     color: var(--gray);
 }
+
+
+
+
+
+
+
+
+/*_______________________________
+____||  Deals  Page Start  ||____
+________________________________*/
+.deal-area .deals-top {
+    width: 200px;
+    height: 200px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+.deal-area .deals-top .icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    background-color: var(--border-color);
+}
+
+
+
+
+
+
+
 
 
 @media (max-width:991px) {
@@ -381,5 +430,12 @@ ___________________________________*/
 
     .checkout-layout .subcribe {
         width: 100%;
+    }
+
+    /* offer-details-wrapper */
+    .offer-details-wrapper .head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
 }
