@@ -782,7 +782,7 @@ _______________________________*/
 
 footer {
     background-color: var(--dark);
-    padding: 34px;
+    padding: 34px 0;
     padding-bottom: 14px;
     color: var(--border-color2);
 }

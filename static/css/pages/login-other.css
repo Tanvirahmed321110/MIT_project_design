@@ -242,6 +242,33 @@ table .quantity button:hover {
 
 
 
+/*_______________________________
+____||  Offer  Page Start  ||____
+_________________________________*/
+.offer-items .offer-item {
+    transition: .3s linear;
+}
+
+.offer-items .offer-item:hover {
+    transform: scale(.98);
+}
+
+
+
+/*_______________________________________
+____||  Offer Details  Page Start  ||____
+________________________________________*/
+.offer-details-wrapper {
+    box-shadow: var(--shadow-1);
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 16px;
+}
+
+
 
 
 /*_________________________________

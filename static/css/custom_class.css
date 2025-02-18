@@ -184,7 +184,7 @@ tr {
     padding: 10px 16px;
     margin: 0px auto;
     width: 100%;
-    max-width: 1380px;
+    max-width: 1340px;
 }
 
 .my-container-sm {
@@ -609,11 +609,31 @@ tr {
 }
 
 
+
+/*______  Word spacing _____*/
+.my-word-space-1 {
+    word-spacing: 1px;
+}
+
+.my-word-space-2 {
+    word-spacing: 2px;
+}
+
+.my-word-space-3 {
+    word-spacing: 3px;
+}
+
+
+
+
 /*_____ Hover_____ */
 .hover-underline:hover {
     text-decoration: underline;
 }
 
+.hover-text-primary:hover {
+    color: var(--primary-color);
+}
 
 /*______  Padding  ______*/
 .my-p-0 {
