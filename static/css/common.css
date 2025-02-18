@@ -812,6 +812,9 @@ footer a {
     background-color: var(--white);
 }
 
+.footer-area h5 {
+    color: var(--white-off);
+}
 
 footer .pages i {
     font-size: var(--fs-xs);
