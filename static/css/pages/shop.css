@@ -67,6 +67,10 @@ ______________________________________*/
 }
 
 
+.shop-content .product-cart-area.my-card {
+    border-radius: 6px;
+}
+
 
 /*____  show desc ____*/
 .shop-content .product-cart .show-desc {

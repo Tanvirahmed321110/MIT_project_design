@@ -4225,7 +4225,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="module">
             import {
-                openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, activeF, toggleF, bigImageChangeF
+                openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, activeF, toggleF, bigImageChangeF, quickViewF
             } from './static/js/utilitis.js';
 
             closeButtonF()
@@ -4388,6 +4388,9 @@
 
 
 
+            // Quick View
+            quickViewF('.quick-view-btn')
+
 
             // Counter animation
             function animateCounter(counter) {
@@ -4427,6 +4430,33 @@
             );
 
             counters.forEach(counter => observer.observe(counter));
+
+
+
+
+
+
+
+            // update qty
+            function updateQty() {
+                const inputQuantity = document.getElementById('input-quantity')
+
+                if (inputQuantity) {
+                    document.getElementById('plus-btn').addEventListener('click', function () {
+                        updateQuantity(inputQuantity, 'increment')
+                        console.log('click')
+                    })
+                    document.getElementById('minus-btn').addEventListener('click', function () {
+                        updateQuantity(inputQuantity, 'decrement')
+                    })
+                }
+            }
+            updateQty()
+
+
+            // active class for varient ram
+            activeF('.varient-items .item')
+
         </script>
     </body>
 
