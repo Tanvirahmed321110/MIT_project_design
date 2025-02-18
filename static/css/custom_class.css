@@ -34,7 +34,7 @@ h6 {
     font-weight: var(--fw-600);
     line-height: 20px;
     font-family: var(--font-poppins);
-    color: var(--secondary-hover);
+    color: var(--secondary-color);
 }
 
 h1 {

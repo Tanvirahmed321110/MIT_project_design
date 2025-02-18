@@ -7,20 +7,20 @@
 
 :root {
     /*______  Color  ______ */
-    --primary-color: #1877F2;
+    --primary-color: #1878F2;
     --primary-hover-color: #4385dc;
-    --secondary-color: #141d39;
+    --secondary-color: #081621;
     --orange: #ffc107;
     --green: #0aad0a;
     --gray: #767676;
     --gray2: #a39e9ec3;
     --dark: #1b2023;
-    --secondary-hover: #1e3e4a;
+    --secondary-hover: #1d3741;
     --white: #fff;
     --white-off: #F0F3F2;
     --border-color: #ededed;
     --border-color2: #c7c7c7;
-    --red: #ED1A24;
+    --red: #EE1B24;
     --after: #7891f5a3;
 
 

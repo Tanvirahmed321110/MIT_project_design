@@ -9,6 +9,8 @@ _______________________________*/
 .header-top {
     padding: 0;
     color: var(--border-color);
+    background-color: var(--primary-color);
+    /* background-color: rgb(94, 14, 94); */
 }
 
 .header-top .my-container {
@@ -26,7 +28,13 @@ _______________________________*/
 }
 
 
+header .my-tooltip .show-text {
+    background-color: var(--red);
+}
 
+header .my-tooltip .show-text::after {
+    background-color: var(--red);
+}
 
 
 
@@ -34,9 +42,10 @@ _______________________________*/
 /*_________________  Header Medile  _________________*/
 .header-medile {
     background-color: var(--secondary-color);
-    background-color: var(--white);
+    /* background-color: var(--white); */
     color: var(--secondary-hover);
     box-shadow: var(--shadow-1);
+    background-color: #000000;
 }
 
 
@@ -76,31 +85,36 @@ _______________________________*/
 
 .header-medile .account p,
 .header-medile .account div {
-    color: var(--secondary-hover);
+    color: var(--white);
 }
 
 .header-medile .right i {
-    color: var(--secondary-hover);
+    color: var(--white);
 }
 
 .header-medile .right .icon,
 .mobile-header-bottom .icon {
     width: 40px;
-    color: var(--gray);
+    color: var(--white);
     border: 1px solid var(--border-color2);
-    height: 40px !important;
+    height: 38px !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 4px;
     color: var(--secondary-color);
+    color: var(--white);
+}
+
+.header-medile .right .icon:hover {
+    background-color: var(--red);
 }
 
 .header-medile .build,
 .mobile-header-bottom .build {
-    background: linear-gradient(270deg, #358afa, #1a5ebd);
+    background: linear-gradient(to left, #1878F2, #EE1B24);
     background-size: 200% 200%;
-    animation: built-btn-animation 2s linear infinite;
+    animation: built-btn-animation 1.5s linear infinite;
     border-radius: 8px;
     width: 180px;
     word-wrap: normal;
@@ -115,22 +129,28 @@ _______________________________*/
 
 
 .header-medile .base-round {
-    background-color: var(--secondary-hover);
+    background-color: var(--red);
+    top: -8px;
+    right: -4px;
 }
 
 
 /*_________________  header medile bottom  ____________________*/
 .header-medile-bottom {
     padding-top: 12px !important;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--gray);
     margin-top: 16px;
 }
 
 .header-medile-bottom .item a {
     font-size: 15px !important;
-    color: var(--secondary-hover);
+    color: var(--border-color);
     position: relative;
     padding: 0px 2px;
+}
+
+.header-medile-bottom .item a:hover {
+    color: var(--primary-hover-color);
 }
 
 .header-medile-bottom .item a::after {
@@ -140,7 +160,7 @@ _______________________________*/
     left: 50%;
     width: 0%;
     height: 1px;
-    background-color: var(--gray);
+    background-color: var(--primary-hover-color);
     transition: .2s linear;
 }
 
@@ -585,9 +605,6 @@ _______________________________________________________________*/
     padding-top: 4px;
 }
 
-.product-details-main .buy-now-btn {
-    border: 1px solid var(--secondary-color)
-}
 
 
 /*_________________________   Left Side Image   ________________________*/
@@ -782,7 +799,7 @@ _______________________________________________________________*/
 _______________________________*/
 
 footer {
-    background-color: var(--dark);
+    background-color: #000;
     padding: 34px 0;
     padding-bottom: 14px;
     color: var(--border-color2);

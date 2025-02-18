@@ -394,6 +394,10 @@ ________________________________*/
     .checkout-layout .my-input-control input {
         width: calc(100% - 100px);
     }
+
+    .login-other .left {
+        margin-bottom: 16px;
+    }
 }
 
 

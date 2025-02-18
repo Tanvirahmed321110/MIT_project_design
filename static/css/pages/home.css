@@ -432,19 +432,21 @@ _____________________________________*/
     width: 100%;
 }
 
-.feature-category .all-category-btn:hover {
-    color: var(--primary-color);
-}
 
-.feature-category-area .item:hover {
-    transform: scale(.96);
-    outline: 1px solid var(--border-color2);
+
+
+.feature-category-area .item:hover h5 {
+    color: var(--primary-color);
+
 }
 
 .feature-category-area .item img {
     width: 40px;
 }
 
+.feature-category .all-category-btn:hover {
+    color: var(--primary-color) !important
+}
 
 
 
@@ -572,19 +574,16 @@ _______________________________________*/
 }
 
 .feature-product-area .product-content .my-btn.my-primary-btn {
-    background: white !important;
     border: 1px solid var(--border-color2);
-    color: var(--secondary-hover);
+    /* color: var(--secondary-hover); */
     padding: 10px 14px;
+    background-color: var(--primary-color);
 }
 
-.feature-product-area .product-content .my-btn.my-primary-btn:hover {
-    background: var(--primary-hover-color) !important;
-    color: var(--white);
-}
+
 
 .seo-area p {
-    color: #767676;
+    color: var(--secondary-hover);
 }
 
 

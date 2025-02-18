@@ -14,10 +14,10 @@
     bottom: -32px;
     right: 2px;
     z-index: 6;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 4px 8px !important;
-    border-radius: 3px;
+    background-color: var(--dark);
+    color: var(--white-off);
+    padding: 6px 8px !important;
+    border-radius: 2px;
     font-size: var(--fs-xs);
     transform: translateY(-3px);
     transition: .2s;
@@ -36,7 +36,7 @@
     clip-path: polygon(48% 26%, 100% 100%, 100% 45%);
     height: 25px;
     width: 25px;
-    background-color: var(--primary-color);
+    background-color: var(--dark);
     z-index: 6;
 }
 
@@ -232,7 +232,7 @@
 .my-btn-sm {
     cursor: pointer;
     user-select: none;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-sm) !important;
     padding: 13px 20px;
     font-family: var(--font-inter);
     display: flex;
@@ -313,7 +313,7 @@
 }
 
 .my-primary-btn {
-    background: var(--gradient-1);
+    background-color: var(--primary-color);
     color: var(--white);
 }
 
@@ -331,7 +331,7 @@
 }
 
 .my-primary-btn:hover {
-    background: var(--gradient-2);
+    background-color: var(--primary-hover-color);
 }
 
 /* close button */
@@ -1148,15 +1148,19 @@ input[type="radio"]:checked::after {
 }
 
 .product-cart .base.save {
+    top: 4px;
     left: 3px;
-    /* border-top-right-radius: 12px; */
     right: unset;
-    padding: 3px 6px;
+    padding: 5px 10px;
     background-color: transparent;
     color: var(--gray);
-    font-weight: 600;
+    font-weight: 500;
     text-transform: capitalize;
     font-size: var(--fs-xs);
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 2px;
+    border-top-right-radius: 15px;
 }
 
 /* instock */
@@ -1385,11 +1389,9 @@ input[type="radio"]:checked::after {
 
 /*_____ Product Content _____ */
 .product-content {
-    background-color: var(--white-off);
-    padding: 10px;
+    padding: 6px;
     padding-top: 6px;
     margin-top: 10px !important;
-    /* height: 240px; */
 }
 
 .product-content .my-btn {
@@ -1415,7 +1417,7 @@ input[type="radio"]:checked::after {
 }
 
 .product-cart .hide-icon {
-    background-color: var(--secondary-color);
+    background-color: var(--red);
     box-shadow: var(--shadow-3);
     width: 39px;
     height: 36px;
@@ -1962,6 +1964,7 @@ input[type="radio"]:checked::after {
     padding: 16px;
 }
 
+
 .my-popup .head {
     margin-bottom: 12px;
     padding: 6px;
@@ -1988,6 +1991,10 @@ input[type="radio"]:checked::after {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+.my-modal .close-btn {
+    font-size: var(--fs-lg) !important;
 }
 
 
