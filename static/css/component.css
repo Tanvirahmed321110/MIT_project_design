@@ -286,10 +286,6 @@
     outline: 4px solid #a5a4a461;
 }
 
-.my-btn.my-btn-fill {
-    background-color: #201919;
-    color: var(--white);
-}
 
 .my-btn.my-btn-pill {
     border-radius: var(--radius-pill);
@@ -344,6 +340,13 @@
     border-bottom-right-radius: 0;
     padding: 9px 12px !important;
 }
+
+.close-btn.my-btn:hover {
+    background-color: var(--primary-hover-color) !important;
+    transition: .2s linear;
+}
+
+
 
 
 
@@ -1135,7 +1138,7 @@ input[type="radio"]:checked::after {
 
 
 .product-cart .add-to-cart .my-primary-btn:hover {
-    background-color: var(--border-color);
+    background-color: var(--primary-hover-color) !important;
 }
 
 .product-cart .base {

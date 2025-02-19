@@ -45,9 +45,26 @@ _____________________________________________________*/
 }
 
 /*_____ p specifications _____*/
-.p-specifications ul li:nth-child(odd) {
-    /* border-bottom: 2px solid var(--border-color); */
-    /* background-color: var(--white-off); */
+.p-specifications h5 {
+    padding: 12px;
+    background-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+.p-specifications li.my-py-2 {
+    padding: 12px;
+}
+
+.p-specifications .value {
+    font-weight: 600;
+}
+
+.p-specifications .value div {
+    line-height: 20px;
+}
+
+.p-specifications .key {
+    font-size: 14px;
 }
 
 .p-specifications ul li {

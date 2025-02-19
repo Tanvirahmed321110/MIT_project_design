@@ -1220,7 +1220,7 @@
 
 
                             <!-- Quantity -->
-                            <div class="btn-quantity my-mt-3">
+                            <div class="btn-quantity">
                                 <div class="my-d-flex my-gap-6 my-align-center ">
                                     <!-- quantity buttons -->
                                     <div class="my-d-flex quantity-buttons">
@@ -1335,6 +1335,47 @@
                             <div class="p-specifications my-bg-white my-border my-p-5 my-p-3-sm my-flex-column my-gap-5"
                                 id="p-specifications" id="p-specifications">
 
+                                <!-- item -->
+                                <div>
+                                    <h5 class="">Basic Information</h5>
+                                    <ul>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">Processor
+                                            </div>
+                                            <div class="value my-w-50">
+                                                <div class="my-w-100"> AMD Ryzen 7 7700 Gaming Processor</div>
+                                                <div class="my-w-100">3 Years Warranty (No Warranty for Fan or Cooler)
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Motherboard
+                                            </div>
+                                            <div class="value my-w-50">
+                                                MSI PRO B650M-P DDR5 AMD AM5 mATX Motherboard
+                                                3 Years Warranty
+                                            </div>
+                                        </li>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Touch Screen
+                                            </div>
+                                            <div class="value my-w-50">
+                                                No
+                                            </div>
+                                        </li>
+                                        <li class="my-border-bottom my-d-flex my-gap-10 my-py-2 my-align-center">
+                                            <div class="key my-w-50  my-text-secendary">
+                                                Panel Type
+                                            </div>
+                                            <div class="value my-w-50">
+                                                TFT LCD
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- item -->
                                 <div>
                                     <h5 class="">Display Features</h5>
@@ -3074,14 +3115,13 @@
                     const y = ((e.clientY - top) / height) * 100;
 
                     bigImage.style.transformOrigin = `${x}% ${y}%`;
-                    bigImage.style.transform = "scale(2)"; // Zoom level
+                    bigImage.style.transform = "scale(1.4)"; // Zoom level
                 });
 
                 bigImage.addEventListener('mouseleave', function () {
                     bigImage.style.transform = "scale(1)"; // Reset zoom
                 });
             });
-
 
 
             // update qty

@@ -8,7 +8,7 @@
 :root {
     /*______  Color  ______ */
     --primary-color: #1878F2;
-    --primary-hover-color: #4385dc;
+    --primary-hover-color: #0a61d4;
     --secondary-color: #081621;
     --orange: #ffc107;
     --green: #0aad0a;
@@ -16,12 +16,13 @@
     --gray2: #a39e9ec3;
     --dark: #1b2023;
     --secondary-hover: #1d3741;
+    --secondary-hover: #052841;
     --white: #fff;
     --white-off: #F0F3F2;
     --border-color: #ededed;
     --border-color2: #c7c7c7;
     --red: #EE1B24;
-    --after: #7891f5a3;
+    --after: #a5a6a7a3;
 
 
     /* ______ bg color in section ______ */

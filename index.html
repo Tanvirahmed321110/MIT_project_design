@@ -4020,7 +4020,7 @@
 
 
                     <!--______________  Right Details  _____________ -->
-                    <div class="right-details my-p-5 my-p-3-sm  my-bg-white my-shadow-sm my-flex-column my-gap-6">
+                    <div class="right-details my-p-5 my-p-3-sm  my-bg-white my-shadow-sm my-flex-column my-gap-5">
                         <!-- title -->
                         <h4>
                             HP 15-fc0166AU AMD Ryzen 5 7520U 8GB DDR5, 512GB SSD 15.6 Inch FHD Display Moonlight
@@ -4028,7 +4028,7 @@
                         </h4>
 
 
-                        <div>
+                        <div class="my-border-bottom my-pb-5">
                             <!-- Rating -->
                             <div class="rating my-d-flex my-align-center my-gap-3">
                                 <a href="#" class="star">
@@ -4057,7 +4057,7 @@
 
 
                         <!-- Quick Detials -->
-                        <div class="quick-details my-mt-3">
+                        <div class="quick-details my-mt-0 my-pb-5 my-border-bottom">
                             <h4>Quick Detials</h4>
                             <ul class="my-mt-3">
                                 <li>Processor Type. - Ryzen 5</li>
@@ -4082,7 +4082,7 @@
 
 
                         <!-- price -->
-                        <div class="price my-mt-3">
+                        <div class="price my-pb-5 my-border-bottom">
                             <!-- for ram , color , size -->
                             <div class="">
                                 <h5>Ram</h5>
@@ -4119,7 +4119,7 @@
 
 
                         <!-- Quantity -->
-                        <div class="btn-quantity my-mt-3">
+                        <div class="btn-quantity">
                             <div class="my-d-flex my-gap-6 my-align-center ">
                                 <!-- quantity buttons -->
                                 <div class="my-d-flex quantity-buttons">
@@ -4152,7 +4152,7 @@
                                 <button class="my-btn  my-btn-outline my-bg-white-off">Add To
                                     Cart</button>
                                 <!-- Buy Now -->
-                                <button class="my-btn my-secendary-btn buy-now-btn my-radius-sm  ">Buy
+                                <button class="my-btn my-primary-btn buy-now-btn my-radius-sm  ">Buy
                                     Now</button>
                             </div>
                         </div>
@@ -4282,7 +4282,7 @@
                     const y = ((e.clientY - top) / height) * 100;
 
                     bigImage.style.transformOrigin = `${x}% ${y}%`;
-                    bigImage.style.transform = "scale(2)"; // Zoom level
+                    bigImage.style.transform = "scale(1.4)"; // Zoom level
                 });
 
                 bigImage.addEventListener('mouseleave', function () {

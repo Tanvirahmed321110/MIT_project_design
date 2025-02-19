@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.build-area .head .item i {
+    font-size: var(--fs-lg);
+}
+
 .build-area .head .item:hover {
     color: var(--secondary-color);
 }
@@ -41,7 +45,7 @@
 .select-product .required {
     padding: 2px 4px;
     border-radius: 2px;
-    background-color: var(--gray);
+    background-color: var(--red);
     color: var(--border-color);
     font-size: 13px;
 }

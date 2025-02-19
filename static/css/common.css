@@ -9,8 +9,7 @@ _______________________________*/
 .header-top {
     padding: 0;
     color: var(--border-color);
-    background-color: var(--primary-color);
-    /* background-color: rgb(94, 14, 94); */
+    background-color: var(--red);
 }
 
 .header-top .my-container {
@@ -24,7 +23,6 @@ _______________________________*/
 
 .header-top ul li a:hover {
     text-decoration: underline;
-    color: var(--border-color2);
 }
 
 
@@ -41,8 +39,6 @@ header .my-tooltip .show-text::after {
 
 /*_________________  Header Medile  _________________*/
 .header-medile {
-    background-color: var(--secondary-color);
-    /* background-color: var(--white); */
     color: var(--secondary-hover);
     box-shadow: var(--shadow-1);
     background-color: #000000;
@@ -83,8 +79,12 @@ header .my-tooltip .show-text::after {
 }
 
 
-.header-medile .account p,
-.header-medile .account div {
+.header-medile .account {
+    color: var(--white);
+}
+
+.header-medile #user-btn div,
+.header-medile #user-btn p {
     color: var(--white);
 }
 
@@ -112,7 +112,7 @@ header .my-tooltip .show-text::after {
 
 .header-medile .build,
 .mobile-header-bottom .build {
-    background: linear-gradient(to left, #1878F2, #EE1B24);
+    background: linear-gradient(to right, #1878F2, #EE1B24);
     background-size: 200% 200%;
     animation: built-btn-animation 1.5s linear infinite;
     border-radius: 8px;
@@ -124,7 +124,7 @@ header .my-tooltip .show-text::after {
 }
 
 .header-medile .build .my-btn:hover {
-    background-color: var(--secondary-hover);
+    background-color: var(--dark);
 }
 
 
@@ -138,19 +138,19 @@ header .my-tooltip .show-text::after {
 /*_________________  header medile bottom  ____________________*/
 .header-medile-bottom {
     padding-top: 12px !important;
-    border-top: 1px solid var(--gray);
+    /* border-top: 1px solid var(--gray); */
     margin-top: 16px;
 }
 
 .header-medile-bottom .item a {
     font-size: 15px !important;
-    color: var(--border-color);
+    color: var(--white);
     position: relative;
     padding: 0px 2px;
 }
 
 .header-medile-bottom .item a:hover {
-    color: var(--primary-hover-color);
+    color: var(--border-color2);
 }
 
 .header-medile-bottom .item a::after {
@@ -160,7 +160,7 @@ header .my-tooltip .show-text::after {
     left: 50%;
     width: 0%;
     height: 1px;
-    background-color: var(--primary-hover-color);
+    background-color: var(--border-color2);
     transition: .2s linear;
 }
 
@@ -388,7 +388,7 @@ header .my-tooltip .show-text::after {
 }
 
 .all-department .dropdown li a:hover {
-    color: var(--primary-color);
+    color: var(--white-off);
 }
 
 .all-department .dropdown .col li {
@@ -401,8 +401,9 @@ header .my-tooltip .show-text::after {
     font-size: 11px;
 }
 
+.other-page-category .dropdown .col li:hover,
 .all-department .dropdown .col li:hover {
-    background-color: var(--white-off);
+    background-color: var(--primary-color);
     width: 100%;
 }
 
@@ -417,24 +418,31 @@ header .my-tooltip .show-text::after {
     font-size: var(--fs-sm);
 }
 
-.all-department .all-department .single-dept::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 0;
-    width: 0px;
-    height: 100%;
-    background-color: var(--primary-color);
-    transition: .2s linear;
+.all-department .single-dept .dropdown p {
+    font-size: 14px !important;
 }
 
-.all-department .all-department .single-dept:hover::after {
-    width: 4px;
-    left: 0;
+.other-page-category .all-department .single-dept {
+    color: var(--dark);
 }
 
+.other-page-category .all-department .single-dept:hover {
+    color: var(--white);
+}
+
+.other-page-category .dropdown .col li {
+    color: var(--dark);
+}
+
+.other-page-category .dropdown .col li:hover {
+    color: var(--white);
+}
+
+
+
+.other-page-category .all-department .single-dept:hover,
 .all-department .all-department .single-dept:hover {
-    background-color: var(--white-off);
+    background-color: var(--primary-color) !important;
 }
 
 .all-department .all-department-btn i {
@@ -455,6 +463,17 @@ header .my-tooltip .show-text::after {
     justify-content: space-between;
 }
 
+.all-department-btn span {
+    font-size: 16px;
+}
+
+.all-department .single-dept p {
+    font-size: 15px !important;
+}
+
+.all-department .single-dept .dropdown p {
+    font-size: 14px;
+}
 
 
 .all-department .my-nav-item {
@@ -548,7 +567,6 @@ header .my-tooltip .show-text::after {
     width: 300px;
     background-color: transparent;
     border: 1px solid var(--border-color2);
-    color: var(--dark);
     border-bottom: none;
     /* color: var(--border-color); */
     /* box-shadow: var(--shadow-2); */
@@ -609,9 +627,14 @@ _______________________________________________________________*/
 
 /*_________________________   Left Side Image   ________________________*/
 /*______ Big Images ______*/
+.product-details-main .big-image {
+    width: 100%;
+    height: unset;
+}
+
 .product-details-main .big-image img {
-    height: 420px;
-    width: 80%;
+    /* height: 420px; */
+    width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 3;
@@ -620,7 +643,7 @@ _______________________________________________________________*/
 
 /*______  Small Images ______*/
 .product-details-main .small-images {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     overflow-x: auto;
     margin-top: 20px;
@@ -646,7 +669,7 @@ _______________________________________________________________*/
 }
 
 .image-area .product-banner a {
-    width: 90%;
+    width: 100%;
 }
 
 .image-area .product-banner img {
@@ -703,9 +726,13 @@ _______________________________________________________________*/
     gap: 12px;
     color: var(--white);
     cursor: pointer;
-    color: var(--secondary-color);
-    background-color: var(--border-color);
+    color: var(--white);
+    background-color: var(--red);
+    font-weight: 600;
+}
 
+.helpline .my-mt-1 {
+    font-weight: 500;
 }
 
 .quantity-buttons input {
@@ -727,8 +754,8 @@ _______________________________________________________________*/
 /*_________________________   Left Side Image   ________________________*/
 /*______ Big Images ______*/
 .product-details-main .big-image img {
-    height: 360px;
-    width: 65%;
+    /* height: 360px;
+    width: 65%; */
     margin: 0 auto;
     position: relative;
     z-index: 3;
@@ -739,17 +766,19 @@ _______________________________________________________________*/
 
 /*______  Small Images ______*/
 .product-details-main .small-images {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     overflow-x: auto;
     margin-top: 20px;
     padding: 12px;
+    user-select: none;
 }
 
 .product-details-main .small-images img {
     cursor: pointer;
     border-color: var(--border-color2);
     border-radius: 4px;
+    width: 64px;
 }
 
 .product-details-main .small-images img.active {
@@ -791,6 +820,20 @@ _______________________________________________________________*/
     border-color: var(--secondary-color);
 }
 
+
+.price-area .new-price {
+    background-color: var(--secondary-color) !important;
+    color: var(--white);
+}
+
+.price-area .old-price {
+    background-color: var(--border-color);
+}
+
+.price-area .new-price h4 {
+    color: var(--white);
+    margin-top: 4px;
+}
 
 
 
@@ -983,6 +1026,15 @@ footer .pages a:hover i {
     background-color: var(--border-color2);
 }
 
+.quantity-buttons input:hover {
+    color: var(--primary-color) !important;
+}
+
+.btn-quantity .my-btn:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white);
+}
+
 .my-modal.shopping-cart-modal .item .right {
     gap: 25px;
 }
@@ -1031,6 +1083,24 @@ footer .pages a:hover i {
     background-color: var(--primary-color);
     border-radius: 0;
     color: var(--white-off);
+}
+
+.my-modal.shopping-cart-modal .footer :nth-child(2) {
+    background-color: var(--secondary-color);
+}
+
+.my-modal.shopping-cart-modal .footer :nth-child(2):hover {
+    background-color: var(--secondary-hover);
+}
+
+
+
+.share .my-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.share .my-btn:hover i {
+    color: var(--white);
 }
 
 /**********************************
