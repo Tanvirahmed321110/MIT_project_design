@@ -140,6 +140,7 @@ ____________________________________________*/
 /* tab-content */
 .tab-content {
     display: none;
+    margin-top: 16px;
 }
 
 .tab-content.active {
@@ -483,6 +484,10 @@ ________________________________________________*/
         min-width: 700px;
         display: block;
     }
+
+    .orders-area-tab-buttons {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width:769px) {
@@ -497,6 +502,24 @@ ________________________________________________*/
 
     .login-other .left {
         margin-bottom: 16px;
+    }
+
+
+    /* orders-area */
+    .orders-area {
+        padding: 12px;
+    }
+
+    .orders-area form {
+        width: 100%;
+    }
+
+    .orders-area .search {
+        width: 100%;
+    }
+
+    .orders-area .order-item-top {
+        padding: 20px;
     }
 }
 

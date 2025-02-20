@@ -1545,27 +1545,27 @@ tr {
     }
 
     /* gap */
-    .my-gap-sm-1 {
+    .my-gap-md-1 {
         gap: 4px;
     }
 
-    .my-gap-sm-2 {
+    .my-gap-md-2 {
         gap: 8px;
     }
 
-    .my-gap-sm-3 {
+    .my-gap-md-3 {
         gap: 12px;
     }
 
-    .my-gap-sm-4 {
+    .my-gap-md-4 {
         gap: 16px;
     }
 
-    .my-gap-sm-5 {
+    .my-gap-md-5 {
         gap: 20px;
     }
 
-    .my-gap-sm-6 {
+    .my-gap-md-6 {
         gap: 24px;
     }
 }
