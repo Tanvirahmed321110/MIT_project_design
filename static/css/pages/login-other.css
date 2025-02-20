@@ -1,15 +1,27 @@
 /*_____________________________
 ____||  Cart Page Start  ||____
 _______________________________*/
-.area {
+.cart-section .area {
     display: grid;
     grid-template-columns: 3fr 1.1fr;
     gap: 40px;
 }
 
+.cart-section .area .left {
+    width: 100%;
+    overflow: hidden;
+}
 
 .products-area-table .delete-btn:hover {
     color: var(--gray);
+}
+
+.delete-btn {
+    color: var(--gray);
+}
+
+.delete-btn:hover {
+    color: var(--primary-color);
 }
 
 
@@ -56,7 +68,6 @@ ____________________________________________*/
 }
 
 
-
 /* wishlist table */
 .products-area-table .col {
     width: 110px;
@@ -72,6 +83,67 @@ ____________________________________________*/
 
 .products-area-table .col.buttons {
     width: 200px;
+}
+
+
+
+
+
+.orders-area .order-top-btn.active {
+    color: var(--primary-color);
+}
+
+.orders-area .order-top-btn:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.orders-area .top input {
+    background-color: var(--white);
+    border: none;
+    box-shadow: var(--shadow-1);
+}
+
+.orders-area {
+    position: relative;
+}
+
+
+/* tab buttons */
+.orders-area-tab-buttons {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.order-top-btn {
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.border-indicator {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out;
+    transition-delay: .16s;
+}
+
+/* tab-content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: flex;
 }
 
 /*______________________________________
@@ -118,6 +190,14 @@ ________________________________________*/
 }
 
 
+
+
+
+
+
+
+
+
 /*_________________________________________
 ____||  Order Completed  Page Start  ||____
 __________________________________________*/
@@ -141,6 +221,8 @@ __________________________________________*/
     width: 100%;
     padding: 24px 20px;
 }
+
+
 
 
 
@@ -267,6 +349,9 @@ _________________________________*/
 
 
 
+
+
+
 /*_______________________________________
 ____||  Offer Details  Page Start  ||____
 ________________________________________*/
@@ -279,17 +364,6 @@ ________________________________________*/
     border-radius: 4px;
     padding: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,26 +426,24 @@ ________________________________*/
 
 
 
-
-
-
-
-
+/*_______________________________________________
+____||  Responsive Start Here  Page Start  ||____
+________________________________________________*/
 @media (max-width:991px) {
+    .cart-section .area {
+        grid-template-columns: 1fr
+    }
+
     .products-table-wrapper {
         width: 100%;
         max-width: 1200px;
-        /* Limits max width but allows shrinking */
         overflow-x: auto;
     }
 
     .products-area-table {
-        min-width: 1100px;
-        /* Ensures it does not shrink too much */
+        min-width: 1000px;
         width: 100%;
-        /* overflow-x: auto; */
         white-space: nowrap;
-        /* Prevents text from wrapping */
     }
 
     .area.my-grid-2 {

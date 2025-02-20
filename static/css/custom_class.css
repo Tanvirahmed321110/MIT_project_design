@@ -530,6 +530,10 @@ tr {
     color: #5a5959;
 }
 
+.my-text-red {
+    color: var(--red);
+}
+
 .my-text-primary {
     color: var(--primary-color);
 }

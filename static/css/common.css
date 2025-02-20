@@ -117,7 +117,7 @@ header .my-tooltip .show-text::after {
     text-wrap: nowrap;
     border-radius: 8px;
     padding: 4px;
-    background: linear-gradient(45deg, #1878F2, #0a61d4, #c7c6c6, #f53844, #0a61d4);
+    background: linear-gradient(45deg, #1878F2, #0a61d4, #aaa9a9, #f53844, #0a61d4);
     background-size: 400% 200%;
     animation: built-btn-animation 6s ease infinite;
     color: #fff;

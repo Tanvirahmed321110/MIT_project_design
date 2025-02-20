@@ -4,77 +4,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Star Rating</title>
-        <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+        <title>Order Management</title>
         <style>
-            .rating {
-                font-size: 30px;
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .tabs {
                 display: flex;
-                gap: 5px;
                 cursor: pointer;
             }
 
-            .rating i {
-                transition: color 0.2s ease-in-out;
-                color: gray;
+            .tab {
+                padding: 10px 20px;
+                border: 1px solid #ccc;
             }
 
-            .rating i.active {
-                color: gold;
+            .tab.active {
+                background-color: #007bff;
+                color: white;
+            }
+
+            .tab-content {
+                display: none;
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+
+            .tab-content.active {
+                display: block;
             }
         </style>
     </head>
 
     <body>
+        <div class="tabs">
+            <div class="tab active" data-tab="processing">Processing Orders</div>
+            <div class="tab" data-tab="shipped">Shipped Orders</div>
+            <div class="tab" data-tab="delivered">Delivered Orders</div>
+        </div>
 
-        <div class="rating" id="star-rating">
-            <i class="fa-regular fa-star" data-value="1"></i>
-            <i class="fa-regular fa-star" data-value="2"></i>
-            <i class="fa-regular fa-star" data-value="3"></i>
-            <i class="fa-regular fa-star" data-value="4"></i>
-            <i class="fa-regular fa-star" data-value="5"></i>
+        <div class="tab-content active" id="processing">
+            <h2>Processing Orders</h2>
+            <p>List of processing orders...</p>
+        </div>
+        <div class="tab-content" id="shipped">
+            <h2>Shipped Orders</h2>
+            <p>List of shipped orders...</p>
+        </div>
+        <div class="tab-content" id="delivered">
+            <h2>Delivered Orders</h2>
+            <p>List of delivered orders...</p>
         </div>
 
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const stars = document.querySelectorAll("#star-rating i");
-                let currentRating = 0;
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function () {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
 
-                stars.forEach(star => {
-                    star.addEventListener("mouseover", function () {
-                        highlightStars(this.dataset.value);
-                    });
-
-                    star.addEventListener("click", function () {
-                        currentRating = this.dataset.value;
-                        setRating(currentRating);
-                    });
-
-                    star.addEventListener("mouseout", function () {
-                        resetStars();
-                    });
+                    this.classList.add('active');
+                    document.getElementById(this.dataset.tab).classList.add('active');
                 });
-
-                function highlightStars(rating) {
-                    stars.forEach(star => {
-                        star.classList.toggle("active", star.dataset.value <= rating);
-                    });
-                }
-
-                function setRating(rating) {
-                    stars.forEach(star => {
-                        star.classList.toggle("active", star.dataset.value <= rating);
-                    });
-                }
-
-                function resetStars() {
-                    stars.forEach(star => {
-                        star.classList.toggle("active", star.dataset.value <= currentRating);
-                    });
-                }
             });
         </script>
-
     </body>
 
 </html>

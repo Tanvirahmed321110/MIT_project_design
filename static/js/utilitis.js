@@ -309,3 +309,24 @@ allCategoryClose.addEventListener('click', function () {
     // Remove the 'active' class from the mobile menu icon when the category close button is clicked
     mobileMenuIcon.classList.remove('active');
 });
+
+
+
+
+
+
+// Tab Function
+export function tabF(tabSelector, contentSelector) {
+
+    document.querySelectorAll(tabSelector).forEach(tab => {
+        tab.addEventListener('click', function () {
+            document.querySelectorAll(tabSelector).forEach(t => t.classList.remove('active'));
+            document.querySelectorAll(contentSelector).forEach(tc => tc.classList.remove('active'));
+
+            this.classList.add('active');
+            document.getElementById(this.dataset.tab).classList.add('active');
+        });
+    });
+}
+
+// Example Usage
