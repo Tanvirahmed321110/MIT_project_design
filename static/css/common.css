@@ -112,15 +112,15 @@ header .my-tooltip .show-text::after {
 
 .header-medile .build,
 .mobile-header-bottom .build {
-    background: linear-gradient(to right, #1878F2, #EE1B24);
-    background-size: 200% 200%;
-    animation: built-btn-animation 1.5s linear infinite;
-    border-radius: 8px;
     width: 180px;
     word-wrap: normal;
     text-wrap: nowrap;
-    color: var(--white);
-    padding: 2px;
+    border-radius: 8px;
+    padding: 4px;
+    background: linear-gradient(45deg, #1878F2, #0a61d4, #c7c6c6, #f53844, #0a61d4);
+    background-size: 400% 200%;
+    animation: built-btn-animation 6s ease infinite;
+    color: #fff;
 }
 
 .header-medile .build .my-btn:hover {
@@ -344,6 +344,8 @@ header .my-tooltip .show-text::after {
 .all-department .dropdown li {
     position: relative;
 }
+
+
 
 .all-department .dropdown li a {
     padding: 3px 0;
@@ -1031,9 +1033,11 @@ footer .pages a:hover i {
 }
 
 .btn-quantity .my-btn:hover {
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-hover-color) !important;
     color: var(--white);
 }
+
+
 
 .my-modal.shopping-cart-modal .item .right {
     gap: 25px;

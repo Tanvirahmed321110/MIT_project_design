@@ -57,10 +57,22 @@ ____________________________________________*/
 
 
 
+/* wishlist table */
+.products-area-table .col {
+    width: 110px;
+}
 
+.products-area-table .col.name-img {
+    width: 260px;
+}
 
+.products-area-table .col.name-img h5:hover {
+    color: var(--primary-color);
+}
 
-
+.products-area-table .col.buttons {
+    width: 200px;
+}
 
 /*______________________________________
 ____||  All Cateogry  Page Start  ||____
@@ -346,6 +358,22 @@ ________________________________*/
 
 
 @media (max-width:991px) {
+    .products-table-wrapper {
+        width: 100%;
+        max-width: 1200px;
+        /* Limits max width but allows shrinking */
+        overflow-x: auto;
+    }
+
+    .products-area-table {
+        min-width: 1100px;
+        /* Ensures it does not shrink too much */
+        width: 100%;
+        /* overflow-x: auto; */
+        white-space: nowrap;
+        /* Prevents text from wrapping */
+    }
+
     .area.my-grid-2 {
         margin: 0 auto;
         gap: 24px !important;
@@ -402,21 +430,9 @@ ________________________________*/
 
 
 @media (max-width:556px) {
-    .products-area-table {
-        max-width: 600px;
-        width: 100%;
-        overflow-x: auto;
-    }
 
-    .products-area-table li {
-        width: 800px;
-    }
 
-    .products-area-table .quantity-buttons {
-        width: 120px;
-    }
-
-    .products-area-table .details {
+    /* .products-area-table .details {
         width: 200px !important;
         word-wrap: nowrap;
         text-wrap: nowrap;
@@ -426,7 +442,8 @@ ________________________________*/
         margin-right: 12px;
         word-wrap: nowrap;
         text-wrap: nowrap;
-    }
+        min-width: 140px;
+    } */
 
     .checkout-layout .my-input-control input {
         max-width: unset;

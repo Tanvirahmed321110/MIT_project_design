@@ -1168,14 +1168,16 @@ input[type="radio"]:checked::after {
 
 /* instock */
 .product-cart .in-stock {
-    background-color: var(--border-color2);
+    background-color: var(--secondary-color);
     padding: 2px 5px;
     margin: 0;
     font-weight: 500;
     font-size: 13px;
+    color: var(--white);
 }
 
-.product-cart .out-of-stock {
+.product-cart .out-of-stock,
+.out-of-stock {
     background-color: var(--red);
     color: var(--white-off);
     font-weight: 500;
