@@ -141,7 +141,7 @@ ______________________________________*/
     pointer-events: auto;
     width: 20px;
     height: 20px;
-    background-color: #ff5722;
+    background-color: var(--primary-color);
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
@@ -157,10 +157,11 @@ ______________________________________*/
     width: 100%;
     z-index: 1;
     border-radius: 8px !important;
+    background-color: var(--primary-color);
 }
 
 .slider-track.active {
-    background: #ff5722;
+    background: var(--primary-color);
 }
 
 .price-inputs {

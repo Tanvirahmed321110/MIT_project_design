@@ -903,8 +903,20 @@ footer .pages a:hover i {
     color: var(--orange);
 }
 
+footer .my-social li a {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+}
 
+footer .my-social li a:hover {
+    background-color: var(--red);
+}
 
+footer .my-social li a i {
+    color: var(--white);
+    font-size: var(--fs-lg);
+}
 
 
 

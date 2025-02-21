@@ -64,7 +64,8 @@ ____________________________________________*/
 
 
 .other-login-option button:hover {
-    background-color: var(--border-color);
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 

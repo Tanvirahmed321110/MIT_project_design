@@ -21,6 +21,7 @@ body {
     color: var(--secondary-color);
     background-color: var(--border-color);
     letter-spacing: .1px;
+    min-width: 360px;
 }
 
 
@@ -231,9 +232,21 @@ tr {
     text-decoration: underline;
 }
 
-.text-hover:hover {
-    color: var(--green);
+
+/*_______ Text Hover _______*/
+.text-hover-primary:hover {
+    color: var(--primary-color);
 }
+
+.text-hover-secondary:hover {
+    color: var(--secondary-color);
+}
+
+.text-hover-red:hover {
+    color: var(--red);
+}
+
+
 
 /* Border */
 .my-border {

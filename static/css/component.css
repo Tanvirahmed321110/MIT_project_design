@@ -395,12 +395,12 @@ textarea::placeholder {
 
 .my-input-control:hover input,
 .my-input-control:hover textarea {
-    outline: 2px solid #0aad0a4d;
+    outline: 2px solid var(--input);
 }
 
 .my-input-control input:focus,
 .my-input-control textarea:focus {
-    outline: 4px solid #0aad0a4d;
+    outline: 4px solid var(--input);
     padding-left: 20px;
 }
 
@@ -1154,7 +1154,7 @@ input[type="radio"]:checked::after {
     top: 4px;
     left: 3px;
     right: unset;
-    padding: 5px 10px;
+    padding: 3px 10px;
     background-color: transparent;
     color: var(--gray);
     font-weight: 500;
@@ -1422,7 +1422,7 @@ input[type="radio"]:checked::after {
 }
 
 .product-cart .hide-icon {
-    background-color: var(--red);
+    background-color: var(--primary-hover-color);
     box-shadow: var(--shadow-3);
     width: 39px;
     height: 36px;
