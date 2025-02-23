@@ -8,6 +8,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Trebuchet MS', sans-serif;
+    src: url('../fonts/trebuc.ttf');
+}
+
+@font-face {
+    font-family: font2;
+    src: url('../fonts/Trebuchet-MS-Italic.ttf');
+}
+
 
 /*________  Tag Style  ________ */
 html {
@@ -16,10 +26,10 @@ html {
 
 body {
     font-size: var(--fs-sm);
-    font-family: var(--font-poppins);
+    font-family: 'Trebuchet MS', sans-serif;
     font-weight: var(--fw-500);
     color: var(--secondary-color);
-    background-color: var(--border-color);
+    background-color: var(--white-off);
     letter-spacing: .1px;
     min-width: 360px;
 }
@@ -34,7 +44,7 @@ h5,
 h6 {
     font-weight: var(--fw-600);
     line-height: 20px;
-    font-family: var(--font-poppins);
+    font-family: 'Trebuchet MS', sans-serif;
     color: var(--secondary-color);
 }
 
@@ -92,7 +102,7 @@ a {
 
 button {
     user-select: none;
-    font-family: var(--font-poppins);
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 button:active,
@@ -156,7 +166,7 @@ button {
     font-size: inherit;
     word-spacing: 3px;
     transition: .2s ease-in-out;
-    font-family: var(--font-poppins);
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 

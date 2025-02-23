@@ -192,10 +192,86 @@ ________________________________________*/
 }
 
 
+/*_________________________________________
+____||  Order Details  Page Start  ||____
+__________________________________________*/
+.order-details .top .my-border-top {
+    border-color: var(--border-color);
+}
 
+.order-details .order-status {
+    padding: 8px 12px;
+    border-radius: 24px;
+    background-color: var(--border-color);
+    font-weight: var(--fw-600);
+}
 
+.order-details .order-status.on-delivary {
+    color: var(--green);
+}
 
+.order-details .item {
+    background-color: var(--input) !important;
+}
 
+.order-details .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.total-items {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--input);
+}
+
+/***** Range *****/
+.order-progress .range {
+    border-radius: 22px;
+    height: 8px;
+    width: 50%;
+    background-color: var(--red);
+}
+
+.order-progress p {
+    opacity: .5;
+}
+
+.order-progress p.active {
+    opacity: 1;
+}
+
+.order-progress p::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
+    border-radius: 50%;
+    top: -22px;
+}
+
+.order-progress .start::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
+    border-radius: 50%;
+    top: -22px;
+    left: 0;
+}
+
+.order-progress .way::after {
+    left: 0;
+}
+
+.order-progress .delivary::after {
+    right: 0;
+}
 
 
 
@@ -527,6 +603,9 @@ ________________________________________________*/
 
 @media (max-width:556px) {
 
+    .order-details .my-p-5 {
+        padding: 12px;
+    }
 
     /* .products-area-table .details {
         width: 200px !important;

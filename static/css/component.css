@@ -234,7 +234,6 @@
     user-select: none;
     font-size: var(--fs-sm) !important;
     padding: 13px 20px;
-    font-family: var(--font-inter);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,7 +376,6 @@
     outline: none;
     border-radius: 8px;
     transition: .15s linear;
-    font-family: var(--font-inter);
     max-width: 640px;
     width: 100%;
     color: var(--gray);

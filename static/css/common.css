@@ -40,8 +40,8 @@ header .my-tooltip .show-text::after {
 /*_________________  Header Medile  _________________*/
 .header-medile {
     color: var(--secondary-hover);
-    box-shadow: var(--shadow-1);
-    background-color: #000000;
+    /* box-shadow: var(--shadow-1); */
+    background-color: #000;
 }
 
 
@@ -69,13 +69,13 @@ header .my-tooltip .show-text::after {
 
 .header-medile .subcribe button {
     background: unset;
-    background-color: var(--secondary-hover);
+    background-color: var(--secondary-color);
     top: 0 !important;
     color: var(--border-color);
 }
 
 .header-medile .subcribe button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--red);
 }
 
 
@@ -169,6 +169,24 @@ header .my-tooltip .show-text::after {
     width: 100%;
 }
 
+
+/* pages */
+.pages .my-dropdown {
+    padding: 20px;
+    min-width: 200px;
+}
+
+.pages .my-dropdown li a {
+    color: var(--secondary-color);
+}
+
+.pages .my-dropdown li a::after {
+    background-color: var(--primary-color) !important;
+}
+
+.pages .my-dropdown li a:hover {
+    color: var(--primary-color);
+}
 
 
 

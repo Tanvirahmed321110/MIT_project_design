@@ -1058,7 +1058,8 @@
                 <div class="my-container my-pb-0 ">
                     <ul class="my-d-flex my-mt-2 my-align-center my-gap-5 brigtcamp-area  contact-page">
                         <li><a href="../index.html">Home</a> </li>
-                        <h6 class="my-fw-bold">Orders</h6>
+                        <li><a href="../index.html">Orders</a> </li>
+                        <h6 class="my-fw-bold">Order Details</h6>
                     </ul>
                 </div>
             </section>
@@ -1074,436 +1075,214 @@
             <!-- ==================================================== -->
             <section>
                 <div class="my-container-sm ">
-                    <div class="orders-area my-p-5 my-bg-white my-radius-md  ">
-                        <div class="top my-flex-between my-flex-sm-column my-align-start">
-                            <h1 class="my-fs-xl">My Orders</h1>
-
-                            <!-- Right Side -->
-                            <div class="search">
-                                <form action="">
-                                    <div
-                                        class="my-input-control  my-flex-between my-gap-2 my-p-3 my-bg-border my-radius-md ">
-                                        <input type="text" placeholder="Search order">
-                                        <button class="my-btn my-secendary-btn"> Search</button>
-                                    </div>
-                                </form>
+                    <div class="order-details my-bg-white my-radius-md  ">
+                        <!-- Top -->
+                        <div class="top">
+                            <h1 class="my-fs-xl order-id my-p-2  my-px-5 ">Order Details</h1>
+                            <div class="head  my-p-3 my-px-5  my-flex-between my-border-top my-gap-2">
+                                <div>
+                                    <div class="my-text-gray my-uppercase my-fw-bold">Order ID:</div>
+                                    <h4 class="my-fs-lg  order-id my-mt-1">#4400278</h4>
+                                </div>
+                                <div>
+                                    <div class="order-status on-delivary">On Delivary</div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Tab buttons -->
-                        <ul
-                            class="my-d-flex my-gap-6 my-align-center orders-area-tab-buttons my-mt-5 my-py-2 my-gap-md-1 flex-wrap">
-                            <li class="order-top-btn active my-fs-md" data-tab="orders-content">Orders</li>
-                            <li class="order-top-btn my-fs-md" data-tab="cancelled-content">Cancelled orders</li>
-                            <li class="order-top-btn my-fs-md" data-tab="return-content">Return</li>
-                            <li class="order-top-btn my-fs-md" data-tab="shipped-content">Not yet Shipped</li>
-                        </ul>
+                        <div class="my-p-5 my-grid-2 my-grid-md-1 my-gap-2 ">
+
+                            <!-- Item -->
+                            <div class="item my-bg-white-off my-p-3 my-radius-md">
+                                <div class="icon my-flex-center">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </div>
+                                <h4 class="my-mt-2 my-fw-medium"> Your order on the way</h4>
 
 
-                        <!--________________ For all orders _________________ -->
-                        <div class="my-mt-8 my-flex-column tab-content active  my-gap-6" id="orders-content">
-
-                            <!-- ______  Single order item  ______ -->
-                            <div class="order-item my-border my-bg-white-off my-radius-md my-w-100 m ">
-
-                                <!-- top header -->
-                                <div
-                                    class="order-item-top my-border-bottom my-p-3 my-w-100 my-pb-1 my-align-center my-grid-4  my-grid-sm-2 my-gap-md-4">
-
-                                    <!-- Order Place Date -->
-                                    <div class="order-place">
-                                        <div class="my-uppercase my-fw-bold">Order placed</div>
-                                        <p class="my-text-gray">Jan 23,2025</p>
+                                <!-- order start end -->
+                                <div class="my-flex-between my-gap-4 my-mt-6">
+                                    <!-- start location -->
+                                    <div class="my-d-flex my-align-center my-gap-2 my-p-2 my-bg-white my-radius-pill">
+                                        <i class="fa-solid fa-truck"></i>
+                                        <div class="my-fs-xs">bonsree,rampura Dhaka</div>
                                     </div>
 
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase my-fw-bold">Total</div>
-                                        <p class="my-text-gray">1200.00</p>
+                                    <div class="my-flex-center">
+                                        <h5>To</h5>
                                     </div>
 
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase  my-fw-bold ">Shipped BY</div>
-                                        <p class="my-text-gray">Tanvir</p>
-                                    </div>
-
-                                    <!-- Order ID -->
-                                    <div>
-                                        <div class="my-uppercase my-fw-bold ">Order ID <span>#132132312</span>
-                                        </div>
-                                        <a href="#" class="my-btn my-btn-sm my-btn-outline my-fit-content my-mt-2">View
-                                            invoice</a>
+                                    <!-- End Location -->
+                                    <div class="my-d-flex my-align-center my-gap-2 my-p-2 my-bg-white my-radius-pill">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <div class="my-fs-xs">mirpur 12, Dhaka</div>
                                     </div>
                                 </div>
 
-                                <!-- body -->
-                                <div class="order-body  my-p-5">
-                                    <div class="my-mt-2">
-                                        <h5 class="my-fw-bolder my-text-red">Processing</h5>
+                                <!-- Order Progress -->
+                                <div class="order-progress my-mt-6">
+                                    <div class="range-wrapper my-p-relative">
+                                        <div class="range">
+                                            <div class="medile"></div>
+                                        </div>
                                     </div>
-
-
-                                    <div class="my-mt-4 my-grid-4 my-w-100 my-grid-sm-2 my-gap-md-4">
-                                        <!-- Image -->
-                                        <a href="./product.html">
-                                            <img class="w-15" src="../static/images/product-img4.webp" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <div>
-                                            <h6 class="my-text-gray"> Gaming Pc</h6>
-                                            <div>
-                                                <button class="my-btn my-btn-sm my-primary-btn my-mt-1">
-                                                    Buy again
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <!-- quantity -->
-                                        <div>
-                                            <h6 class="my-text-gray">Quantity</h6>
-                                            <p class="my-mt-1">1</p>
-                                        </div>
-
-                                        <div>
-                                            <a href="./order_details.html"
-                                                class="my-btn my-btn-sm my-secendary-btn  my-fit-content my-mt-1">
-                                                View Details
-                                            </a>
-                                        </div>
-
+                                    <div class="my-grid-3 my-mt-2">
+                                        <p class="my-fw-bold active start my-p-relative">Start</p>
+                                        <p class="my-fw-bold active way my-text-center my-p-relative">Way</p>
+                                        <p class="my-fw-bold delivary my-text-right my-p-relative">Delivared</p>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <!-- ______  Single order item  ______ -->
-                            <div class="order-item my-border my-radius-md my-bg-white-off my-w-100">
-
-                                <!-- top header -->
+                            <div class="my-grid-2 my-grid-sm-1 my-gap-2">
+                                <!-- Item -->
                                 <div
-                                    class="order-item-top my-border-bottom my-p-3 my-w-100 my-pb-1 my-align-center my-grid-4 my-grid-sm-2 my-gap-md-4">
-
-                                    <!-- Order Place Date -->
-                                    <div class="order-place">
-                                        <div class="my-uppercase my-fw-bold">Order placed</div>
-                                        <p class="my-text-gray">Jan 23,2025</p>
+                                    class="item my-flex-between my-flex-column my-align-start my-bg-white-off my-p-3 my-radius-md">
+                                    <div class="icon my-flex-center">
+                                        <i class="fa-solid fa-truck-fast"></i>
                                     </div>
 
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase my-fw-bold">Total</div>
-                                        <p class="my-text-gray">1200.00</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase  my-fw-bold ">Shipped BY</div>
-                                        <p class="my-text-gray">Tanvir</p>
-                                    </div>
-
-                                    <!-- Order ID -->
-                                    <div>
-                                        <div class="my-uppercase my-fw-bold ">Order ID <span>#132132312</span>
+                                    <div class="my-pb-1 my-mt-4">
+                                        <div class="my-text-gray">Estimate Arrival</h4>
+                                            <h4 class="my-mt-1">09 March 2025</h4>
                                         </div>
-                                        <button class="my-btn my-btn-sm my-btn-outline my-mt-2">view invoice</button>
                                     </div>
                                 </div>
 
-                                <!-- body -->
-                                <div class="order-body my-p-5">
-                                    <div class="my-mt-2">
-                                        <h5 class="">On The Way</h5>
+                                <!-- Delivary Time -->
+                                <div
+                                    class="item my-flex-between my-flex-column my-align-start my-bg-white-off my-p-3 my-radius-md">
+                                    <div class="icon my-flex-center">
+                                        <i class="fa-regular fa-clock"></i>
                                     </div>
 
-
-                                    <div class="my-mt-4 my-grid-4 my-w-100 my-grid-sm-2 my-gap-md-4">
-                                        <!-- Image -->
-                                        <a href="./product.html">
-                                            <img class="w-15" src="../static/images/product-img3.webp" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <div>
-                                            <h6 class="my-text-gray">New Gaming Pc</h6>
-                                            <div>
-                                                <button class="my-btn my-btn-sm my-primary-btn my-mt-1">
-                                                    Buy again
-                                                </button>
-                                            </div>
+                                    <div class="my-pb-1 my-mt-4">
+                                        <div class="my-text-gray">Delivary In</h4>
+                                            <h4 class="my-mt-1">2 days</h4>
                                         </div>
-
-                                        <!-- quantity -->
-                                        <div>
-                                            <h6 class="my-text-gray">Quantity</h6>
-                                            <p class="my-mt-1">2</p>
-                                        </div>
-
-                                        <div>
-                                            <a href="./order_details.html"
-                                                class="my-btn my-btn-sm my-secendary-btn my-fit-content my-mt-1">
-                                                View Details
-                                            </a>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
 
-                            <!-- ______  Single order item  ______ -->
-                            <div class="order-item my-border my-bg-white-off my-radius-md my-w-100">
+                        <!-- Timeline and Shipment -->
+                        <div class="my-grid-2 my-p-5 my-grid-md-1 my-gap-2">
 
-                                <!-- top header -->
-                                <div
-                                    class="order-item-top my-border-bottom my-p-3 my-w-100 my-pb-1 my-align-center my-grid-4 my-grid-sm-2 my-gap-md-4">
-
-                                    <!-- Order Place Date -->
-                                    <div class="order-place">
-                                        <div class="my-uppercase my-fw-bold">Order placed</div>
-                                        <p class="my-text-gray">Jan 23,2025</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase my-fw-bold">Total</div>
-                                        <p class="my-text-gray">1200.00</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase  my-fw-bold ">Shipped BY</div>
-                                        <p class="my-text-gray">Tanvir</p>
-                                    </div>
-
-                                    <!-- Order ID -->
-                                    <div>
-                                        <div class="my-uppercase my-fw-bold ">Order ID <span>#132132312</span>
+                            <!-- Timeline -->
+                            <div class=" my-bg-white-off my-p-3 my-radius-md">
+                                <div class="my-text-gray my-fs-md">Timeline</div>
+                                <ul class="my-mt-5 my-flex-column my-gap-5">
+                                    <li class="my-d-flex my-align-center ">
+                                        <div class="left w-20  my-text-dark">23 Feb</div>
+                                        <div class="my-flex-grow-1">
+                                            <div class="my-fw-bold ">Your Packege is Packaged by the
+                                                Countainer</div>
+                                            <p class="my-text-gray my-fs-xs">Mirpure Dhaka,Bangladesh</p>
                                         </div>
-                                        <button class="my-btn my-btn-sm my-btn-outline my-mt-2">view invoice</button>
-                                    </div>
-                                </div>
-
-                                <!-- body -->
-                                <div class="order-body my-p-5">
-                                    <div class="my-mt-2">
-                                        <h5 class="">On The Way</h5>
-                                    </div>
-
-
-                                    <div class="my-mt-4 my-grid-4 my-w-100 my-grid-sm-2 my-gap-md-4">
-                                        <!-- Image -->
-                                        <a href="./product.html">
-                                            <img class="w-15" src="../static/images/product-img3.webp" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <div>
-                                            <h6 class="my-text-gray">New Gaming Pc</h6>
-                                            <div>
-                                                <button class="my-btn my-btn-sm my-primary-btn my-mt-1">
-                                                    Buy again
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <!-- quantity -->
-                                        <div>
-                                            <h6 class="my-text-gray">Quantity</h6>
-                                            <p class="my-mt-1">2</p>
-                                        </div>
-
-                                        <div>
-                                            <a href="./order_details.html"
-                                                class="my-btn my-btn-sm my-secendary-btn my-fit-content my-mt-1">
-                                                View Details
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- ______  Single order item  ______ -->
-                            <div class="order-item my-border my-bg-white-off my-radius-md my-w-100">
-
-                                <!-- top header -->
-                                <div
-                                    class="order-item-top my-border-bottom my-p-3 my-w-100 my-pb-1 my-align-center my-grid-4 my-grid-sm-2 my-gap-md-4">
-
-                                    <!-- Order Place Date -->
-                                    <div class="order-place">
-                                        <div class="my-uppercase my-fw-bold">Order placed</div>
-                                        <p class="my-text-gray">Jan 10,2025</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase my-fw-bold">Total</div>
-                                        <p class="my-text-gray">19200.00</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase  my-fw-bold ">Shipped BY</div>
-                                        <p class="my-text-gray">Tanvir</p>
-                                    </div>
-
-                                    <!-- Order ID -->
-                                    <div>
-                                        <div class="my-uppercase my-fw-bold ">Order ID <span>#120321312</span>
-                                        </div>
-                                        <button class="my-btn my-btn-sm my-btn-outline my-mt-2">view invoice</button>
-                                    </div>
-                                </div>
-
-                                <!-- body -->
-                                <div class="order-body my-p-5">
-                                    <div class="my-mt-2">
-                                        <h5 class="">Delivered</h5>
-                                    </div>
-
-
-                                    <div class="my-mt-4 my-grid-4 my-w-100 my-grid-sm-2 my-gap-md-4">
-                                        <!-- Image -->
-                                        <a href="./product.html">
-                                            <img class="w-15"
-                                                src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
-                                                alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <div>
-                                            <h6 class="my-text-gray">New Gaming Pc</h6>
-                                            <div>
-                                                <button class="my-btn my-btn-sm my-primary-btn my-mt-1">
-                                                    Buy again
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <!-- quantity -->
-                                        <div>
-                                            <h6 class="my-text-gray">Quantity</h6>
-                                            <p class="my-mt-1">1</p>
-                                        </div>
-
-                                        <div>
-                                            <a href="./order_details.html"
-                                                class="my-btn  my-fit-content my-btn-sm my-secendary-btn">
-                                                View Details
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Pagination -->
-                            <div class="pagination my-mt-0">
-                                <ul class="my-d-flex my-align-center my-gap-1 my-justify-end">
-                                    <li>
-                                        <a class="disable" href="#"> <i class="fa-solid fa-chevron-left"></i>
-                                            Previous</a>
                                     </li>
-                                    <li class="active"><a class="" href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">Next <i class="fa-solid fa-chevron-right"></i> </a></li>
+                                    <li class="my-d-flex my-align-center  ">
+                                        <div class="left w-20    my-text-dark">22 Feb</div>
+                                        <div class="my-text-gray my-fw-medium my-flex-grow-1">Shipment has been created
+                                        </div>
+                                    </li>
+                                    <li class=" my-d-flex my-align-center ">
+                                        <div class="  left w-20 my-text-dark">22 Feb
+                                        </div>
+                                        <div class=" my-text-gray my-flex-grow-1">Your Packege is Packaged by the
+                                            Countainer</div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Timeline -->
+                            <div class=" my-bg-white-off my-p-3 my-radius-md">
+                                <div class="my-text-gray my-fs-md">Shipment</div>
+                                <ul class="my-mt-5 my-flex-column my-gap-5">
+                                    <li class="my-d-flex my-align-center my-gap-4">
+                                        <div class=" icon my-flex-center"><i class="fa-solid fa-truck-arrow-right"></i>
+                                        </div>
+                                        <div>
+                                            <div class="my-fw-bold ">Fedex</div>
+                                            <p class="my-text-gray my-fs-xs"> Dhaka,Bangladesh</p>
+                                        </div>
+                                    </li>
+                                    <li class="my-grid-2  ">
+                                        <div class="left  my-text-dark">
+                                            <div class="my-text-gray">Recipient</div>
+                                            <div class="my-mt-1">Tanvir</div>
+                                        </div>
+                                        <div class="left  my-text-dark">
+                                            <div class="my-text-gray">Delivary Address</div>
+                                            <div class="my-mt-1">Mirpur dhaka,Bangladesh</div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="my-text-gray">Tracking No:</div>
+                                        <h5 class="my-mt-1">4322321342</h5>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!--________________ For Cancelled orders _________________ -->
-                        <div class="tab-content" id="cancelled-content">
-                            <!-- ______  Single order item  ______ -->
-                            <div class="order-item my-border my-bg-white-off my-radius-md my-w-100">
+                        <!-- Order items -->
+                        <div class="my-p-5 ">
+                            <div class="my-d-flex my-gap-2 my-gap-2">
+                                <h4>Items</h4>
+                                <div class="total-items my-flex-center my-fw-bold my-bg-primary-hover">4</div>
+                            </div>
 
-                                <!-- top header -->
-                                <div
-                                    class="order-item-top my-border-bottom my-p-3 my-w-100 my-pb-1 my-align-center my-grid-4 my-grid-sm-2 my-gap-md-4">
+                            <div class="my-mt-4 my-grid-2 my-gap-2 my-grid-sm-1">
 
-                                    <!-- Order Place Date -->
-                                    <div class="order-place">
-                                        <div class="my-uppercase my-fw-bold">Order placed</div>
-                                        <p class="my-text-gray">Jan 23,2025</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase my-fw-bold">Total</div>
-                                        <p class="my-text-gray">1200.00</p>
-                                    </div>
-
-                                    <!-- Total Price -->
-                                    <div class="total">
-                                        <div class="my-uppercase  my-fw-bold ">Shipped BY</div>
-                                        <p class="my-text-gray">Tanvir</p>
-                                    </div>
-
-                                    <!-- Order ID -->
+                                <!-- Single order item -->
+                                <div class="my-d-flex my-gap-4 my-radius-md my-p-2 my-border my-align-start">
+                                    <img class="w-15 my-border my-radius-sm" src="../static/images/product-img3.webp"
+                                        alt="">
                                     <div>
-                                        <div class="my-uppercase my-fw-bold ">Order ID <span>#132132312</span>
-                                        </div>
-                                        <a href="#" class="my-btn my-btn-sm my-btn-outline my-fit-content my-mt-2">View
-                                            invoice</a>
+                                        <h6>Gaming pc 24</h6>
+                                        <h6 class="my-mt-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>1240</h6>
+                                        <p class="my-mt-1">size: <strong>24"</strong></p>
                                     </div>
                                 </div>
 
-                                <!-- body -->
-                                <div class="order-body  my-p-5 ">
-                                    <div class="my-mt-2">
-                                        <h5 class="my-fw-bolder my-text-red">Canceled</h5>
+                                <!-- Single order item -->
+                                <div class="my-d-flex my-gap-4 my-radius-md my-p-2 my-border my-align-start">
+                                    <img class="w-15 my-border my-radius-sm" src="../static/images/product-img4.webp"
+                                        alt="">
+                                    <div>
+                                        <h6>Gaming pc 24</h6>
+                                        <h6 class="my-mt-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>1240</h6>
+                                        <p class="my-mt-1">size: <strong>24"</strong></p>
                                     </div>
+                                </div>
+                                <!-- Single order item -->
+                                <div class="my-d-flex my-gap-4 my-radius-md my-p-2 my-border my-align-start">
+                                    <img class="w-15 my-border my-radius-sm"
+                                        src="https://media.istockphoto.com/id/506040816/photo/modern-desktop-pc-with-curved-screen.jpg?s=2048x2048&w=is&k=20&c=W5EgkJh_-8XOIwJpt7QKMgOWqDgqRpRFPQ0aP_gEo_E="
+                                        alt="">
+                                    <div>
+                                        <h6>Best Monitor 22"</h6>
+                                        <h6 class="my-mt-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>1240</h6>
+                                        <p class="my-mt-1">size: <strong>24"</strong></p>
+                                    </div>
+                                </div>
 
-
-                                    <div class="my-mt-4 my-grid-4 my-w-100 my-grid-sm-2 my-gap-md-4">
-                                        <!-- Image -->
-                                        <a href="./product.html">
-                                            <img class="w-15" src="../static/images/product-img4.webp" alt="">
-                                        </a>
-
-                                        <!-- Title -->
-                                        <div>
-                                            <h6 class="my-text-gray"> Gaming Pc</h6>
-                                            <div>
-                                                <button class="my-btn my-btn-sm my-secendary-btn my-mt-1">
-                                                    Buy again
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <!-- quantity -->
-                                        <div>
-                                            <h6 class="my-text-gray">Quantity</h6>
-                                            <p class="my-mt-1">1</p>
-                                        </div>
-
-                                        <div>
-                                            <a href="./order_details.html"
-                                                class="my-btn my-btn-sm my-primary-btn my-fit-content my-mt-1">
-                                                View Details
-                                            </a>
-                                        </div>
-
+                                <!-- Single order item -->
+                                <div class="my-d-flex my-gap-4 my-radius-md my-p-2 my-border my-align-start">
+                                    <img class="w-15 my-border my-radius-sm"
+                                        src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                        alt="">
+                                    <div>
+                                        <h6>Gaming pc 24</h6>
+                                        <h6 class="my-mt-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>1240</h6>
+                                        <p class="my-mt-1">size: <strong>24"</strong></p>
                                     </div>
                                 </div>
                             </div>
-
-                        </div>
-                        <!--________________ For Return orders _________________ -->
-                        <div class="tab-content" id="return-content">
-                            <h2>No</h2>
-                        </div>
-                        <!--________________ For not shipped orders _________________ -->
-                        <div class="tab-content" id="shipped-content">
-                            <h2>No</h2>
                         </div>
                     </div>
-                </div>
             </section>
             <!-- ================================================== -->
             <!-- ==========    orders  Section  End  Here   ======== -->
