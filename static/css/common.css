@@ -9,7 +9,7 @@ _______________________________*/
 .header-top {
     padding: 0;
     color: var(--border-color);
-    background-color: var(--red);
+    background-color: rgb(177, 22, 22);
 }
 
 .header-top .my-container {
@@ -176,6 +176,11 @@ header .my-tooltip .show-text::after {
     min-width: 200px;
 }
 
+.pages .pages-text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .pages .my-dropdown li a {
     color: var(--secondary-color);
 }
@@ -319,7 +324,7 @@ header .my-tooltip .show-text::after {
 .all-department .single-dept {
     cursor: pointer;
     padding: 4px 16px;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 .category .my-dropdown li {

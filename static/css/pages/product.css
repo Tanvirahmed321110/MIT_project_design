@@ -117,6 +117,10 @@ _____________________________________________________*/
 
 
 
+.p-question-ans input {
+    max-width: unset;
+}
+
 
 
 
@@ -128,7 +132,7 @@ _____________________________________________________*/
     .product-details-bottom-area {
         grid-template-columns: 1fr;
         gap: 12px;
-        max-width: 640px;
+        max-width: 680px;
     }
 
     .image-area {
@@ -136,7 +140,7 @@ _____________________________________________________*/
     }
 
     .image-area img {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .price .new-price,
@@ -191,6 +195,7 @@ _____________________________________________________*/
 
 
 
+
 /* Responsive For 556px */
 @media (max-width:556px) {
 
@@ -209,8 +214,8 @@ _____________________________________________________*/
 
 
     .product-details-main .small-images {
-        width: 90%;
-        max-width: 300px;
+        width: 100%;
+        max-width: 380px;
     }
 
 

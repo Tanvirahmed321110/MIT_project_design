@@ -5,12 +5,12 @@
 :root {
     /*______  Color  ______ */
     --primary-color: #1878F2;
-    --primary-hover-color: #0a61d4;
+    --primary-hover-color: #0554BC;
     --secondary-color: #081621;
     --orange: #ffc107;
     --green: #0aad0a;
     --gray: #767676;
-    --gray2: #a39e9ec3;
+    --gray2: #9e9b9bdc;
     --dark: #1b2023;
     --secondary-hover: #001e46;
     --white: #fff;
@@ -19,6 +19,7 @@
     --border-color2: #c7c7c7;
     --red: #EE1B24;
     --after: #1878F2;
+    --before: #2d78dbe8;
     --input: #1876f25b;
 
 
@@ -29,7 +30,7 @@
 
     /*______  Font Size  ______ */
     --fs-xs: 12px;
-    --fs-sm: 13.5px;
+    --fs-sm: 14px;
     --fs-md: 16px;
     --fs-lg: 18px;
     --fs-xl: 24px;
