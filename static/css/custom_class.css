@@ -75,6 +75,10 @@ h5 {
     line-height: 20px;
 }
 
+i {
+    display: block;
+}
+
 h6 {
     font-size: var(--fs-sm);
     line-height: 17px;

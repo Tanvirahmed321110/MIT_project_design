@@ -953,25 +953,43 @@ input[type="radio"]:checked::after {
 /*_____________________________________*\
   ||   Live Message Start Here      ||
 \*_____________________________________*/
-.message-btn {
+.right-fixed {
     position: fixed;
     right: 25px;
     bottom: 45px;
-    font-size: 2.5rem;
+    font-size: 20px;
     color: #ffffff;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--primary-hover-color);
     z-index: 6;
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    transition: .4s linear;
 }
 
+.right-fixed .item {
+    width: 50px;
+    height: 46px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
 
+.right-fixed .item:hover {
+    background-color: var(--dark);
+}
 
-.message-btn.active {
+.right-fixed .item i {
+    animation: scale 0.4s linear infinite alternate;
+}
+
+.right-fixed.active {
     visibility: visible;
     opacity: 1;
 }
@@ -989,10 +1007,6 @@ input[type="radio"]:checked::after {
     z-index: -1;
 } */
 
-.message-btn i {
-    animation: scale 0.4s linear infinite alternate;
-    font-size: 20px;
-}
 
 @keyframes animations {
     0% {
@@ -1012,7 +1026,7 @@ input[type="radio"]:checked::after {
     }
 
     100% {
-        transform: scale(1.07);
+        transform: scale(1.1);
     }
 
     0% {
@@ -1020,19 +1034,28 @@ input[type="radio"]:checked::after {
     }
 }
 
-.message-btn.up-btn {
-    bottom: 140px;
+.right-fixed.up-btn {
+    bottom: 220px;
     right: 25px;
     transition: .4s linear;
+    width: 70px;
+    height: 50px;
+    padding: 16px;
 }
 
-.message-btn.up-btn.active {
-    bottom: 100px;
+.right-fixed .up-icon {
+    font-size: 18px;
 }
 
-.message-btn:hover {
-    background-color: var(--secondary-hover);
+.right-fixed.up-btn:hover {
+    background-color: var(--dark) !important;
 }
+
+.right-fixed.up-btn.active {
+    bottom: 160px;
+}
+
+
 
 /*________________________________*\
   ||    Notice  Start Here      ||
@@ -2488,7 +2511,19 @@ ___________________________________*/
     display: block;
 }
 
+.search .search-dropdown img {
+    width: 60px;
+    height: 60px;
+}
 
+.search .search-dropdown .tag {
+    padding: 0px 6px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+    color: var(--white-off);
+    font-size: 12px;
+    font-weight: 600;
+}
 
 
 

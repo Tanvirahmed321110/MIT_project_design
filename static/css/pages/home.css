@@ -215,8 +215,8 @@
 .slider-banner {
     margin: auto;
     position: relative;
-    border-radius: 10px;
     height: 500px;
+    border-radius: 8px;
     background-color: rgb(205, 203, 203);
 }
 
@@ -226,7 +226,7 @@
 .banner {
     display: flex;
     flex-grow: 1;
-    height: 490px;
+    height: 484px;
 }
 
 .hero-area .category {
@@ -275,7 +275,7 @@
 
 .slider-banner {
     width: 100%;
-    height: 495px;
+    height: 490px;
 }
 
 .swiper-slide a {
@@ -304,6 +304,63 @@
 .offer-section .my-container {
     padding-top: 0;
 }
+
+
+
+
+
+/*_______________________________________
+  ||     Special Offer Section Here     ||
+________________________________________*/
+.special-offer .item {
+    height: 220px;
+    border-radius: 8px;
+    background-image: url('https://www.computervillage.com.bd/image/cache/catalog/website/banner/graphics-card-1260x400.jpeg.webp');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .special-offer .item:nth-child(2) {
+    background-image: url('https://img.freepik.com/free-vector/adenovirus-computer-screen_1308-47608.jpg?t=st=1738058581~exp=1738062181~hmac=f5a3c9dc5f34b9d4d76090e32e2c8f252503e6e5cee8698b2192ff5227b32968&w=996');
+} */
+
+.special-offer .item:nth-child(2) {
+    background-image: url('https://www.computervillage.com.bd/image/cache/catalog/website/banner/gaming-monitor-1260x400.jpeg.webp');
+}
+
+.special-offer .item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 62, 130, 0.14);
+}
+
+.special-offer .content {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    flex-direction: column;
+    color: transparent;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.special-offer .content h4 {
+    color: transparent;
+}
+
+
+
 
 
 
