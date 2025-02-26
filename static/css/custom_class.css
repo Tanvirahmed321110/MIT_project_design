@@ -394,6 +394,10 @@ tr {
     width: 180px;
 }
 
+.w-50 {
+    width: 200px;
+}
+
 .max-250 {
     max-width: 250px;
     width: 100%;
@@ -1082,8 +1086,50 @@ tr {
 
 /* letter space */
 .my-letter-space-1 {
-    letter-spacing: .5px;
+    letter-spacing: .4px;
 }
+
+.my-letter-space-2 {
+    letter-spacing: .8px;
+}
+
+.my-letter-space-3 {
+    letter-spacing: 1.2px;
+}
+
+/* Line Height */
+.my-line-height-1 {
+    line-height: 12px;
+}
+
+.my-line-height-2 {
+    line-height: 16px;
+}
+
+.my-line-height-3 {
+    line-height: 20px;
+}
+
+.my-line-height-4 {
+    line-height: 24px;
+}
+
+.my-line-height-5 {
+    line-height: 28px;
+}
+
+.my-line-height-6 {
+    line-height: 32px;
+}
+
+.my-line-height-7 {
+    line-height: 36px;
+}
+
+.my-line-height-8 {
+    line-height: 40px;
+}
+
 
 
 /* hover text */
@@ -1149,8 +1195,6 @@ tr {
     position: fixed;
     z-index: 5;
 }
-
-
 
 
 /*______  Flex  ______*/
@@ -1603,7 +1647,7 @@ tr {
 
     /* margin  */
     .my-mt-sm-1 {
-        margin-top: 4px !important;
+        margin-top: 4px;
     }
 
     .my-mt-sm-2 {

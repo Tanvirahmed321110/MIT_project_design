@@ -604,60 +604,6 @@ _______________________________________________________________*/
 
 
 
-/*_________________________   Left Side Image   ________________________*/
-/*______ Big Images ______*/
-.product-details-main .big-image {
-    width: 100%;
-    height: unset;
-}
-
-.product-details-main .big-image img {
-    /* height: 420px; */
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 3;
-}
-
-
-/*______  Small Images ______*/
-.product-details-main .small-images {
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: auto;
-    margin-top: 20px;
-    padding: 12px;
-}
-
-.product-details-main .small-images img {
-    cursor: pointer;
-    border-color: var(--border-color2);
-    border-radius: 4px;
-}
-
-.product-details-main .small-images img.active {
-    border-color: var(--secondary-color);
-}
-
-/* Banner */
-
-.image-area {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-}
-
-.image-area .product-banner a {
-    width: 100%;
-}
-
-.image-area .product-banner img {
-    width: 100%;
-    height: 140px;
-    border-radius: 4px;
-}
-
-
 
 /*_________________________    Right Details   ________________________*/
 .product-details-main .star i {
@@ -683,15 +629,15 @@ _______________________________________________________________*/
 .tag.instock {
     border-radius: 4px;
     position: relative;
-    background-color: var(--border-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
     font-weight: 600;
 }
 
 .product-details-main .tag.save {
-    color: var(--secondary-color);
+    color: var(--white-off) !important;
     border-radius: 4px;
-    background-color: transparent;
+    background-color: var(--primary-color) !important;
     font-weight: bold;
 }
 
@@ -726,6 +672,7 @@ _______________________________________________________________*/
 
 .quick-details ul li {
     padding-bottom: 4px;
+    font-size: calc(var(--fs-sm) + 1px);
 }
 
 
@@ -749,19 +696,20 @@ _______________________________________________________________*/
     margin: 0 auto;
     overflow-x: auto;
     margin-top: 20px;
-    padding: 12px;
+    padding: 12px 0;
     user-select: none;
 }
 
 .product-details-main .small-images img {
     cursor: pointer;
-    border-color: var(--border-color2);
+    border-color: var(--border-color);
     border-radius: 4px;
     width: 64px;
 }
 
-.product-details-main .small-images img.active {
-    border-color: var(--secondary-color);
+.product-details-main .small-images img.active,
+.product-details-main .small-images img:hover {
+    border-color: var(--primary-color);
 }
 
 
@@ -796,7 +744,8 @@ _______________________________________________________________*/
 
 .varient-items .item.active,
 .varient-items .item:hover {
-    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
 }
 
 
@@ -822,7 +771,8 @@ _______________________________*/
 
 footer {
     background-color: #000;
-    padding: 34px 0;
+    padding: 20px 0;
+    padding-top: 0;
     padding-bottom: 14px;
     color: var(--border-color2);
 }
@@ -830,7 +780,7 @@ footer {
 footer p,
 footer a {
     color: var(--border-color2);
-    opacity: .8;
+    opacity: .9;
 }
 
 .footer-title {
@@ -849,6 +799,56 @@ footer a {
     height: 2px;
     width: 120px;
     background-color: var(--white);
+}
+
+/*________________  contact-icon-wrapper  ________________*/
+.contact-icon-wrapper .my-social li a {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.contact-icon-wrapper .my-social li a:hover {
+    background-color: var(--secondary-hover);
+}
+
+.contact-icon-wrapper {
+    background-color: #180303;
+    padding: 8px 0;
+    padding-bottom: 16px;
+}
+
+/* Footer Call items */
+footer .call-items .item {
+    border: 1px solid var(--secondary-hover);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+
+
+footer .call-items .item:hover {
+    background-color: var(--secondary-color);
+}
+
+.footer-area {
+    grid-template-columns: .8fr .8fr 1fr;
+}
+
+.footer-area .contact-item {
+    /* background-color: var(--red); */
+    border: 1px solid var(--secondary-hover);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.footer-area .contact-item h5 {
+    width: 160px !important;
+}
+
+.footer-area .contact-item .my-flex-1 {
+    width: calc(100% - 172px);
 }
 
 .footer-area h5 {
@@ -1362,10 +1362,21 @@ _________________________________________*/
         font-size: 14px !important
     }
 
-    footer {
-        padding: 30px 4px;
+    .footer-area .pages {
+        align-items: flex-start;
     }
 
+
+
+    /* contact item */
+    .footer-area .contact-item {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .footer-area .contact-item .my-flex-1 {
+        width: 100%;
+    }
 
     /* Product Page or product quick view */
     .product-details-main-area,
@@ -1429,6 +1440,10 @@ _________________________________________*/
     .my-modal.shopping-cart-modal .info h6 {
         min-width: 150px;
     }
+
+    footer {
+        padding-bottom: 24px;
+    }
 }
 
 
@@ -1462,5 +1477,6 @@ _________________________________________*/
     .sku-area {
         width: 200px;
     }
+
 
 }

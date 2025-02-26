@@ -110,6 +110,7 @@ ____________________________________________*/
 }
 
 
+
 /* tab buttons */
 .orders-area-tab-buttons {
     position: relative;
@@ -147,6 +148,17 @@ ____________________________________________*/
 .tab-content.active {
     display: flex;
 }
+
+
+/*______________________________________
+____|| pre-order-area  Page Start  ||____
+________________________________________*/
+.pre-order-area iframe {
+    width: 100%;
+    height: 300px;
+}
+
+
 
 /*______________________________________
 ____||  All Cateogry  Page Start  ||____
@@ -564,6 +576,14 @@ ________________________________________________*/
 
     .orders-area-tab-buttons {
         margin-top: 40px;
+    }
+
+    .pre-order-area .common-form {
+        padding: 12px;
+    }
+
+    .pre-order-left {
+        padding: 12px;
     }
 }
 

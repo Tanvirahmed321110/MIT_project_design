@@ -57,6 +57,7 @@ _____________________________________________________*/
 
 .p-specifications .value {
     font-weight: 600;
+    width: 75%;
 }
 
 .p-specifications .value div {
@@ -65,6 +66,7 @@ _____________________________________________________*/
 
 .p-specifications .key {
     font-size: 14px;
+    width: 25%;
 }
 
 .p-specifications ul li {
@@ -239,9 +241,13 @@ _____________________________________________________*/
         flex-direction: column;
     }
 
-    .right-similar-products .my-card img,
-    .related-products .my-card img {
-        width: 50%;
+
+    .p-specifications .value {
+        width: 70%;
+    }
+
+    .p-specifications .key {
+        width: 30%;
     }
 }
 

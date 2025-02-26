@@ -31,6 +31,10 @@
 /*_____________________________________
   ____||   Shop Body Start Here  ||____
 ______________________________________*/
+.shop-body {
+    background-color: var(--border-color);
+}
+
 .shop-body-area {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -75,6 +79,14 @@ ______________________________________*/
     border-radius: 6px;
 }
 
+.shop-content .product-cart-area.my-card .disk {
+    padding: 14px;
+}
+
+.shop-content .product-cart-area.my-card .disk li {
+    color: rgb(78, 78, 78);
+
+}
 
 /*____  show desc ____*/
 .shop-content .product-cart .show-desc {
@@ -181,6 +193,10 @@ ______________________________________*/
 
 
 /* Products */
+.products .product-cart-area {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 .products {
     display: none;
 }
@@ -217,8 +233,12 @@ ______________________________________*/
     margin-top: 8px !important;
 }
 
+.list-view .product-content {
+    border-top: none;
+}
+
 .list-view .base {
-    background-color: var(--red);
+    background-color: var(--primary-color);
     padding: 4px 8px;
     border-radius: 0;
     border-top-left-radius: 12px;
