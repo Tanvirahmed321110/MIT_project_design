@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pre_order_Page</title>
+        <title>Service_Request_Page</title>
 
         <!--  common css -->
         <link rel="stylesheet" href="../static/css/common.css">
@@ -958,7 +958,7 @@
                     <ul class="my-d-flex my-mt-2 my-align-center my-gap-5   brigtcamp-area contact-page">
                         <li><a href="../index.html">Home</a> </li>
                         <li>
-                            <h6>Pre_Order</h6>
+                            <h6>Service_Request</h6>
                         </li>
                     </ul>
                 </div>
@@ -973,82 +973,53 @@
             <!-- ======================================================= -->
             <section>
                 <div class="my-container">
-                    <div class="pre-order-area my-justify-center my-grid-2 my-grid-md-1  my-gap-4">
+                    <div class="pre-order-area ">
 
-                        <!-- Pre order Left -->
-                        <div
-                            class="pre-order-left my-bg-white my-p-5 my-radius-md my-justify-start my-w-100 my-flex-column  my-text-center">
-                            <h1 class="my-fs-xxl my-text-primary my-line-height-8">
-                                Looking For Something Different ??
-                            </h1>
-                            <p class="my-fs-lg my-mt-sm-2">Put Your Information in The Box...</p>
-
-                            <!-- Pre order video -->
-                            <div class="my-mt-10 my-w-100">
-                                <h3 class="my-text-center ">How to Pre-Order</h3>
-                                <div class="my-mt-2 my-w-100 ">
-                                    <div class="my-w-100 video-wraper ">
-                                        <iframe class="" frameborder="0" style="border:0" loading="eager"
-                                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share"
-                                            title="YouTube video player"
-                                            src="https://www.youtube.com/embed/7fkif715igA?autoplay=0&amp;mute=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;controls=1&amp;color=white&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1&amp;&amp;version=3&amp;theme=light&amp;autohide=1&amp;egm=0&amp;showsearch=0&amp;loop=1"
-                                            data-gtm-yt-inspected-10="true"></iframe>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="my-text-center my-mt-5">
+                            <h1 class="my-fs-xxl my-line-height-8 my-text-primary">Contact With Us</h1>
+                            <p class="my-fs-md">Have an enquiry or need a quote? Our specialists can help.</p>
+                            </p>
                         </div>
 
 
-
                         <!-- Form area -->
-                        <div class="my-p-5 my-radius-md my-mt-8 common-form">
-                            <form action="#" class="my-flex-column my-gap-2">
-                                <div class="my-input-control">
-                                    <div><label for="product-info" class="my-fw-bold my-fs-4">Product
-                                            Information</label></div>
-                                    <input id="product-info" class="my-mt-2" type="text"
-                                        placeholder="Product Name or URL">
-                                </div>
+                        <div class="my-mt-10">
+                            <div class="my-p-5 my-radius-md my-mt-8 common-form complain">
+                                <form action="#" class="my-flex-column my-gap-2">
+                                    <div class="my-grid-2 my-gap-4">
+                                        <div class="my-input-control">
+                                            <div><label for="name" class="my-fw-bold my-fs-4">Name</label></div>
+                                            <input id="name" class="my-mt-2" type="text" placeholder="Your Name">
+                                        </div>
 
-                                <div class="my-input-control">
-                                    <div><label for="product-image" class="my-fs-4">Insert Image</label></div>
-                                    <input id="product-image" class="my-mt-2" type="file">
-                                </div>
-
-                                <div class="my-input-control">
-                                    <div><label for="user-name" class="my-fs-4">Name</label></div>
-                                    <input id="user-name" class="my-mt-2" type="text" placeholder="Name">
-                                </div>
-
-                                <!-- Name and email -->
-                                <div class="my-grid-2 my-gap-5 my-grid-sm-1">
-                                    <div class="my-input-control">
-                                        <div><label for="phone" class="my-fs-4">Phone</label></div>
-                                        <input id="phone" class="my-mt-2" type="text" placeholder="Phone">
+                                        <div class="my-input-control">
+                                            <div><label for="phone" class="my-fw-bold my-fs-4">Phone</label></div>
+                                            <input id="phone" class="my-mt-2" type="number"
+                                                placeholder="Your Phone Number">
+                                        </div>
                                     </div>
 
                                     <div class="my-input-control">
                                         <div><label for="email" class="my-fs-4">Email</label></div>
-                                        <input id="email" class="my-mt-2" type="text" placeholder="Email">
+                                        <input id="email" class="my-mt-2" type="email" placeholder="Your Email">
                                     </div>
-                                </div>
 
-                                <!-- Address -->
-                                <div class="my-input-control">
-                                    <div><label for="address" class="my-fs-4">Address</label></div>
-                                    <textarea id="address" class="my-mt-2" placeholder="Address"></textarea>
-                                </div>
+                                    <div class="my-input-control">
+                                        <div><label for="product-model" class="my-fs-4">Product Model</label></div>
+                                        <input id="product-model" class="my-mt-2" type="text"
+                                            placeholder="Product Model">
+                                    </div>
 
-                                <div class="my-d-flex my-align-center my-gap-2">
-                                    <input id="pre-checkbox" type="checkbox">
-                                    <label for="pre-checkbox" class="checkbox-label">
-                                        I hereby accept the terms and conditions of pre-order and read the pre-order
-                                        terms and conditions carefully.
-                                    </label>
-                                </div>
+                                    <!-- Address -->
+                                    <div class="my-input-control">
+                                        <div><label for="details" class="my-fs-4">Details</label></div>
+                                        <textarea id="details" class="my-mt-2"
+                                            placeholder="Write details here..."></textarea>
+                                    </div>
 
-                                <button class="my-btn my-primary-btn my-fs-md">Submit</button>
-                            </form>
+                                    <button class="my-btn my-primary-btn my-fs-md">Submit</button>
+                                </form>
+                            </div>
                         </div>
 
                     </div>

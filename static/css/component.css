@@ -2455,6 +2455,7 @@ ______________________________________*/
 .common-form label {
     font-weight: 500;
     font-size: var(--fs-lg);
+    cursor: pointer;
 }
 
 .common-form input,

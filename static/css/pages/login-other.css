@@ -150,6 +150,108 @@ ____________________________________________*/
 }
 
 
+
+/*______________________________________
+____|| pre-order-area  Page Start  ||____
+________________________________________*/
+
+.happy-clients .happy-client-item {
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.happy-clients .happy-client-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(137, 43, 226, 0.197);
+}
+
+.my-modal-new {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.my-modal-new.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-modal-content {
+    position: relative;
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    min-height: 80dvh;
+}
+
+.image-modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    border-radius: 8px;
+}
+
+.modal-close-btn {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--red);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.modal-close-btn i {
+    font-size: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
 /*______________________________________
 ____|| pre-order-area  Page Start  ||____
 ________________________________________*/
@@ -158,7 +260,10 @@ ________________________________________*/
     height: 300px;
 }
 
-
+.pre-order-area .video-wraper {
+    padding: 4px;
+    border: 1px solid var(--border-color);
+}
 
 /*______________________________________
 ____||  All Cateogry  Page Start  ||____
