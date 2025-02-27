@@ -73,7 +73,7 @@
                     <div class="my-flex-between ">
                         <!-- logo -->
                         <a href="../index.html">
-                            <img class="w-30" src="./static/images/logo.png" alt="">
+                            <img class="w-30" src="../static/images/logo.png" alt="">
                         </a>
 
                         <div class="my-d-flex my-align-center my-gap-1 my-text-white">
@@ -958,7 +958,7 @@
                     <ul class="my-d-flex my-mt-2 my-align-center my-gap-5   brigtcamp-area contact-page">
                         <li><a href="../index.html">Home</a> </li>
                         <li>
-                            <h6>Pre_Order</h6>
+                            <h6>Partner Registaion</h6>
                         </li>
                     </ul>
                 </div>
@@ -975,53 +975,167 @@
                 <div class="my-container">
                     <div class="pre-order-area ">
 
-                        <div class="my-text-center my-mt-5">
-                            <h1 class="my-fs-xxl my-line-height-8 my-text-primary">Complain - MIT</h1>
-                            <p class="my-fs-md">Please fill out the following form with details</p>
-                            <p class="my-fs-md">We will review your request and follow up with you as soon as possible.
-                            </p>
+                        <div class="my-text-center my-mt-2">
+                            <h1 class="my-fs-xxl my-line-height-8 my-text-primary"> Partner Registration Form</h1>
+                            <p class="my-fs-md">“To Be Filled By The Dealer/Corporate/ISP Partner”</p>
                         </div>
 
 
                         <!-- Form area -->
-                        <div class="my-mt-10">
+                        <div class="my-mt-7">
                             <div class="my-p-5 my-radius-md my-mt-8 common-form complain">
                                 <form action="#" class="my-flex-column my-gap-2">
-                                    <div class="my-grid-2 my-gap-4">
+
+                                    <!-- Company Name -->
+                                    <div class="my-input-control">
+                                        <div>
+                                            <label for="company-name" class="my-fw-bold my-fs-4">Company Name</label>
+                                        </div>
+                                        <input id="company-name" class="my-mt-2" type="text" placeholder="Company Name">
+                                    </div>
+
+                                    <!-- Address -->
+                                    <div class="my-input-control">
+                                        <div>
+                                            <label for="full-address" class="my-fw-bold my-fs-4">Full Address</label>
+                                        </div>
+                                        <input id="full-address" class="my-mt-2" type="text" placeholder="Full Address">
+                                    </div>
+
+                                    <!-- Proprietor Name and Country -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
                                         <div class="my-input-control">
-                                            <div><label for="user-name" class="my-fw-bold my-fs-4">Name</label></div>
-                                            <input id="user-name" class="my-mt-2" type="text" placeholder="Your Name">
+                                            <div><label for="proprietor-name" class="my-fs-4">Proprietor Name</label>
+                                            </div>
+                                            <input id="proprietor-name" class="my-mt-2" type="text"
+                                                placeholder="Proprietor Name">
+                                        </div>
+                                        <div class="my-input-control">
+                                            <div><label for="country" class="my-fs-4">Country</label></div>
+                                            <input id="country" class="my-mt-2" type="text" placeholder="Country">
+                                        </div>
+                                    </div>
+
+                                    <!-- Location and Currency -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
+                                        <div class="my-input-control">
+                                            <div><label for="location" class="my-fs-4">Location</label></div>
+                                            <input id="location" class="my-mt-2" type="text" placeholder="Location">
+                                        </div>
+                                        <div class="my-input-control">
+                                            <div><label for="currency" class="my-fs-4">Currency</label></div>
+                                            <input id="currency" class="my-mt-2" type="text" placeholder="Currency">
+                                        </div>
+                                    </div>
+                                    <!-- Post Code and VAT -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
+                                        <div class="my-input-control">
+                                            <div><label for="vat-no" class="my-fs-4">VAT No</label></div>
+                                            <input id="vat-no" class="my-mt-2" type="text" placeholder="VAT No">
                                         </div>
 
                                         <div class="my-input-control">
-                                            <div><label for="phone" class="my-fw-bold my-fs-4">Phone</label></div>
-                                            <input id="phone" class="my-mt-2" type="text"
-                                                placeholder="Your Phone Number">
+                                            <div><label for="currency" class="my-fs-4">Currency</label></div>
+                                            <input id="currency" class="my-mt-2" type="text" placeholder="Currency">
                                         </div>
                                     </div>
 
-                                    <div class="my-input-control">
-                                        <div><label for="email" class="my-fs-4">Email</label></div>
-                                        <input id="email" class="my-mt-2" type="email" placeholder="Your Email">
+                                    <!-- District and TIN No -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
+                                        <div class="my-input-control">
+                                            <div><label for="district" class="my-fs-4">District</label></div>
+                                            <input id="district" class="my-mt-2" type="text" placeholder="District">
+                                        </div>
+
+                                        <div class="my-input-control">
+                                            <div><label for="tin-no" class="my-fs-4">TIN No</label></div>
+                                            <input id="tin-no" class="my-mt-2" type="text" placeholder="TIN No">
+                                        </div>
                                     </div>
 
-                                    <div class="my-input-control">
-                                        <div><label for="subject" class="my-fs-4">Subject</label></div>
-                                        <input id="subject" class="my-mt-2" type="text" placeholder="Subject">
+                                    <!-- Thana and Phone No -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
+                                        <div class="my-input-control">
+                                            <div><label for="thana" class="my-fs-4">Thana</label></div>
+                                            <input id="thana" class="my-mt-2" type="text" placeholder="Thana">
+                                        </div>
+
+                                        <div class="my-input-control">
+                                            <div><label for="phone-no" class="my-fs-4">Phone No</label></div>
+                                            <input id="phone-no" class="my-mt-2" type="text" placeholder="Phone No">
+                                        </div>
                                     </div>
 
-                                    <!-- Details -->
-                                    <div class="my-input-control">
-                                        <div><label for="details" class="my-fs-4">Details</label></div>
-                                        <textarea id="details" class="my-mt-2"
-                                            placeholder="Write details here..."></textarea>
+                                    <!-- Contact and Fax No -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
+                                        <div class="my-input-control">
+                                            <div><label for="contact-personal" class="my-fs-4">Contact Person</label>
+                                            </div>
+                                            <input id="contact-personal" class="my-mt-2" type="text"
+                                                placeholder="Personal Phone">
+                                        </div>
+
+                                        <div class="my-input-control">
+                                            <div><label for="fax-no" class="my-fs-4">Fax No</label></div>
+                                            <input id="fax-no" class="my-mt-2" type="text" placeholder="Fax Number">
+                                        </div>
+                                    </div>
+
+                                    <!-- Account and Email -->
+                                    <div class="my-grid-2 my-gap-4 my-grid-sm-1">
+                                        <div class="my-input-control">
+                                            <div><label for="account-contact" class="my-fs-4">Account Contact</label>
+                                            </div>
+                                            <input id="account-contact" class="my-mt-2" type="text"
+                                                placeholder="Account Contact">
+                                        </div>
+
+                                        <div class="my-input-control">
+                                            <div><label for="email" class="my-fs-4">Email</label></div>
+                                            <input id="email" class="my-mt-2" type="email" placeholder="Email">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="">
+                                        <p class="my-text-red my-my-4">
+                                            Note: N ID, Update Trade License, VAT,TIN and Bank Solvency Certificate, PP
+                                            Size
+                                            Photo Two Copy need to attach.
+                                        </p>
+
+                                        <h3 class="my-text-center my-bg-secondary my-text-white">
+                                            “Additional Bank Details”
+                                        </h3>
+
+                                        <!-- Bank Name -->
+                                        <div class="my-input-control">
+                                            <div><label for="bank-name" class="my-fs-4">Bank Name</label></div>
+                                            <input id="bank-name" class="my-mt-2" type="text" placeholder="Bank Name">
+                                        </div>
+
+                                        <!-- Bank Address -->
+                                        <div class="my-input-control">
+                                            <div><label for="bank-address" class="my-fs-4">Bank Address</label></div>
+                                            <input id="bank-address" class="my-mt-2" type="text"
+                                                placeholder="Bank Address">
+                                        </div>
+
+                                        <!-- Bank Account -->
+                                        <div class="my-input-control">
+                                            <div><label for="bank-account" class="my-fs-4">Bank Account</label></div>
+                                            <input id="bank-account" class="my-mt-2" type="number"
+                                                placeholder="Bank Account">
+                                        </div>
+
+
                                     </div>
 
                                     <button class="my-btn my-primary-btn my-fs-md">Submit</button>
                                 </form>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </section>
