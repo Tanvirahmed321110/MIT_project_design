@@ -214,7 +214,7 @@ ________________________________________*/
     border-radius: 8px;
 }
 
-.modal-close-btn {
+.my-modal-new .modal-close-btn {
     width: 45px;
     height: 45px;
     position: absolute;
@@ -227,7 +227,7 @@ ________________________________________*/
     color: var(--white);
 }
 
-.modal-close-btn i {
+.my-modal-new .modal-close-btn i {
     font-size: 20px;
 }
 
@@ -530,10 +530,10 @@ ____||  Our Team  Page Start  ||____
 ___________________________________*/
 .management .my-card {
     width: 100%;
-    max-width: 440px;
-    height: 580px;
+    max-width: 360px;
+    height: 560px;
     perspective: 1000px;
-    padding: 24px;
+    /* padding: 20px; */
 }
 
 .management .card-inner {
@@ -564,39 +564,56 @@ ___________________________________*/
 }
 
 .card-front {
-    background: #f4f4f4;
+    background: var(--secondary-color);
+    border-radius: 0px;
+}
+
+.card-front .font-name {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: var(--fs-xl);
+    /* text-transform: uppercase; */
+    font-weight: var(--fw-600);
+}
+
+.card-front .post {
+    color: var(--gray2);
 }
 
 .management .card-front img {
-    max-height: 400px;
+    max-height: 360px;
     width: 100%;
+    min-width: 280px;
     margin: 12px auto;
-    border-radius: 4px;
+    padding: 0px;
+    border: 6px solid rgb(39, 39, 55);
 }
 
 .management .content {
     margin-top: 16px;
 }
 
+.management .content p {
+    color: var(--gray);
+}
+
 .card-back {
-    background: #1a1a1a;
+    background: var(--secondary-hover);
     color: #fff;
     transform: rotateY(180deg);
     padding: 20px;
     text-align: center;
 }
 
-.management .social {
-    background-color: gainsboro;
+
+.payment-methods-items .item {
+    color: var(--primary-color);
+    font-size: var(--fs-md);
+    padding: 12px 16px;
+    background-color: transparent;
+    border: 1px solid var(--border-color2);
 }
 
-.management .social ul li a i {
-    font-size: 22px;
-}
-
-.management .social ul li a {
-    background-color: red;
-}
 
 
 
