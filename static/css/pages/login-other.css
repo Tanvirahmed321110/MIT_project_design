@@ -260,6 +260,72 @@ ________________________________________*/
 
 
 
+
+
+
+
+/*__________________________________________
+____||   Emi information  Page Start  ||____
+___________________________________________*/
+.emi-area .question {
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    transition: .3s linear;
+    user-select: none;
+}
+
+.emi-area .question.active {
+    background-color: var(--secondary-hover);
+}
+
+.emi-area .question:hover {
+    background-color: var(--secondary-hover);
+}
+
+.emi-area .ans {
+    padding: 0 12px;
+    border-top: 1px solid var(--border-color);
+    height: 0;
+    overflow: hidden;
+    transition: .3s linear
+}
+
+.emi-area .ans.active {
+    height: 64px;
+    padding: 12px;
+}
+
+.accoudian-item .icon {
+    width: 40px !important;
+}
+
+.icon i {
+    transition: transform 0.3s linear;
+    font-size: var(--fs-md);
+}
+
+.question.active .icon i {
+    transform: rotate(180deg);
+}
+
+
+.question.active .icon i {
+    transform: rotate(180deg);
+}
+
+.emi-area .accoudian-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+
+
 /*______________________________________
 ____|| pre-order-area  Page Start  ||____
 ________________________________________*/
@@ -272,6 +338,12 @@ ________________________________________*/
     padding: 4px;
     border: 1px solid var(--border-color);
 }
+
+
+
+
+
+
 
 /*______________________________________
 ____||  All Cateogry  Page Start  ||____
@@ -315,6 +387,11 @@ ________________________________________*/
     justify-content: center;
     color: var(--white)
 }
+
+
+
+
+
 
 
 /*_________________________________________
@@ -817,6 +894,17 @@ ________________________________________________*/
 
     .orders-area .order-item-top {
         padding: 20px;
+    }
+
+    .emi-area .ans.active {
+        height: 126px;
+        padding: 12px;
+    }
+
+    .ans .my-flex-between {
+        row-gap: 20px;
+        gap: 20px;
+        justify-content: flex-start;
     }
 }
 

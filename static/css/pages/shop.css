@@ -118,6 +118,8 @@ ______________________________________*/
 .sidebar-area .item {
     padding: 24px 12px;
     background-color: var(--white);
+    border-radius: 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .shop-body-area .item-content {

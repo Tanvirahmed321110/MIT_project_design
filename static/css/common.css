@@ -9,7 +9,7 @@ _______________________________*/
 .header-top {
     padding: 0;
     color: var(--border-color);
-    background-color: rgb(177, 22, 22);
+    background-color: rgb(110 12 12);
 }
 
 .header-top .my-container {
