@@ -190,6 +190,11 @@ tr {
 }
 
 
+::selection {
+    background-color: var(--secondary-color);
+    color: var(--red);
+}
+
 
 
 
