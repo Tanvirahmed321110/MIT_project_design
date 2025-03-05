@@ -1178,7 +1178,7 @@ input[type="radio"]:checked::after {
 
 .product-cart .base.save {
     top: 10px;
-    left: 0px;
+    left: 10px;
     right: unset;
     padding: 4px 10px;
     font-weight: 500;
@@ -1187,8 +1187,8 @@ input[type="radio"]:checked::after {
     background-color: var(--before);
     border-radius: 0px;
     color: var(--white);
-    border-top-right-radius: 15px;
     letter-spacing: .4px;
+    width: 90%;
 }
 
 .product-cart .name h5 {
@@ -1202,6 +1202,7 @@ input[type="radio"]:checked::after {
 .product-cart .base.earn-point {
     top: 36px;
     padding: 4px 8px;
+    width: fit-content;
 }
 
 /* instock */
@@ -1230,7 +1231,7 @@ input[type="radio"]:checked::after {
 .product-cart .show-desc {
     position: absolute;
     background-color: rgba(45, 45, 53, 0.83);
-    top: -150%;
+    bottom: 40px;
     left: 0;
     border-radius: 4px;
     z-index: 8;
@@ -1240,14 +1241,15 @@ input[type="radio"]:checked::after {
     visibility: none;
     opacity: 0;
     z-index: -1;
+    height: fit-content;
 }
 
 .product-cart .desc:hover .show-desc {
     opacity: 1;
     visibility: visible;
-    top: -166%;
+    bottom: 75px;
     z-index: 8;
-    display: none;
+    display: block;
 }
 
 
@@ -1255,7 +1257,7 @@ input[type="radio"]:checked::after {
 .product-cart .show-desc::after {
     content: '';
     position: absolute;
-    bottom: -20px;
+    bottom: -19px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
@@ -1467,7 +1469,7 @@ input[type="radio"]:checked::after {
     z-index: 6;
     padding: 10px;
     transition: 1s ease-in-out;
-    background-color: var(--before);
+    background-color: gainsboro;
     top: 70%;
     transform: translateY(-70%);
     height: fit-content;

@@ -1,5 +1,7 @@
+/* Brigtcamp */
 .brigtcamp {
     background-color: var(--white);
+    padding-top: 8px;
 }
 
 .brigtcamp .brigtcamp-area {
@@ -194,7 +196,7 @@ ______________________________________*/
 
 
 
-/* Products */
+/*_____  Products  ______*/
 .products .product-cart-area {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
