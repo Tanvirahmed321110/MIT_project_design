@@ -775,6 +775,7 @@ footer {
     padding-top: 0;
     padding-bottom: 14px;
     color: var(--border-color2);
+    padding-bottom: 0;
 }
 
 .footer-bg {
@@ -850,12 +851,14 @@ footer .call-items .item {
     border: 1px solid var(--secondary-hover);
     border-radius: 6px;
     padding: 12px;
+    transition: .2s linear;
 }
 
 
 
 footer .call-items .item:hover {
     background-color: var(--secondary-color);
+    border-color: var(--primary-color);
 }
 
 .footer-area {
@@ -867,6 +870,10 @@ footer .call-items .item:hover {
     border: 1px solid var(--secondary-hover);
     padding: 12px;
     border-radius: 8px;
+}
+
+.footer-area .contact-item:hover {
+    border-color: var(--primary-color);
 }
 
 .footer-area .contact-item h5 {
@@ -886,50 +893,41 @@ footer .pages i {
     transition: .2s linear;
 }
 
+footer .pages a {
+    padding: 6px 0;
+}
+
 footer .pages a:hover {
     opacity: unset;
+    color: var(--primary-color);
 }
 
 footer .pages a:hover i {
     transform: translateX(4px);
 }
 
-.footer-bottom {
-    border-color: var(--gray);
-}
-
-.footer-bottom ul a {
-    font-size: 13px;
-}
-
-.footer-bottom ul a:hover {
-    color: var(--orange);
-}
 
 footer .my-social li a {
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
-}
-
-footer .my-social li a:hover {
-    background-color: var(--red);
-}
-
-footer .my-social li a i {
-    color: var(--white);
-    font-size: var(--fs-lg);
+    transition: .3s linear;
 }
 
 
+.footer-last {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid var(--secondary-hover);
+}
 
 
 
 
 
-/**********************************
+/*************************************
 ****   Shopping Cart Start Here   ****
-***********************************/
+**************************************/
 .my-modal.shopping-cart-modal {
     justify-content: end;
     right: 0%;
