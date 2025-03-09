@@ -1178,7 +1178,7 @@ input[type="radio"]:checked::after {
 
 .product-cart .base.save {
     top: 10px;
-    left: 10px;
+    left: 0px;
     right: unset;
     padding: 4px 10px;
     font-weight: 500;
@@ -1189,6 +1189,7 @@ input[type="radio"]:checked::after {
     color: var(--white);
     letter-spacing: .4px;
     width: 90%;
+    border-top-right-radius: 16px;
 }
 
 .product-cart .name h5 {

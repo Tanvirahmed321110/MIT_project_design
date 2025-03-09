@@ -1,6 +1,8 @@
 /*_____________   compare product   _____________ */
 .compare-product {
     border: 1px solid var(--border-color2);
+    min-width: 240px;
+    flex: 1;
 }
 
 .compare-product img {
@@ -12,7 +14,7 @@
 
 /* Top */
 .compare-product .top {
-    height: 400px;
+    height: 460px;
     padding: 16px 24px;
 }
 

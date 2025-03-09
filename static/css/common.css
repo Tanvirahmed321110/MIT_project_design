@@ -16,9 +16,15 @@ _______________________________*/
     padding: 10px 16px;
 }
 
+.header-top .left p {
+    font-size: 13px;
+    letter-spacing: .4px;
+}
+
 .header-top ul li a {
     padding: 2px 0;
     color: var(--border-color);
+    font-size: 13px;
 }
 
 .header-top ul li a:hover {
@@ -572,6 +578,18 @@ header .my-tooltip .show-text::after {
 
 
 
+/*___________________________________
+  _____||  Page Reload  Modal  ||____
+___________________________________*/
+.page-reload-modal .modal-content {
+    padding: 0;
+}
+
+.page-reload-modal .modal-content .modal-close-btn {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
 
 
 
@@ -792,7 +810,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000c5;
+    background-color: #000000a3;
     z-index: 1;
 }
 

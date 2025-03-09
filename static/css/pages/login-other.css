@@ -328,6 +328,26 @@ ___________________________________________*/
     font-size: var(--fs-md);
 }
 
+
+
+
+
+.servicing-area .my-card {
+    padding: 0px;
+    transition: .3s linear;
+}
+
+.servicing-area .my-card:hover {
+    transform: translateY(6px);
+}
+
+
+
+
+
+
+
+
 /*______________________________________
 ____|| pre-order-area  Page Start  ||____
 ________________________________________*/
@@ -341,9 +361,22 @@ ________________________________________*/
     border: 1px solid var(--border-color);
 }
 
+.common-form input[type="checkbox"] {
+    background-color: transparent;
+}
+
+.pre-order-area .pre-checkbox {
+    background-color: var(--white) !important;
+}
+
+.pre-order-area input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+}
 
 
-
+.pre-order-area input[type="checkbox"]:checked::after {
+    color: var(--white);
+}
 
 
 

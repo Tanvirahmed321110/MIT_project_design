@@ -4,12 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Compare_Page</title>
-
+        <title>MIT Care</title>
         <!--  common css -->
         <link rel="stylesheet" href="../static/css/common.css">
         <!-- home page css -->
-        <link rel="stylesheet" href="../static/css/pages/compare.css">
+        <link rel="stylesheet" href="../static/css/pages/login-other.css">
     </head>
 
     <body>
@@ -1056,10 +1055,12 @@
             <!-- ==========    brigtcamp Section  Start  Here   ======== -->
             <!-- ======================================================= -->
             <section class="brigtcamp">
-                <div class="my-container my-pb-0">
-                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5   brigtcamp-area contact-page">
+                <div class="my-container my-pb-0 ">
+                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5 brigtcamp-area  contact-page">
                         <li><a href="../index.html">Home</a> </li>
-                        <li>Product Comparison</li>
+                        <li>
+                            <h6>Servicing</h6>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -1070,312 +1071,247 @@
 
 
 
-
-            <!-- ===================================================== -->
-            <!-- ==========    Compare Section  Start  Here   ======== -->
-            <!-- ===================================================== -->
-            <section class="compare">
+            <!-- ======================================================= -->
+            <!-- ==========    Servicing  Section  Start  Here   ======== -->
+            <!-- ======================================================== -->
+            <section>
                 <div class="my-container">
-                    <div class="compare-area">
+                    <div class="servicing-area">
+                        <div class="servicing-banner">
+                            <div>
+                                <img class="my-radius-md"
+                                    src="https://service.startech.com.bd/image/cache/catalog/slider/desktop/laptop-service-desktop-banner-1290x500.webp"
+                                    alt="">
+                            </div>
+                        </div>
 
-                        <div class="my-bg-white my-p-4 my-mt-0 my-radius-sm">
+                        <!-- Servicing Category -->
+                        <div class="service-category my-mt-6 ">
+                            <ul class="my-flex-center my-gap-5 my-fs-lg">
+                                <li>Laptop</li>
+                                <li>CC Camara</li>
+                                <li>Drone</li>
+                                <li>Gaming Console</li>
+                                <li>Speaker</li>
+                                <li>Headphone</li>
+                            </ul>
+                        </div>
 
-                            <div class="head my-flex-between">
-                                <h1 class="my-fs-xl">Product Comparison</h1>
-                                <div class="my-d-flex my-gap-2">
-                                    <button class="my-btn my-primary-btn my-btn-sm my-gap-2"
-                                        onclick="window.print()">Print <i class="fa-solid fa-print"></i></button>
-                                    <button class="my-btn my-primary-btn my-btn-sm my-gap-2">PDF <i
-                                            class="fa-solid fa-download"></i></button>
-                                    <button class="my-btn my-primary-btn my-btn-sm my-gap-2">Mail <i
-                                            class="fa-solid fa-envelope"></i></button>
+                        <div class="servicing-items my-grid-4 my-gap-4 my-mt-6">
+
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/laptop-794x564.jpg"
+                                    alt="">
+
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">Laptop Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/tv-794x564.jpg"
+                                    alt="">
 
-                            <!-- Compare Products -->
-                            <div class="compare-products my-d-flex  flex-wrap my-mt-4 ">
-
-                                <div class="default compare-product">
-
-                                    <!-- _____ Top ______ -->
-                                    <div class="top my-flex-center">
-                                        <div class=" my-text-center">
-                                            <div class="my-flex-center my-gap-2">
-                                                <button class="my-btn my-btn-outline delete-all-btn my-btn-sm">Clear
-                                                    ALl</button>
-                                            </div>
-                                            <div class="my-mt-4">
-                                                <h4>Product Comparison</h4>
-                                                <p>You Can add Maximum 3 Products </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- _____ Desc _____ -->
-                                    <div class="desc">
-                                        <ul>
-                                            <li>Brand</li>
-                                            <li>Model</li>
-                                            <li>Shape</li>
-                                            <li>Design</li>
-                                            <li>Display Type</li>
-                                            <li>Borderless</li>
-                                            <li>Touch Screen</li>
-                                            <li>Display Resolution</li>
-                                            <li>Refresh Rate (Hz)</li>
-                                            <li>Response Time (ms)</li>
-                                            <li>Horizontal Viewing Angle</li>
-                                            <li>Vertical Viewing Angle</li>
-                                            <li>Speaker (Built-in)</li>
-                                            <li>Rotatable</li>
-                                            <li>Color</li>
-                                            <li>Weight (Kg)</li>
-                                            <li>Warranty Details</li>
-                                            <li>Laptop Series</li>
-                                            <li>Processor Brand</li>
-                                            <li>Generation</li>
-                                            <li>Processor Model</li>
-                                            <li>NPU</li>
-                                            <li>RAM</li>
-                                            <li>RAM Type</li>
-                                            <li>Hard Disk Drive (HDD)</li>
-                                            <li>Solid-State Drive (SSD)</li>
-                                            <li>Optical Drive</li>
-                                            <li>Graphics Chipset</li>
-                                            <li>Graphics Memory</li>
-                                            <li>WiFi</li>
-                                            <li>Bluetooth</li>
-                                            <li>Keyboard Back-lit</li>
-                                            <li>Finger Print Sensor</li>
-                                            <li>Operating System</li>
-                                            <li>Warranty Claim Duration (Approximate)</li>
-                                            <li>Form Factor</li>
-                                            <li>CPU Cache</li>
-                                            <li>Monitor</li>
-                                            <li>Keyboard</li>
-                                            <li>Mouse</li>
-                                            <li>Power Supply</li>
-                                            <li>Weight</li>
-                                            <li>Body Color</li>
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">TV Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
                                         </ul>
                                     </div>
-                                </div>
 
-                                <!-- Single Compare Product -->
-                                <div class="compare-product">
-
-                                    <!-- _____ Top _____ -->
-                                    <div class="top">
-
-                                        <!-- Delete Button -->
-                                        <div class="my-text-right">
-                                            <button class="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                        </div>
-
-                                        <div class="">
-                                            <!-- img -->
-                                            <img src="../static/images/new-porduct (3).webp" alt="">
-
-                                            <div class="my-text-center my-mt-2">
-                                                <!-- Title -->
-                                                <h6>
-                                                    <a href="../pages/product.html">M3 Pro 18GB RAM, 512GB SSD 16.2 Inch
-                                                        Liquid Retina XDR Display Space Black Laptop
-                                                    </a>
-                                                </h6>
-
-                                                <p class="my-mt-1">SKU: <span>2321Hk21321</span></p>
-
-                                                <!-- Price -->
-                                                <div class="price my-mt-4 my-text-center">
-                                                    <h5 class="my-text-gray my-fw-medium">Regular Price:
-                                                        <span>TK33540</span>
-                                                    </h5>
-                                                    <h4 class="my-mt-1">Special Price: <span>TK31540</span></h4>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
                                     </div>
+                                </div>
+                            </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/monitor-794x564.jpg"
+                                    alt="">
 
-
-                                    <!-- _____ Desc _____ -->
-                                    <div class="desc">
-                                        <ul>
-                                            <li>Dahua</li>
-                                            <li>Dahua DHI-LM27-E230C</li>
-                                            <li>Gaming</li>
-                                            <li>Widescreen</li>
-                                            <li>3-sided frameless</li>
-                                            <li>27</li>
-                                            <li>FHD LED Display</li>
-                                            <li>Yes</li>
-                                            <li>No</li>
-                                            <li>1920x1080</li>
-                                            <li>180Hz</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>No</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>180Hz</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>No</li>
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">Monitor Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
                                         </ul>
                                     </div>
-                                </div>
 
-                                <!-- Single Compare Product -->
-                                <div class="compare-product">
-
-                                    <!-- _____ Top _____ -->
-                                    <div class="top">
-
-                                        <!-- Delete Button -->
-                                        <div class="my-text-right">
-                                            <button class="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                        </div>
-
-                                        <div class="">
-                                            <!-- img -->
-                                            <img src="../static/images/new-porduct (5).webp" alt="">
-
-                                            <div class="my-text-center my-mt-2">
-                                                <!-- Title -->
-                                                <h6>
-                                                    <a href="../pages/product.html">
-                                                        AMD Ryzen 5 8500G Processor with Radeon Graphics 3 Years
-                                                        Warranty
-                                                        (No
-                                                        Warranty for Fan or Cooler)
-                                                    </a>
-                                                </h6>
-
-                                                <p class="my-mt-1">SKU: <span>2321Hk21321</span></p>
-
-                                                <!-- Price -->
-                                                <div class="price my-mt-4 my-text-center">
-                                                    <h5 class="my-text-gray my-fw-medium">Regular Price:
-                                                        <span>TK33540</span>
-                                                    </h5>
-                                                    <h4 class=" my-mt-1">Special Price: <span>TK31540</span></h4>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
                                     </div>
+                                </div>
+                            </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/desktop-794x564.jpg"
+                                    alt="">
 
-
-                                    <!-- _____ Desc _____ -->
-                                    <div class="desc">
-                                        <ul>
-                                            <li>Dahua</li>
-                                            <li>Dahua DHI-LM27-E230C</li>
-                                            <li>Gaming</li>
-                                            <li>Widescreen</li>
-                                            <li>3-sided frameless</li>
-                                            <li>27</li>
-                                            <li>FHD LED Display</li>
-                                            <li>Yes</li>
-                                            <li>No</li>
-                                            <li>1920x1080</li>
-                                            <li>180Hz</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>No</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>180Hz</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>No</li>
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">Desktop Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
                                         </ul>
                                     </div>
-                                </div>
-                                <!-- Single Compare Product -->
-                                <div class="compare-product">
 
-                                    <!-- _____ Top _____ -->
-                                    <div class="top">
-
-                                        <!-- Delete Button -->
-                                        <div class="my-text-right">
-                                            <button class="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                        </div>
-
-                                        <div class="">
-                                            <!-- img -->
-                                            <img src="../static/images/new-porduct (1).webp" alt="">
-
-                                            <div class="my-text-center my-mt-2">
-                                                <!-- Title -->
-                                                <h6>
-                                                    <a href="../pages/product.html">
-                                                        Microsoft Surface Pro Copilot+ PC 11th Edition (Wi-Fi)
-                                                        Snapdragon X
-                                                        Plus 16GB RAM, 512GB SSD AI Optimized Sapphire
-                                                        2-in-1 Detachable Laptop (Type Cover is sold
-                                                    </a>
-                                                </h6>
-
-                                                <p class="my-mt-1">SKU: <span>2321Hk21321</span></p>
-
-                                                <!-- Price -->
-                                                <div class="price my-mt-4 my-text-center">
-                                                    <h5 class="my-text-gray my-fw-medium">Regular Price:
-                                                        <span>TK33540</span>
-                                                    </h5>
-                                                    <h4 class=" my-mt-1">Special Price: <span>TK31540</span></h4>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
                                     </div>
+                                </div>
+                            </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/laptop-794x564.jpg"
+                                    alt="">
 
-
-                                    <!-- _____ Desc _____ -->
-                                    <div class="desc">
-                                        <ul>
-                                            <li>Dahua</li>
-                                            <li>Dahua DHI-LM27-E230C</li>
-                                            <li>Gaming</li>
-                                            <li>Widescreen</li>
-                                            <li>3-sided frameless</li>
-                                            <li>27</li>
-                                            <li>FHD LED Display</li>
-                                            <li>Yes</li>
-                                            <li>No</li>
-                                            <li>1920x1080</li>
-                                            <li>180Hz</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>No</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>180Hz</li>
-                                            <li>1ms (MPRT)</li>
-                                            <li>No</li>
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">Laptop Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
                                         </ul>
                                     </div>
+
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
+                                    </div>
                                 </div>
+                            </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/tv-794x564.jpg"
+                                    alt="">
 
-
-                                <!-- Add More -->
-                                <div class="default compare-product">
-
-                                    <!-- _____ Top ______ -->
-                                    <div class="top my-flex-center">
-                                        <div class=" my-text-center my-w-100">
-                                            <div class="my-flex-center my-gap-2">
-                                                <h4>Add More</h4>
-                                            </div>
-                                            <select class="my-mt-4 my-border2 my-w-100">
-                                                <option value="">Select Product</option>
-                                                <option value="">Laptop</option>
-                                                <option value="">Monitor</option>
-                                                <option value="">Camara</option>
-                                                <option value="">Headphone</option>
-                                                <option value="">Keyboard</option>
-                                                <option value="">Mosose</option>
-                                            </select>
-                                        </div>
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">TV Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
+                                        </ul>
                                     </div>
 
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/monitor-794x564.jpg"
+                                    alt="">
 
-                                    <!-- _____ Desc _____ -->
-                                    <div class="desc">
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">Monitor Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
+                                        </ul>
+                                    </div>
 
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single service item -->
+                            <div class="item my-card">
+                                <img src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/service/desktop-794x564.jpg"
+                                    alt="">
+
+                                <div class="my-mt-4">
+                                    <h4 class="my-px-4">Desktop Service</h4>
+                                    <div class="my-p-3 my-border-top my-mt-3">
+                                        <ul class="  disk my-fs-sm my-flex-column my-gap-2">
+                                            <li>
+                                                All Types of Motherboard Problem Solutions.
+                                            </li>
+                                            <li>All Types of Display Problem Solution/Change.</li>
+                                            <li>All Types of Software, Driver Solution.</li>
+                                            <li>MacBook Hardware Solution.</li>
+                                            <li>MacBook Display Solution.</li>
+                                            <li>Laptop Repair and Parts Change.</li>
+                                            <li>Laptop Cleaning.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="my-p-3 my-text-right ">
+                                        <a class="my-btn  my-primary-btn "
+                                            href="../pages/service_request.html">Booking</a>
                                     </div>
                                 </div>
                             </div>
@@ -1383,9 +1319,11 @@
                     </div>
                 </div>
             </section>
-            <!-- =================================================== -->
-            <!-- ==========    Compare Section  End  Here   ======== -->
-            <!-- =================================================== -->
+            <!-- ================================================== -->
+            <!-- ==========    Offer  Section  End  Here   ======== -->
+            <!-- ================================================== -->
+
+
         </main>
 
 
@@ -2062,17 +2000,14 @@
 
 
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="module">
-            import { openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, toggleF, activeF, } from '../static/js/utilitis.js';
+            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown } from '../static/js/utilitis.js';
 
             closeButtonF()
 
             // shopping cart
             openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
-
-            deleteF('.compare-products .compare-product', '.compare-product .delete-btn')
-
-
 
 
             // Toggle category dropdowns and icon
@@ -2107,40 +2042,45 @@
                 });
             });
 
-            // Toggle subcategory dropdowns and icon
-            document.querySelectorAll('.subcategory-btn').forEach(subcategory => {
-                subcategory.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent navigation
-                    const nestedDropdown = this.nextElementSibling; // The nested dropdown div
-                    const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon for nested dropdown
 
-                    // Close all other nested dropdowns and reset their icons
-                    document.querySelectorAll('.nested-dropdown').forEach(otherNestedDropdown => {
-                        if (otherNestedDropdown !== nestedDropdown) {
-                            otherNestedDropdown.classList.remove('active'); // Close other nested dropdowns
-                            const otherIcon = otherNestedDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
-                            otherIcon.classList.remove('fa-minus');
-                            otherIcon.classList.add('fa-plus');
-                        }
-                    });
 
-                    // Toggle the current nested dropdown
-                    nestedDropdown.classList.toggle('active');
 
-                    // Toggle the icon for the current nested dropdown
-                    if (nestedDropdown.classList.contains('active')) {
-                        icon.classList.remove('fa-plus');
-                        icon.classList.add('fa-minus');
+
+            // sidebar
+            toggleF('shop-page-sidebar', 'mobile-filter-btn');
+            const sidebar = document.getElementById('shop-page-sidebar');
+            if (sidebar) {
+                const closeBtn = sidebar.querySelector('.sidebar-close-btn');
+                const body = document.querySelector('body');
+
+                function toggleBodyScroll() {
+                    if (sidebar.classList.contains('active')) {
+                        body.style.overflow = 'hidden'; // Hide scrollbar
                     } else {
-                        icon.classList.remove('fa-minus');
-                        icon.classList.add('fa-plus');
+                        body.style.overflow = ''; // Restore scrollbar
                     }
-                });
-            });
+                }
+
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', function () {
+                        sidebar.classList.remove('active');
+                        toggleBodyScroll(); // Update scrollbar state
+                    });
+                }
+
+                // Observe class changes dynamically
+                const observer = new MutationObserver(toggleBodyScroll);
+                observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+            }
+
+
+
+
 
 
 
             toggleF('all-category', 'mobile-menu-icon');
+            openSearchDropdown()
 
 
         </script>
