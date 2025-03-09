@@ -2,10 +2,11 @@
     /* color: var(--gray); */
     text-align: center;
     font-size: var(--fs-sm);
-    background-color: var(--border-color);
+    background-color: var(--primary-color);
     padding: 10px 16px;
     border-radius: 4px;
     cursor: pointer;
+    color: var(--white);
 }
 
 .build-area .head .item i {
@@ -13,13 +14,20 @@
 }
 
 .build-area .head .item:hover {
-    color: var(--secondary-color);
+    background-color: var(--primary-hover-color);
 }
 
-.build-area .head .item:hover i {
-    color: var(--primary-color);
+.build-area .select-product h6 {
+    font-size: var(--fs-lg);
 }
 
+
+select,
+option {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-600);
+    color: var(--dark);
+}
 
 
 /* select-product */
