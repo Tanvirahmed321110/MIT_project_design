@@ -1065,6 +1065,12 @@ tr {
 }
 
 
+
+.my-mb-n-2 {
+    margin-bottom: -8px;
+}
+
+
 /*_______  Font Class  ________*/
 .my-fs-xs {
     font-size: var(--fs-xs);

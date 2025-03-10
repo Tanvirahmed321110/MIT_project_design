@@ -4,12 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PC_Build_Page</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <title>Service_Request_Page</title>
+
         <!--  common css -->
         <link rel="stylesheet" href="../static/css/common.css">
         <!-- home page css -->
-        <link rel="stylesheet" href="../static/css/pages/build.css">
+        <link rel="stylesheet" href="../static/css/pages/login-other.css">
     </head>
 
     <body>
@@ -25,13 +25,13 @@
                     <div class="header-top-area my-d-lg-none my-flex-center ">
                         <ul class="my-flex-center my-gap-4 my-fs-xs my-fw-medium">
                             <li>
-                                <a href="#">Laptop Deals</a>
+                                <a href="./pages/pc_deals.html">Laptop Deals</a>
                             </li>
                             <li>
-                                <a href="#">Desktop Deals</a>
+                                <a href="./pages/pc_deals.html">Desktop Deals</a>
                             </li>
                             <li>
-                                <a href="#">CC Deals</a>
+                                <a href="./pages/pc_deals.html">CC Deals</a>
                             </li>
                             <li>
                                 <a href="#">Pre-Order</a>
@@ -76,12 +76,25 @@
                             <img class="w-30" src="../static/images/logo.png" alt="">
                         </a>
 
-                        <!-- menu button -->
-                        <button class="menu-icon" id="mobile-menu-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+                        <div class="my-d-flex my-align-center my-gap-1 my-text-white">
+                            <button class="my-btn" id="mobile-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+
+                            <!-- Search Input for mobile -->
+                            <div class="my-input-control">
+                                <input placeholder="Search.." class="my-d-none mobile-search-input "
+                                    id="mobile-search-input" type="search">
+                            </div>
+
+                            <!-- menu button -->
+                            <button class="menu-icon" id="mobile-menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
                     </div>
 
 
@@ -455,6 +468,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- catrgory item -->
                 <div class="category">
                     <button class="open-btn">
@@ -613,122 +627,180 @@
                             </a>
 
 
-                            <!-- Search -->
+                            <!--_____ Search _____-->
                             <div class="search">
                                 <form action="#" class="subcribe my-d-flex my-align-center">
                                     <input type="text" placeholder="Search Products" id="search-input">
                                     <button class="my-btn my-primary-btn">Search</button>
                                 </form>
 
+
                                 <div class="search-dropdown my-has-scrollbar-sm " id="search-dropdown">
                                     <ul class="search-related-products">
                                         <li>
-                                            <a class="my-d-flex my-align-center my-gap-4 my-p-2 my-border-bottom"
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
                                                 href="#">
-                                                <div class="img w-25">
+                                                <div class="img w-20">
+                                                    <img src="https://www.techlandbd.com/image/cache/catalog/Smartphone/Google%20/pixel%209/google-pixel-9-smartphone-004-260x200h.jpg"
+                                                        alt="">
+                                                </div>
+
+                                                <!-- detials -->
+                                                <div class="details my-flex-column my-gap-1">
+                                                    <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
+                                                        DDR5,
+                                                        512GB SSD 15.6 Inch FHD
+                                                        Display Moonlight Blue Laptop</h6>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 28200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 1120</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
+                                                href="#">
+                                                <div class="img w-20">
                                                     <img src="../static/images/product-img4.webp" alt="">
                                                 </div>
 
                                                 <!-- detials -->
-                                                <div class="details my-flex-column my-gap-2">
+                                                <div class="details my-flex-column my-gap-1">
                                                     <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
                                                         DDR5,
                                                         512GB SSD 15.6 Inch FHD
                                                         Display Moonlight Blue Laptop</h6>
-                                                    <h5>TK 33200</h5>
-                                                    <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 38200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 920</p>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="my-d-flex my-align-center my-gap-4 my-p-2 my-border-bottom"
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
                                                 href="#">
-                                                <div class="img w-25">
-                                                    <img src="../static/images/product-img4.webp" alt="">
+                                                <div class="img w-20">
+                                                    <img src="https://www.techlandbd.com/image/cache/catalog/Speaker/Logitech/logitech-z623-subwoofer-speaker/logitech-z623-subwoofer-speaker-260x200h.jpg"
+                                                        alt="">
                                                 </div>
 
                                                 <!-- detials -->
-                                                <div class="details my-flex-column my-gap-2">
+                                                <div class="details my-flex-column my-gap-1">
                                                     <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
                                                         DDR5,
                                                         512GB SSD 15.6 Inch FHD
                                                         Display Moonlight Blue Laptop</h6>
-                                                    <h5>TK 33200</h5>
-                                                    <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 38200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 920</p>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="my-d-flex my-align-center my-gap-4 my-p-2 my-border-bottom"
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
                                                 href="#">
-                                                <div class="img w-25">
+                                                <div class="img w-20">
                                                     <img src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
                                                         alt="">
                                                 </div>
 
                                                 <!-- detials -->
-                                                <div class="details my-flex-column my-gap-2">
+                                                <div class="details my-flex-column my-gap-1">
                                                     <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
                                                         DDR5,
                                                         512GB SSD 15.6 Inch FHD
                                                         Display Moonlight Blue Laptop</h6>
-                                                    <h5>TK 33200</h5>
-                                                    <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 48200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 920</p>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="my-d-flex my-align-center my-gap-4 my-p-2 my-border-bottom"
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
                                                 href="#">
-                                                <div class="img w-25">
-                                                    <img src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                                <div class="img w-20">
+                                                    <img src="https://www.techlandbd.com/image/cache/catalog/MSI/PRO-MP251-1-260x200h.jpg"
                                                         alt="">
                                                 </div>
 
                                                 <!-- detials -->
-                                                <div class="details my-flex-column my-gap-2">
+                                                <div class="details my-flex-column my-gap-1">
                                                     <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
                                                         DDR5,
                                                         512GB SSD 15.6 Inch FHD
                                                         Display Moonlight Blue Laptop</h6>
-                                                    <h5>TK 33200</h5>
-                                                    <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 38200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 920</p>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="my-d-flex my-align-center my-gap-4 my-p-2 my-border-bottom"
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
                                                 href="#">
-                                                <div class="img w-25">
-                                                    <img src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                                <div class="img w-20">
+                                                    <img src="https://www.techlandbd.com/image/cache/catalog/honor-pad-9-wi-fi-wqxga-snapdragon-8gb-256gb-magicos-tablet-260x200h.jpg"
                                                         alt="">
                                                 </div>
 
                                                 <!-- detials -->
-                                                <div class="details my-flex-column my-gap-2">
+                                                <div class="details my-flex-column my-gap-1">
                                                     <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
                                                         DDR5,
                                                         512GB SSD 15.6 Inch FHD
                                                         Display Moonlight Blue Laptop</h6>
-                                                    <h5>TK 33200</h5>
-                                                    <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 78200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="my-d-flex my-align-center my-gap-4 my-p-2 my-border-bottom"
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
                                                 href="#">
-                                                <div class="img w-25">
-                                                    <img src="../static/images/product-img3.webp" alt="">
+                                                <div class="img w-20">
+                                                    <img src="https://www.techlandbd.com/image/cache/catalog/MSI/PRO-MP251-1-260x200h.jpg"
+                                                        alt="">
                                                 </div>
 
                                                 <!-- detials -->
-                                                <div class="details my-flex-column my-gap-2">
+                                                <div class="details my-flex-column my-gap-1">
                                                     <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
                                                         DDR5,
                                                         512GB SSD 15.6 Inch FHD
                                                         Display Moonlight Blue Laptop</h6>
-                                                    <h5>TK 78200</h5>
+                                                    <div class="my-flex-between  my-gap-3">
+                                                        <h5 class="">TK 38200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 920</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="my-d-flex my-align-center my-gap-4 my-p-1 my-border-bottom"
+                                                href="#">
+                                                <div class="img w-20">
+                                                    <img src="https://www.techlandbd.com/image/cache/catalog/honor-pad-9-wi-fi-wqxga-snapdragon-8gb-256gb-magicos-tablet-260x200h.jpg"
+                                                        alt="">
+                                                </div>
+
+                                                <!-- detials -->
+                                                <div class="details my-flex-column my-gap-1">
+                                                    <h6 class="my-text-primary">HP 15-fc0166AU AMD Ryzen 5 7520U 8GB
+                                                        DDR5,
+                                                        512GB SSD 15.6 Inch FHD
+                                                        Display Moonlight Blue Laptop</h6>
+                                                    <div class="my-flex-between my-gap-3">
+                                                        <h5 class="">TK 78200</h5>
+                                                        <p class="tag instock my-fs-sm">Save Tk 1000</p>
+                                                    </div>
                                                 </div>
                                             </a>
                                         </li>
@@ -745,23 +817,27 @@
 
                                 <!-- wise list -->
                                 <li class="my-tooltip">
-                                    <span class="icon my-text-white">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </span>
-                                    <div class="base-round active">2</div>
-                                    <!-- Tooltip -->
-                                    <span class="show-text">wish list items</span>
+                                    <a href="./pages/wishlist.html">
+                                        <span class="icon my-text-white">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </span>
+                                        <div class="base-round active">2</div>
+                                        <!-- Tooltip -->
+                                        <span class="show-text">wish list items</span>
+                                    </a>
                                 </li>
 
 
                                 <!-- wise list -->
                                 <li class="my-tooltip">
-                                    <span class="icon my-text-white">
-                                        <i class="fa-solid fa-code-compare"></i>
-                                    </span>
-                                    <div class="base-round active">1</div>
-                                    <!-- Tooltip -->
-                                    <span class="show-text">compalre</span>
+                                    <a href="./pages/compare.html">
+                                        <span class="icon my-text-white">
+                                            <i class="fa-solid fa-code-compare"></i>
+                                        </span>
+                                        <div class="base-round active">1</div>
+                                        <!-- Tooltip -->
+                                        <span class="show-text">compalre</span>
+                                    </a>
                                 </li>
 
 
@@ -779,261 +855,89 @@
 
                             <!-- user login -->
                             <div class="my-d-flex my-align-center my-gap-3" id="user-btn">
-                                <span class="my-fs-lg">
+                                <span class="my-fs-lg my-fw-bold">
                                     <i class="fa-regular fa-user"></i>
                                 </span>
 
-                                <div>
-                                    <p class="account my-fw-bold my-fs-sm">Account</p>
-                                    <div class=" my-fs-xs">
+                                <div class="my-text-gray account">
+                                    <p class="my-fw-bold">Account</p>
+                                    <div class="my-text-white-off my-fs-xs">
                                         <div class="my-d-flex my-align-center my-gap-1">
-                                            <a href="./login.html" class="hover-underline">login</a> /
-                                            <a href="register.html" class="hover-underline">register</a>
+                                            <a href="./pages/login.html" class="hover-underline">login</a> /
+                                            <a href="./pages/register.html" class="hover-underline">register</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="build my-flex-center">
-                                <button class="my-btn build-btn ">PC Bulid</button>
+                                <a href="./pages/pc_build.html" class="my-btn build-btn ">PC Bulid</a>
                                 <span>|</span>
-                                <button class="my-btn build-btn ">CC Bulid</button>
+                                <a href="./pages/cc_build.html" class="my-btn build-btn ">CC Bulid</a>
                             </div>
                         </div>
                     </div>
 
                     <!--________________  Header Medile Bottom Here  _______________-->
-                    <div class="header-medile-bottom my-mt-5 my-p-relative">
+                    <div class="header-medile-bottom my-mt-4">
                         <div class="my-flex-center my-gap-6 my-text-white">
                             <div class="item">
                                 <a href="#">Happy Hours</a>
                             </div>
                             <div class="item">
-                                <a href="#">Other</a>
+                                <a href="./pages/offer.html">Offer</a>
                             </div>
                             <div class="item">
                                 <a href="#">MIT Care</a>
                             </div>
-                            <div class="item">
-                                <a href="#">Other page</a>
+
+                            <div class="item pages my-dropdown-parent">
+                                <div class="my-fw-bold my-fs-md pages-text">
+                                    Short Page <i class="fa-solid fa-angle-down"></i>
+                                </div>
+
+                                <!-- Dropdown -->
+                                <ul class="my-dropdown">
+                                    <li><a href="./pages/about.html" target="_blank">About</a></li>
+                                    <li><a href="./pages/contact.html" target="_blank">Contact</a></li>
+                                    <li><a href="./pages/delivary_info.html" target="_blank">Delivery Info</a></li>
+                                    <li><a href="./pages/login.html" target="_blank">Login</a></li>
+                                    <li><a href="./pages/register.html" target="_blank">Register</a></li>
+                                    <li><a href="./pages/forget.html" target="_blank">Forget</a></li>
+                                    <li><a href="./pages/error.html" target="_blank">Error</a></li>
+                                    <li>
+                                        <a href="./pages/terms_condition.html" target="_blank">Terms & Conditions</a>
+                                    </li>
+                                    <li><a href="./pages/return.html" target="_blank">Return</a></li>
+                                    <li><a href="./pages/order_complete.html" target="_blank">Order Completed</a></li>
+                                </ul>
                             </div>
-                        </div>
 
-
-                        <!--_________________  Category Here ________________  -->
-                        <div class="category other-page-category my-d-md-none my-p-relative">
-                            <div class="left ">
-
-                                <!-- all department button -->
-                                <div class="all-department-btn my-btn my-align-center my-gap-4" id="all-department-btn">
-                                    <i class="fas fa-bars"></i>
-
-                                    <div class="my-flex-center my-gap-4">
-                                        <span>All Category</span>
-                                    </div>
-                                    <span class="my-mt-1"><i class="fa-solid fa-angle-down"></i></span>
+                            <div class="item pages my-dropdown-parent">
+                                <div class="my-fw-bold my-fs-md pages-text">
+                                    Long Pages <i class="fa-solid fa-angle-down"></i>
                                 </div>
 
-
-                                <!--_____  all-department items  ______-->
-                                <div class="all-department my-card " id="all-department-sidebar">
-                                    <ul class="wrapper">
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative  my-flex-between my-gap-0 single-dept ">
-
-                                            <!-- Main hover -->
-                                            <div class=" my-flex-between my-w-100">
-                                                <p>Desktop</p>
-                                                <span><i class="fa-solid fa-angle-right"></i></span>
-                                            </div>
-
-                                            <!-- main dropdown -->
-                                            <div class="dropdown">
-                                                <ul class="col">
-                                                    <li>
-                                                        <div class="my-flex-between">
-                                                            <span>Desktop Offer</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <!-- sub hover -->
-                                                        <div class=" my-flex-between my-w-100">
-                                                            <p>MIT PC</p>
-                                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                                        </div>
-
-                                                        <!-- dropdown -->
-                                                        <ul class="dropdown my-flex-column my-gap-1">
-                                                            <li><a href="#">Intel PC</a></li>
-                                                            <li><a href="#">Ryzen PC</a></li>
-                                                        </ul>
-                                                    </li>
-
-                                                    <li>
-                                                        <!-- sub hover -->
-                                                        <div class="my-flex-between my-w-100">
-                                                            <p>Gaming PC</p>
-                                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                                        </div>
-
-                                                        <!-- dropdown -->
-                                                        <ul class="dropdown my-flex-column my-gap-1">
-                                                            <li><a href="#">Intel PC</a></li>
-                                                            <li><a href="#">Ryzen PC</a></li>
-                                                        </ul>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#">Corporate/Office PC</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <!-- sub hover -->
-                                                        <div class="my-flex-between my-w-100">
-                                                            <p>PC Combo</p>
-                                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                                        </div>
-
-                                                        <!-- dropdown -->
-                                                        <ul class="dropdown my-flex-column my-gap-1">
-                                                            <li><a href="#">AMD Combo</a></li>
-                                                            <li><a href="#">GPU Combo</a></li>
-                                                            <li><a href="#">Intel Combo</a></li>
-                                                        </ul>
-                                                    </li>
-
-
-                                                    <li>
-                                                        <!-- sub hover -->
-                                                        <div class="my-flex-between my-w-100">
-                                                            <p>Brand PC</p>
-                                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                                        </div>
-
-                                                        <!-- dropdown -->
-                                                        <ul class="dropdown my-flex-column my-gap-1">
-                                                            <li><a href="#">HP</a></li>
-                                                            <li><a href="#">Dell</a></li>
-                                                            <li><a href="#">Lenovo</a></li>
-                                                            <li><a href="#">Asus</a></li>
-                                                            <li><a href="#">MSI</a></li>
-                                                            <li><a href="#">Apple</a></li>
-                                                            <li><a href="#">Walton</a></li>
-                                                            <li><a href="#">Value-Top</a></li>
-                                                            <li><a href="#">Teclast</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Porable Mini PC</a></li>
-                                                    <li><a href="#">Photography</a></li>
-                                                    <li><a href="#">Gaming Product</a></li>
-                                                    <li><a href="#">Networking</a></li>
-                                                    <li><a href="#">TV</a></li>
-                                                    <li><a href="#">Converter & Cable</a></li>
-                                                    <li><a href="#">Home Appliance</a></li>
-                                                    <li><a href="#">Software</a></li>
-                                                    <li class="">
-                                                        <a href="#">Toys</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Laptop </p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                            <div class="dropdown">
-                                                <ul class="col">
-                                                    <li><a href="#">Baby Toy</a></li>
-                                                    <li><a href="#">Baby Cream</a></li>
-                                                    <li><a href="#">Baby Watch</a></li>
-                                                    <li><a href="#">Baby Skin Care</a></li>
-                                                    <li><a href="#">Baby Pampash</a></li>
-                                                    <li><a href="#">Baby Saban</a></li>
-                                                    <li><a href="#">Baby Tissue</a></li>
-                                                    <li><a href="#">Baby Oil Soft</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Monitor</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Monitor</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Monitor</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Component</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Networking</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>UPS Collection</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Phone Accesries </p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>LED Tv</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Tablet</p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Laptop </p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Software </p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-
-                                        <!-- single dept -->
-                                        <li class="my-p-relative my-flex-between my-gap-2 single-dept">
-                                            <p>Other Devicve </p>
-                                            <span><i class="fa-solid fa-angle-right"></i></span>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <!-- Dropdown -->
+                                <ul class="my-dropdown">
+                                    <li><a href="./pages/product.html" target="_blank">Product</a></li>
+                                    <li><a href="./pages/shop.html" target="_blank">Shop</a></li>
+                                    <li><a href="./pages/cart.html" target="_blank">Cart</a></li>
+                                    <li><a href="./pages/all_category.html" target="_blank">All Category</a></li>
+                                    <li><a href="./pages/cc_build.html" target="_blank">CC Build</a></li>
+                                    <li><a href="./pages/pc_build.html" target="_blank">PC Build</a></li>
+                                    <li><a href="./pages/compare.html" target="_blank">Compare</a></li>
+                                    <li><a href="./pages/offer.html" target="_blank">Offer</a></li>
+                                    <li><a href="./pages/offer.html" target="_blank">Offer Details</a></li>
+                                    <li><a href="./pages/wishlist.html" target="_blank">Wishlist</a></li>
+                                    <li><a href="./pages/checkout.html" target="_blank">Checkout</a></li>
+                                    <li><a href="./pages/orc.html" target="_blank">Orders</a></li>
+                                    <li><a href="./pages/order_details.html" target="_blank">Order Details</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
         </header>
         <!-- ============================================== -->
@@ -1047,678 +951,83 @@
 
 
 
-
-
-
-
         <main>
             <!-- ======================================================= -->
             <!-- ==========    brigtcamp Section  Start  Here   ======== -->
             <!-- ======================================================= -->
             <section class="brigtcamp">
-                <div class="my-container my-pb-0 ">
-                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5 brigtcamp-area  contact-page">
+                <div class="my-container my-pb-0">
+                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5   brigtcamp-area contact-page">
                         <li><a href="../index.html">Home</a> </li>
-                        <li>PC Build</li>
+                        <li>
+                            <h6>Price Quotation</h6>
+                        </li>
                     </ul>
                 </div>
             </section>
             <!-- ======================================================= -->
-            <!-- ==========    brigtcamp Section  Start  Here   ======== -->
+            <!-- ==========    brigtcamp Section  End  Here   ======== -->
             <!-- ======================================================= -->
 
 
-
-
-            <!-- ======================================================= -->
-            <!-- ==========    PC Build  Section  Start  Here   ======== -->
+            <!-- ====================================================== -->
+            <!-- ==========    Priorder Section  Start  Here   ======== -->
             <!-- ======================================================= -->
             <section>
                 <div class="my-container">
-                    <div class="build-area my-shadow-sm my-bg-white my-p-5 my-radius-sm">
+                    <div class="pre-order-area ">
 
-                        <!-- head top -->
-                        <div class="head my-y-2 my-flex-between my-gap-4 my-flex-sm-column my-border-bottom my-pb-1">
-                            <a href="#" class="logo">
-                                <img class="w-30" src="../static/images/logo.png" alt="">
-                            </a>
-
-                            <div class="right">
-                                <ul class="my-d-flex my-gap-2">
-                                    <button class="item my-btn my-flex-column my-text-center my-gap-2">
-                                        <span><i class="fa-solid fa-envelope"></i></span>
-                                        <div>Mail</div>
-                                    </button>
-                                    <button class="item my-btn my-flex-column my-gap-2 my-text-center">
-                                        <span><i class="fa-solid fa-cart-arrow-down"></i></span>
-                                        <div>Add to Cart</div>
-                                    </button>
-                                    <button class="item my-btn my-flex-column my-gap-2">
-                                        <span><i class="fa-solid fa-camera"></i></span>
-                                        <div>ScreenShort</div>
-                                    </button>
-                                    <button class="item my-btn my-flex-column my-gap-2">
-                                        <span><i class="fa-solid fa-trash-can"></i></span>
-                                        <div>Delete All </div>
-                                    </button>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- head medile -->
-                        <div class="head my-y-2 my-flex-between my-gap-4 my-flex-sm-column my-mt-6">
-                            <div>
-                                <h5>PC Builder - Build your own PC - MIT</h5>
-                                <div class="my-d-flex my-align-center my-gap-2 my-mt-2">
-                                    <input type="checkbox" name="hide" id="hide">
-                                    <label for="hide" class="my-fs-sm">Hide Unconfigured Components</label>
-                                </div>
-
-                            </div>
-
-                            <div class=" right">
-                                <div
-                                    class="total-amount my-p-2 my-px-5 my-radius-sm my-text-white-off my-text-center my-bg-red">
-                                    <h4 class="my-text-white-off my-fw-medium">Total Amount</h4>
-                                    <h4 class="my-mt-1 my-text-white my-fw-bold"><span>TK- </span>65800</h4>
-                                </div>
-                            </div>
+                        <div class="my-text-center my-mt-5">
+                            <h1 class="my-fs-xxl my-line-height-8 my-text-primary">Price Quotaiton</h1>
+                            <p class="my-fs-md">Have an enquiry or need a quote? Our specialists can help.</p>
+                            </p>
                         </div>
 
 
+                        <!-- Form area -->
+                        <div class="my-mt-10">
+                            <div class="my-p-5 my-radius-md my-mt-8 common-form complain">
+                                <form action="#" class="my-flex-column my-gap-2">
+                                    <div class="my-grid-2 my-gap-4">
+                                        <div class="my-input-control">
+                                            <div><label for="name" class="my-fw-bold my-fs-4">Name</label></div>
+                                            <input id="name" class="my-mt-2" type="text" placeholder="Your Name">
+                                        </div>
 
-                        <!-- defult and choose items -->
-                        <div class="my-mt-8">
+                                        <div class="my-input-control">
+                                            <div><label for="phone" class="my-fw-bold my-fs-4">Phone</label></div>
+                                            <input id="phone" class="my-mt-2" type="number"
+                                                placeholder="Your Phone Number">
+                                        </div>
+                                    </div>
 
-                            <!-- Name of Component -->
-                            <div class="core my-text-uppercase my-text-white-off my-bg-primary my-p-1 my-fw-medium ">
-                                PC Build
+                                    <div class="my-input-control">
+                                        <div><label for="email" class="my-fs-4">Email</label></div>
+                                        <input id="email" class="my-mt-2" type="email" placeholder="Your Email">
+                                    </div>
+
+                                    <!-- Address -->
+                                    <div class="my-input-control">
+                                        <div><label for="details" class="my-fs-4">Product Quotation</label></div>
+                                        <textarea id="details" class="my-mt-2"
+                                            placeholder="Write details here..."></textarea>
+                                    </div>
+
+                                    <button class="my-btn my-primary-btn my-fs-md">Submit</button>
+                                </form>
                             </div>
-
-
-                            <!-- Products -->
-                            <div class="select-products  my-mt-2">
-
-
-                                <!-- When user choose product -->
-                                <div class="my-d-none choose-products">
-
-                                    <!--______ Single Select Product defult _____-->
-                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                        <!-- Left -->
-                                        <div class="left my-d-flex my-align-center my-gap-3">
-                                            <img class="w-15 my-p-1 my-bg-white-off"
-                                                src="../static/images/product-img4.webp" alt="">
-
-                                            <div class="my-w-100">
-                                                <div class="my-d-flex my-gap-2">
-                                                    <h6>CPU </h6><span class="required">required</span>
-                                                </div>
-
-                                                <!-- when item  is empty -->
-                                                <div class="left-hide hide my-d-none"></div>
-
-                                                <!-- when item is fill -->
-                                                <p class="my-fs-xs">
-                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
-                                                    Graphics
-                                                </p>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- Right -->
-                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                            <div>
-                                                <!-- when item is empty -->
-                                                <div class="hide my-d-none"></div>
-                                                <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
-                                            </div>
-
-                                            <!-- when item is empty -->
-                                            <a href="../pages/shop.html"
-                                                class="my-btn my-secendary-btn my-d-none">Choose</a>
-
-                                            <!-- when item is fill -->
-                                            <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                        </div>
-                                    </div>
-
-                                    <!--______ Single Select Product defult _____-->
-                                    <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                        <!-- Left -->
-                                        <div class="left my-d-flex my-align-center my-gap-3">
-                                            <img class="w-15 my-p-1 my-bg-white-off"
-                                                src="../static/images/product-img4.webp" alt="">
-
-                                            <div class="my-w-100">
-                                                <div class="my-d-flex my-gap-2">
-                                                    <h6>CPU </h6><span class="required">required</span>
-                                                </div>
-
-                                                <!-- when item  is empty -->
-                                                <div class="left-hide hide my-d-none"></div>
-
-                                                <!-- when item is fill -->
-                                                <p class="my-fs-xs">
-                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
-                                                    Graphics
-                                                </p>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- Right -->
-                                        <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                            <div>
-                                                <!-- when item is empty -->
-                                                <div class="hide my-d-none"></div>
-                                                <h5>13,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
-                                            </div>
-
-                                            <!-- when item is empty -->
-                                            <a href="../pages/shop.html"
-                                                class="my-btn my-secendary-btn my-d-none">Choose</a>
-
-                                            <!-- when item is fill -->
-                                            <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/2310600_1686989058.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Motherboard </h6><span class="required">required</span>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/2310600_1686989058.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Processor </h6><span class="required">required</span>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/RAM_1686989592.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>RAM 1 </h6><span class="required">required</span>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/RAM_1686989592.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>RAM 2 </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/SSD-48x48_1686989668.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>SSD </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/hard-disk_1686990181.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>HDD </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.techlandbd.com/image/cache/catalog/AAA-Offer/pc_builder/motherboard-48x48.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>CPU </h6><span class="required">required</span>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/SSD-48x48_1686989668.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>SSD </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/cpu_1686989918.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Casing </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/Mouse_1686989966.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Mouse </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/2194087-200_1686989982.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Monitor </h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/gpu-48x48_1686990042.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Graphics Card</h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/1470116_1686990072.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Power Supply</h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/ups_1686990117.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>UPS</h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                                <!--______ Single Select Product defult _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="https://www.ryans.com/storage/pc-builder-components/casing_fan_1686990102.png"
-                                            alt="">
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Casing Fan</h6>
-                                            </div>
-
-                                            <div class="left-hide hide"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <div class="hide"></div>
-                                        </div>
-                                        <button class="my-btn my-secendary-btn">Choose</button>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-
-                            <!-- Products -->
-                            <div class="select-products my-mt-2">
-
-
-                                <!--______ Single Select Product when select _____-->
-                                <div class="select-product my-py-2 my-border-bottom default my-flex-between">
-
-                                    <!-- Left -->
-                                    <div class="left my-d-flex my-align-center my-gap-3">
-                                        <img class="w-15 my-p-1 my-bg-white-off"
-                                            src="../static/images/product-img3.webp" alt="">
-
-                                        <div class="my-w-100">
-                                            <div class="my-d-flex my-gap-2">
-                                                <h6>Casing Cover </h6>
-                                            </div>
-
-                                            <!-- when item  is empty -->
-                                            <div class="left-hide hide my-d-none"></div>
-
-                                            <!-- when item is fill -->
-                                            <div>
-                                                <p class="my-fs-xs">
-                                                    AMD Athlon PRO 300GE AM4 Desktop Processor with Radeon Vega 3
-                                                    Graphics
-                                                </p>
-                                                <p class="my-text-primary">Product Id: 12321321</p>
-                                                <button
-                                                    class="my-border2 my-btn-ouline my-mt-2 my-flex-center my-border my-text-gray my-p-2 my-px-2 my-radius-sm">+
-                                                    Add
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Right -->
-                                    <div class="right my-d-flex my-gap-3 my-align-center my-justify-end">
-                                        <div>
-                                            <!-- when item is empty -->
-                                            <div class="hide my-d-none"></div>
-                                            <h5>10,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></h5>
-                                        </div>
-
-                                        <!-- when item is empty -->
-                                        <button class="my-btn my-secendary-btn my-d-none">Choose</button>
-
-                                        <!-- when item is fill -->
-                                        <button class="my-btn"><i class="fa-solid fa-trash-can"></i></button>
-                                    </div>
-                                </div>
-
-                            </div>
-
                         </div>
-
-
-
-                        <!-- Select Other Component -->
-                        <div class="my-mt-4 max-400">
-                            <select class="my-border2" name="" id="">
-                                <option value="">Select Other Component</option>
-                                <option value="">Access Control</option>
-                                <option value="">Accessories</option>
-                                <option value="">Action Camera</option>
-                                <option value="">Antivirus</option>
-                                <option value="">Barcode Scanner</option>
-                                <option value="">Ip c</option>
-                            </select>
-                        </div>
-
 
                     </div>
                 </div>
             </section>
-            <!-- ==================================================== -->
-            <!-- ==========    PC Build Section  End  Here   ======== -->
-            <!-- ==================================================== -->
-
-
+            <!-- ====================================================== -->
+            <!-- ==========    Priorder Section  End  Here   ======== -->
+            <!-- ======================================================= -->
         </main>
+
+
+
 
 
 
@@ -1729,35 +1038,129 @@
         <!-- ==========    Fotter Section  Start  Here   ======== -->
         <!-- ==================================================== -->
         <footer class="my-mt-10">
+
+            <!-- _______________  Footer Contact and Icons  ________________ -->
+            <div class="contact-icon-wrapper">
+                <div class="my-container">
+                    <div class="">
+                        <div class="my-flex-center contact-icon">
+                            <!-- Social -->
+                            <ul class="my-social my-d-flex my-gap-2 my-mt-2">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- call items -->
+                        <div class="call-items my-grid-4 my-gap-4 my-mt-6 my-grid-md-2 my-grid-sm-1">
+
+                            <!-- item -->
+                            <div class="item my-d-flex my-align-center my-gap-4">
+                                <div class="w-10 my-fs-lg my-text-primary my-flex-center"><i
+                                        class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div>
+                                    <h5 class="my-text-red  my-uppercase">Pc component</h5>
+                                    <div class="my-d-flex my-gap-2 my-mt-1">
+                                        <p>01973167985,</p>
+                                        <p>01673991833</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item my-d-flex my-align-center my-gap-4">
+                                <div class="w-10 my-text-primary my-fs-lg my-flex-center">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div>
+                                    <h5 class="my-text-red my-uppercase">Gadget</h5>
+                                    <div class="my-d-flex my-gap-2 my-mt-1">
+                                        <p>01973167983,</p>
+                                        <p>01973167985</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item my-d-flex my-align-center my-gap-4">
+                                <div class="w-10 my-text-primary my-fs-lg my-flex-center"><i
+                                        class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div>
+                                    <h5 class="my-text-red  my-uppercase">desktop service</h5>
+                                    <div class="my-d-flex my-gap-2 my-mt-1">
+                                        <p>01322928228</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item my-d-flex my-align-center my-gap-4">
+                                <div class="w-10 my-text-primary my-fs-lg my-flex-center"><i
+                                        class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div>
+                                    <h5 class="my-text-red  my-uppercase">Laptop</h5>
+                                    <div class="my-d-flex my-gap-2 my-mt-1">
+                                        <p>01973167984</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--_____________  Footer Area  _______________-->
             <div class="my-container">
-                <div class="footer-area my-grid-3 my-grid-md-2 my-grid-sm-1 my-gap-10">
+                <div class="footer-area my-grid-3 my-mt-6 my-grid-md-2 my-grid-sm-1 my-gap-10">
 
                     <!-- Singe grid item -->
                     <div>
                         <h4 class="footer-title">Our Business</h4>
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a href="index.html">
-                                <h2 class="my-text-white-off">MIT</h2>
-                            </a>
-                        </div>
 
                         <div class="my-mt-4">
-                            <h5>Always Here for You.</h5>
-                            <p>
+                            <h5 class="my-text-white-off">Always Here for You.</h5>
+                            <p class="my-mt-2">
                                 "We always strive to provide the best products. Your support is extremely important to
                                 us."
                                 Thank you for visit our
                                 website
                             </p>
+                        </div>
 
-                            <p class="my-mt-4">
-                                Hello ipsum dolor sit amet consectetur adipisicing elit. Fugit sed quisquam ex.
-                            </p>
+                        <!-- Logo -->
+                        <div class="logo my-mt-6">
+                            <a href="../index.html">
+                                <img class="w-40" src="../static/images/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="my-mt-6">
+                            <h4 class="my-text-white-off">Membership</h4>
+                            <p>Logo</p>
                         </div>
 
 
-                        <div class="my-mt-7">
+                        <div class="my-mt-6">
                             <h4 class="my-text-white-off"> Join Now</h4>
 
                             <form action="#" class="subcribe my-d-flex my-mt-2">
@@ -1768,163 +1171,139 @@
                     </div>
 
                     <!-- Singe grid item -->
-                    <div class="pages">
-                        <h4 class="footer-title">About More</h4>
-                        <div class="my-grid-2 my-gap-4">
-                            <ul class="my-flex-column my-gap-3">
+                    <div class="pages my-flex-column my-align-center">
+                        <h4 class=" footer-title">About More</h4>
+                        <div class=" my-gap-4">
+                            <ul class="my-flex-column my-gap-4">
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Contact Us
+                                        EMI Information
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        About Us
+                                        Warranty Policy
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Shipping Info
+                                        Privacy Policy
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Refund
+                                        Refund and Return
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Happy Customer
+                                        Terms & Conditions
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Top Products
+                                        Order Procedure
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Happy Customer
+                                        Online Delivery
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="my-d-flex my-align-center my-gap-2">
                                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Top Products
+                                        Add more
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        add more
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        add more
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        add more
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                        add more
                                     </a>
                                 </li>
 
-                            </ul>
-
-
-                            <ul class="my-flex-column my-gap-3">
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Contact Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Shipping Info
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Refund
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Happy Customer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Top Products
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Happy Customer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="my-d-flex my-align-center my-gap-2">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                        Top Products
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
+
+
                     <!-- Singe grid item -->
                     <div>
                         <h4 class="footer-title">
-                            Contact Info
+                            Contact Us
                         </h4>
 
-                        <div class="my-flex-column my-gap-4">
-                            <div class="my-d-flex my-align-center my-gap-3">
-                                <span class="profile-img-lg"><i class="fa-solid fa-mobile-screen"></i></span>
-                                <div>
-                                    <p>0187262627782</p>
-                                    <p>0187262627781</p>
-                                </div>
-                            </div>
-                            <div class="my-d-flex my-align-center my-gap-3">
-                                <span class="profile-img-lg"><i class="fa-regular fa-envelope"></i></span>
-                                <div>
-                                    <p>example@gmail.com</p>
-                                    <p>example2@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="my-d-flex my-align-center my-gap-3">
-                                <span class="profile-img-lg"><i class="fa-solid fa-location-dot"></i></span>
-                                <div>
-                                    <p>House 122,Block A, Road 12</p>
-                                    <p>Mirpur Dhaka</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="my-flex-column my-gap-3">
 
-                        <div class="my-mt-8">
-                            <h4 class="my-text-white-off">Follow Us</h4>
-                            <ul class="my-social my-d-flex my-gap-2 my-mt-2">
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
+                            <!-- Contact item -->
+                            <div class="my-d-flex my-align-start my-gap-3 contact-item">
+                                <h5 class="w-50 ">Head Office </h5>
+                                <div class="my-flex-1">
+                                    <p>Shop No- 117,118,103 & 104, Level-2, Somobay New Market,</p>
+                                    <p>Chasara, Narayanganj-1400, Bangladesh.</p>
+                                </div>
+                            </div>
+
+                            <!-- Contact item -->
+                            <div class="my-d-flex my-align-start my-gap-3 contact-item">
+                                <h5 class="w-50 ">Corporate Office</h5>
+                                <div class="my-flex-1">
+                                    <p>193, President Road, Siraj Mansion (4th Floor),</p>
+                                    <p>Chasara, Narayanganj - 1400, Bangladesh</p>
+                                </div>
+                            </div>
+
+                            <!-- Contact item -->
+                            <div class="my-d-flex my-align-start my-gap-3 contact-item">
+                                <h5 class="w-50 ">Service Center</h5>
+                                <div class="my-flex-1">
+                                    <p>193, President Road, Siraj Mansion (4th Floor),</p>
+                                    <p>Chasara, Narayanganj - 1400, Bangladesh.</p>
+                                </div>
+                            </div>
+
+                            <!-- Contact item -->
+                            <div class="my-d-flex my-align-start my-gap-3 contact-item">
+                                <h5 class="w-50">Warehouse</h5>
+                                <div class="my-flex-1">
+                                    <p>29 DIT Plot, Razzak Villa, Balur Mat, Chasara,</p>
+                                    <p>Narayanganj-1400, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <h5>We Accept</h5>
+                                <a href="./payment" class="my-mt-2">
+                                    <img loading="lazy"
+                                        src="https://www.techlandbd.com/image/cache/catalog/techland/partners/new2/payment-794x102h.png"
+                                        alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1932,21 +1311,19 @@
 
 
             <!-- Footer Bottom -->
-            <div class="my-container">
-                <div
-                    class="footer-bottom  my-mt-8 my-border-top my-flex-sm-column my-gap-4 my-align-start my-flex-between  my-pt-4">
+            <div class="my-container my-d-none">
+                <div class="footer-bottom   my-mt-8 my-border-top my-flex-sm-column my-gap-4 my-grid-2  my-pt-4">
                     <p class="my-fw-normal">
-                        copy right ©design by tanvir <a class="my-text-orange" href="#">webiste
-                            name</a>
+                        copy right ©design by xsellencebdltd <a class="my-text-orange"
+                            href="#">https://www.xsellencebdltd.com/</a>
                     </p>
 
                     <div>
-                        <ul class="my-d-flex my-align-center my-gap-4">
-                            <li><a href="#">Return</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Refund</a></li>
-                            <li><a href="#">Cookies</a></li>
-                        </ul>
+                        <a href="./payment">
+                            <img loading="lazy"
+                                src="https://www.techlandbd.com/image/cache/catalog/techland/partners/new2/payment-794x102h.png"
+                                alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -2377,16 +1754,27 @@
 
 
         <!-- ____________ Message Button ___________ -->
-        <div class="message-btn active my-flex-center ">
-            <a class="my-flex-center" href="https://wa.me/01701957294" target="_blank">
-                <i class="fa-regular fa-message"></i>
-            </a>
-        </div>
+        <div class="right-fixed active">
+            <div class="item  my-flex-center ">
+                <a class="my-flex-center" href="https://wa.me/01701957294" target="_blank">
+                    <i class="fa-regular fa-message"></i>
+                </a>
+            </div>
+            <div class="item my-flex-center my-mt-2 ">
+                <a class="my-flex-center" href="https://wa.me/01701957294" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
 
+        </div>
         <!-- ____________ Up Button ___________ -->
-        <a class="my-flex-center message-btn up-btn active my-flex-center" href="#">
-            <i class="fa-solid fa-angle-up"></i>
+        <a class="my-flex-center right-fixed up-btn active my-flex-center" href="#">
+            <div class="up-icon"><i class="fa-solid fa-angle-up"></i></div>
         </a>
+
+
+
+
 
 
 
@@ -2396,30 +1784,16 @@
 
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="module">
-            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown } from '../static/js/utilitis.js';
+            import {
+                openModalF, closeButtonF, updateQuantity, openSearchDropdown, deleteF, activeF, toggleF, bigImageChangeF, quickViewF
+            } from '../static/js/utilitis.js';
 
             closeButtonF()
+            openSearchDropdown()
+            toggleF('mobile-search-input', 'mobile-search-btn')
 
             // shopping cart
             openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
-
-
-
-            document.addEventListener("DOMContentLoaded", function () {
-                new Swiper(".related-products", {
-                    slidesPerView: 1,  // Default: Show 1 slide on small screens
-                    spaceBetween: 20,  // Space between slides
-                    loop: true,
-                    autoplay: {
-                        delay: 3000,   // Auto-slide every 3 seconds
-                        disableOnInteraction: false,
-                    },
-                    breakpoints: {
-                        768: { slidesPerView: 2 },  // Tablets (768px and above)
-                        1024: { slidesPerView: 3 }  // Desktops (1024px and above)
-                    }
-                });
-            });
 
 
 
@@ -2461,127 +1835,68 @@
 
 
 
+            // Toggle subcategory dropdowns and icon
+            document.querySelectorAll('.subcategory-btn').forEach(subcategory => {
+                subcategory.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent navigation
+                    const nestedDropdown = this.nextElementSibling; // The nested dropdown div
+                    const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon for nested dropdown
 
-
-            // sidebar
-            toggleF('shop-page-sidebar', 'mobile-filter-btn');
-            const sidebar = document.getElementById('shop-page-sidebar');
-            if (sidebar) {
-                const closeBtn = sidebar.querySelector('.sidebar-close-btn');
-                const body = document.querySelector('body');
-
-                function toggleBodyScroll() {
-                    if (sidebar.classList.contains('active')) {
-                        body.style.overflow = 'hidden'; // Hide scrollbar
-                    } else {
-                        body.style.overflow = ''; // Restore scrollbar
-                    }
-                }
-
-                if (closeBtn) {
-                    closeBtn.addEventListener('click', function () {
-                        sidebar.classList.remove('active');
-                        toggleBodyScroll(); // Update scrollbar state
+                    // Close all other nested dropdowns and reset their icons
+                    document.querySelectorAll('.nested-dropdown').forEach(otherNestedDropdown => {
+                        if (otherNestedDropdown !== nestedDropdown) {
+                            otherNestedDropdown.classList.remove('active'); // Close other nested dropdowns
+                            const otherIcon = otherNestedDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
+                            otherIcon.classList.remove('fa-minus');
+                            otherIcon.classList.add('fa-plus');
+                        }
                     });
-                }
 
-                // Observe class changes dynamically
-                const observer = new MutationObserver(toggleBodyScroll);
-                observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
-            }
+                    // Toggle the current nested dropdown
+                    nestedDropdown.classList.toggle('active');
 
-
-
-
+                    // Toggle the icon for the current nested dropdown
+                    if (nestedDropdown.classList.contains('active')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
 
 
 
             toggleF('all-category', 'mobile-menu-icon');
-            openSearchDropdown()
 
 
 
 
-            // Price Range
-            const minRange = document.getElementById('min-price');
-            const maxRange = document.getElementById('max-price');
-            const minInput = document.getElementById('min-price-value');
-            const maxInput = document.getElementById('max-price-value');
-            const sliderTrack = document.querySelector('.slider-track');
 
-            function updateTrack() {
-                const minPercent = (minRange.value / minRange.max) * 100;
-                const maxPercent = (maxRange.value / maxRange.max) * 100;
 
-                sliderTrack.style.background = `linear-gradient(to right, #ccc ${minPercent}%, #ff5722 ${minPercent}%, #ff5722 ${maxPercent}%, #ccc ${maxPercent}%)`;
-            }
 
-            function syncInputs() {
-                minInput.value = minRange.value;
-                maxInput.value = maxRange.value;
-            }
 
-            function syncSliders() {
-                minRange.value = minInput.value;
-                maxRange.value = maxInput.value;
-                updateTrack();
-            }
 
-            minRange.addEventListener('input', () => {
-                if (parseInt(minRange.value) > parseInt(maxRange.value)) {
-                    minRange.value = maxRange.value;
+
+
+            // update qty
+            function updateQty() {
+                const inputQuantity = document.getElementById('input-quantity')
+
+                if (inputQuantity) {
+                    document.getElementById('plus-btn').addEventListener('click', function () {
+                        updateQuantity(inputQuantity, 'increment')
+                        console.log('click')
+                    })
+                    document.getElementById('minus-btn').addEventListener('click', function () {
+                        updateQuantity(inputQuantity, 'decrement')
+                    })
                 }
-                syncInputs();
-                updateTrack();
-            });
-
-            maxRange.addEventListener('input', () => {
-                if (parseInt(maxRange.value) < parseInt(minRange.value)) {
-                    maxRange.value = minRange.value;
-                }
-                syncInputs();
-                updateTrack();
-            });
-
-            minInput.addEventListener('input', syncSliders);
-            maxInput.addEventListener('input', syncSliders);
-
-            updateTrack();
-
-
-
-
-            // Tabs grid and list view
-            function setupTabs(tabBtnSelector, tabContentSelector) {
-                document.querySelectorAll(tabBtnSelector).forEach(button => {
-                    button.addEventListener('click', () => {
-
-                        // Remove active class from all buttons
-                        document.querySelectorAll(tabBtnSelector).forEach(btn => {
-                            btn.classList.remove('active');
-                        });
-
-                        // Add active class to clicked button
-                        button.classList.add('active');
-
-                        // Remove active class from all tab contents
-                        document.querySelectorAll(tabContentSelector).forEach(content => {
-                            content.classList.remove('active');
-                        });
-
-                        // Get the tab ID from the button
-                        const tabId = button.getAttribute('data-tab');
-                        const selectedTabContent = document.getElementById(tabId);
-
-                        // Add active class to the corresponding tab content
-                        if (selectedTabContent) {
-                            selectedTabContent.classList.add('active');
-                        }
-                    });
-                });
             }
+            updateQty()
 
-            setupTabs('.grid-btn', '.shop-content .products');
+
 
         </script>
     </body>

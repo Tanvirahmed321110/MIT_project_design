@@ -346,7 +346,7 @@ window.addEventListener("load", function () {
 
         setTimeout(() => {
             document.getElementById("page-reload-modal").style.display = "none";
-        }, 5000); // Hide after 5 seconds
+        }, 8000); // Hide after 5 seconds
 
-    }, 2000); // Show after 2 seconds
+    }, 1000); // Show after 2 seconds
 });

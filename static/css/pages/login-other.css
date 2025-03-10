@@ -18,16 +18,92 @@ _______________________________*/
 
 .delete-btn {
     color: var(--gray);
+    transition: .2s linear;
 }
 
-.delete-btn:hover {
+.delete-btn:hover i {
     color: var(--primary-color);
+    transition: .2s linear;
+}
+
+.delete-btn i {
+    color: var(--dark);
+    transition: .2s linear;
 }
 
 
+.emi-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 34px;
+    background: var(--primary-color);
+    border-radius: 0px;
+    padding: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+    color: var(--white);
 
+}
 
+.cart-section .btn {
+    flex: 1;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    font-size: 13px;
+}
 
+/* Default state (Show 'Change to Regular') */
+.cart-section .toggle-on {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cart-section .toggle-off {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* Toggle switch handle */
+.cart-section .toggle-handle {
+    position: absolute;
+    left: 0px;
+    width: 10%;
+    height: 100%;
+    background: var(--orange);
+    border-radius: 0px;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(-2px);
+}
+
+/* Active state (Show 'Change to EMI') */
+.emi-btn.active .toggle-on {
+    transform: translateX(-128px);
+    opacity: 0;
+}
+
+.emi-btn.active .toggle-off {
+    transform: translateX(-10px);
+    opacity: 1;
+    font-size: 13px;
+}
+
+.emi-btn.active .toggle-handle {
+    transform: translateX(128px);
+    background: var(--orange);
+}
+
+.emi-btn.active {
+    background-color: #6E0C0C;
+    color: var(--white);
+}
 
 /*___________________________________________
 ____||  Login and Register Page Start  ||____

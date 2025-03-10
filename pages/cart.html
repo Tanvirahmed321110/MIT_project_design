@@ -1099,11 +1099,22 @@
                                         </div>
 
                                         <!-- quantity buttons -->
-                                        <div class="quantity-buttons-area">
-                                            <div class="my-d-flex quantity-buttons">
+                                        <div class="quantity-buttons-area my-align-center  my-flex-column my-gap-2">
+
+                                            <div class="my-d-flex quantity-buttons my-align-center ">
                                                 <input type="button" value="-" class="minus-btn">
                                                 <input type="number" step="1" max="10" class="input-field" value="1">
                                                 <input type="button" value="+" class="plus-btn">
+                                            </div>
+
+                                            <!-- emi toggle button -->
+                                            <div class="emi-btn">
+                                                <span class="btn btn-primary toggle-on">
+                                                    Change to
+                                                    Emi</span>
+                                                <span class="btn btn-secondary toggle-off">Change to
+                                                    Regular</span>
+                                                <span class="toggle-handle btn"></span>
                                             </div>
                                         </div>
 
@@ -1118,7 +1129,8 @@
                                     <!-- Singe cart item -->
                                     <li class="my-d-flex my-gap-4 my-border-bottom my-flex-between my-px-5 my-py-3">
                                         <div>
-                                            <img class="w-15 my-border" src="../static/images/product-img3.webp" alt="">
+                                            <img class="w-15 my-border" src="../static/images/new-porduct (2).webp"
+                                                alt="">
 
                                         </div>
 
@@ -1131,12 +1143,67 @@
                                         </div>
 
                                         <!-- quantity buttons -->
-                                        <div>
-                                            <div class="my-d-flex quantity-buttons">
+                                        <div class="quantity-buttons-area my-align-center  my-flex-column my-gap-2">
+                                            <div class="my-d-flex quantity-buttons my-align-center ">
                                                 <input type="button" value="-" class="minus-btn">
                                                 <input type="number" step="1" max="10" class="input-field" value="1">
                                                 <input type="button" value="+" class="plus-btn">
                                             </div>
+
+                                            <!-- emi toggle button -->
+                                            <div class="emi-btn">
+                                                <span class="btn btn-primary toggle-on">
+                                                    Change to
+                                                    Emi</span>
+                                                <span class="btn btn-secondary toggle-off">Change to
+                                                    Regular</span>
+                                                <span class="toggle-handle btn"></span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <h5>19500</h5>
+
+                                        <!-- delete button -->
+                                        <button class="my-fs-md delete-btn"><i
+                                                class="fa-solid fa-trash-can"></i></button>
+                                    </li>
+
+
+                                    <!-- Singe cart item -->
+                                    <li class="my-d-flex my-gap-4 my-border-bottom my-flex-between my-px-5 my-py-3">
+                                        <div>
+                                            <img class="w-15 my-border" src="../static/images/new-porduct (1).webp"
+                                                alt="">
+
+                                        </div>
+
+                                        <!-- info -->
+                                        <div class=" my-flex-column details my-gap-0">
+                                            <h5>New gaming pc</h5>
+                                            <p class="my-mt-0"><i class="fa-solid fa-bangladeshi-taka-sign"> 22400</i>
+                                            </p>
+                                            <div class="my-fs-sm my-mt-2">discount- <span>250</span></div>
+                                        </div>
+
+                                        <!-- quantity buttons -->
+                                        <div class="quantity-buttons-area my-align-center  my-flex-column my-gap-2">
+
+                                            <div class="my-d-flex quantity-buttons my-align-center">
+                                                <input type="button" value="-" class="minus-btn">
+                                                <input type="number" step="1" max="10" class="input-field" value="1">
+                                                <input type="button" value="+" class="plus-btn">
+                                            </div>
+                                            <!-- emi toggle button -->
+                                            <div class="emi-btn">
+                                                <span class="btn btn-primary toggle-on">
+                                                    Change to
+                                                    Emi</span>
+                                                <span class="btn btn-secondary toggle-off">Change to
+                                                    Regular</span>
+                                                <span class="toggle-handle btn"></span>
+                                            </div>
+
                                         </div>
 
                                         <!-- Price -->
@@ -1150,8 +1217,7 @@
                                     <!-- Singe cart item -->
                                     <li class="my-d-flex my-gap-4 my-border-bottom my-flex-between my-px-5 my-py-3">
                                         <div>
-                                            <img class="w-15 my-border"
-                                                src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                            <img class="w-15 my-border" src="../static/images/new-porduct (5).webp"
                                                 alt="">
 
                                         </div>
@@ -1165,12 +1231,23 @@
                                         </div>
 
                                         <!-- quantity buttons -->
-                                        <div>
-                                            <div class="my-d-flex quantity-buttons">
+                                        <div class="quantity-buttons-area my-align-center  my-flex-column my-gap-2">
+                                            <div class="my-d-flex quantity-buttons my-align-center">
                                                 <input type="button" value="-" class="minus-btn">
                                                 <input type="number" step="1" max="10" class="input-field" value="1">
                                                 <input type="button" value="+" class="plus-btn">
                                             </div>
+
+                                            <!-- emi toggle button -->
+                                            <div class="emi-btn">
+                                                <span class="btn btn-primary toggle-on">
+                                                    Change to
+                                                    Emi</span>
+                                                <span class="btn btn-secondary toggle-off">Change to
+                                                    Regular</span>
+                                                <span class="toggle-handle btn"></span>
+                                            </div>
+
                                         </div>
 
                                         <!-- Price -->
@@ -1914,6 +1991,13 @@
             openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
 
 
+
+            // Select all EMI buttons
+            document.querySelectorAll(".emi-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                });
+            });
 
 
             // Toggle category dropdowns and icon
