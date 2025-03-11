@@ -10,6 +10,7 @@ _______________________________*/
     padding: 0;
     color: var(--border-color);
     background-color: rgb(110 12 12);
+    background-color: #033556;
 }
 
 .header-top .my-container {
@@ -48,6 +49,7 @@ header .my-tooltip .show-text::after {
     color: var(--secondary-hover);
     /* box-shadow: var(--shadow-1); */
     background-color: #000;
+    background-color: #002741;
 }
 
 
@@ -585,7 +587,8 @@ ___________________________________*/
     padding: 0;
     width: 60% !important;
     height: 68dvh;
-    max-width: 800px;
+    max-height: 480px;
+    max-width: 500px;
 }
 
 .page-reload-modal .modal-content img {

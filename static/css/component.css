@@ -2537,6 +2537,7 @@ ______________________________________*/
     box-shadow: var(--shadow-2);
     background-color: var(--white);
     padding: 24px;
+    border-top: 6px solid var(--primary-color);
 }
 
 .common-form .my-input-control {

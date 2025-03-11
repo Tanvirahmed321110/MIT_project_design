@@ -45,7 +45,7 @@ h6 {
     font-weight: var(--fw-600);
     line-height: 20px;
     font-family: 'Trebuchet MS', sans-serif;
-    color: var(--secondary-color);
+    color: var(--dark);
 }
 
 h1 {
@@ -651,6 +651,13 @@ tr {
 
 .my-bg-border {
     background-color: var(--border-color);
+}
+
+
+
+/* text hover */
+.my-text-primary-hover:hover {
+    color: var(--primary-color);
 }
 
 
@@ -1280,6 +1287,14 @@ tr {
 
 .my-flex-1 {
     flex-grow: 1;
+}
+
+.flex-fit {
+    flex: 0 0 auto;
+}
+
+.flex-1 {
+    flex: 1;
 }
 
 .my-flex-column {
