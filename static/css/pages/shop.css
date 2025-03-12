@@ -301,6 +301,16 @@ ______________________________________*/
 }
 
 
+
+
+.brand-shop .brand-shop-area {
+    display: grid;
+    grid-template-columns: 3fr .85fr;
+    gap: 12px;
+}
+
+
+
 /*_____________________________________
   ____||   Responsive For 991px  ||____
 ______________________________________*/
@@ -355,6 +365,12 @@ ______________________________________*/
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .brand-shop .brand-shop-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 }
 

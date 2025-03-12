@@ -189,6 +189,10 @@ _______________________________________*/
 
 
 
+
+
+
+
 .blogs-area {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -209,12 +213,45 @@ _______________________________________*/
     font-size: var(--fs-md);
 }
 
+.blog-category li a {
+    width: 100%;
+    height: 100%;
+    padding: 2px 0;
+}
+
+.blog-category li a:hover {
+    color: var(--primary-color);
+}
+
+.blog-tags a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.blog-title-border {
+    border-bottom: 4px solid var(--primary-color);
+    width: 140px;
+    margin-bottom: 24px;
+}
+
 /* .blogs-area .blog-category {
     background-color: gray;
     height: 222px;
     width: 100%;
 } */
 
+/*  popular-blog-item */
+.popular-blog-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.blogs-area h1 {
+    line-height: 34px;
+}
+
+.popular-blog-item .title:hover {
+    color: var(--primary-color);
+}
 
 /*___________________________________________
 ____||  Login and Register Page Start  ||____
@@ -864,6 +901,21 @@ ___________________________________*/
     transition: .2s linear;
 }
 
+/* teams */
+.teams .my-card img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.teams .icon {
+    width: 34px;
+    height: 34px;
+}
+
+.teams .icon i {
+    color: var(--white);
+}
+
 .our-team .founder .icon i {
     color: var(--white);
 }
@@ -883,6 +935,9 @@ ___________________________________*/
     border: 4px solid var(--primary-color);
 }
 
+.certification .item {
+    cursor: pointer;
+}
 
 /*________________________________________
 ____||  Our Management  Page Start  ||____
@@ -1138,6 +1193,13 @@ ________________________________________________*/
     .pre-order-left {
         padding: 12px;
     }
+
+    /* Blog page */
+    .blogs-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }
 
 @media (max-width:769px) {
@@ -1181,6 +1243,12 @@ ________________________________________________*/
         row-gap: 20px;
         gap: 20px;
         justify-content: flex-start;
+    }
+
+
+    /* right-video */
+    .right-video {
+        width: 100%;
     }
 }
 

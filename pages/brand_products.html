@@ -4,10 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blogs</title>
+        <title>Brand Proudcts</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <!--  common css -->
         <link rel="stylesheet" href="../static/css/common.css">
-        <link rel="stylesheet" href="../static/css/pages/login-other.css">
+        <!-- home page css -->
+        <link rel="stylesheet" href="../static/css/pages/shop.css">
     </head>
 
     <body>
@@ -1053,12 +1055,22 @@
             <!-- ======================================================= -->
             <!-- ==========    brigtcamp Section  Start  Here   ======== -->
             <!-- ======================================================= -->
-            <section class="brigtcamp">
-                <div class="my-container my-pb-0">
-                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5   brigtcamp-area contact-page">
+            <section class="brigtcamp my-border-top">
+                <div class="my-container my-pb-0 ">
+                    <ul class="my-d-flex my-mt-2 my-align-center my-gap-5 brigtcamp-area   contact-page">
                         <li><a href="../index.html">Home</a> </li>
-                        <li>Blogs</li>
+                        <li><a href="./overview.html">Overview</a> </li>
+                        <li>
+                            <h6>Brand Items</h6>
+                        </li>
                     </ul>
+
+                    <div class="my-mt-5 my-pb-1">
+                        <div>
+                            <img src="https://www.globalbrand.com.bd/image/cache/catalog/Banners/Epson-Web-Banner-1600x500.jpg"
+                                alt="">
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- ======================================================= -->
@@ -1068,177 +1080,990 @@
 
 
 
+            <!-- ======================================================= -->
+            <!-- ==========    Shop Body Section  Start  Here   ======== -->
+            <!-- ======================================================= -->
+            <section class="brand-shop">
+                <div class="my-container">
+                    <div class="brand-shop-area my-mt-4">
 
-            <!-- ================================================================== -->
-            <!-- ==========    Product Detilas Main Section  Start  Here   ======== -->
-            <!-- ================================================================== -->
-            <section class="">
-                <div class="my-container ">
-                    <div class=" my-text-gray">
                         <div>
-                            <h1 class="my-fs-xxl my-text-center"> Our Popular Blogs </h1>
+                            <!--___________________  Shop Content  ___________________-->
+                            <div class="">
+
+                                <!-- head -->
+                                <div class="head  my-w-100 my-flex-md-column my-bg-white my-p-4 my-gap-2 my-radius-sm">
+                                    <h3 class="my-d-flex my-align-center my-gap-2">
+                                        Explore Epson Brand Products
+                                    </h3>
+                                    <p>Buy the best Epson Brand products with best price in Bangladesh</p>
+                                </div>
+
+
+
+                                <!-- ______________ Grid View Products _______________ -->
+                                <div class="products grid-view active my-grid-4 my-gap-2 my-grid-sm-2 my-grid-xs-1 my-grid-md-2 my-mt-3"
+                                    id="tab1">
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/desktop-pc/ryzen-pc/ryzen-7-7700/ryzen-7-7700-01-200x200.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 1200 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5> Aiwa MF2219-B 22" FHD IPS 100Hz Monitor</h5>
+
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>12332121</span>
+                                                        </p>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>18600.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+                                                    <!-- Buttons -->
+                                                    <div
+                                                        class="add-to-cart my-d-flex my-justify-end my-mt-0 my-w-100 my-text-right">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/yoga-7-2-in-1-14ahp9/yoga-7-2-in-1-14ahp9-01-200x200.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 900 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>Dahua DHI-LM22-L200V 21.45 inch 100Hz FHD ELED Monitor</h5>
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>232121</span>
+                                                        </p>
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>42200.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+                                                    <!-- Buttons -->
+                                                    <div class="my-mt-0 my-d-flex my-align-end my-justify-end">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-l200v/dhi-lm22-l200v-01-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 1200 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>Xiaomi A22i 21.45" 75Hz FHD Monitor</h5>
+
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>12332121</span>
+                                                        </p>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>41000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+                                                    <!-- Buttons -->
+                                                    <div
+                                                        class="add-to-cart my-d-flex my-justify-end my-mt-0 my-w-100 my-text-right">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/television/haier/h43p7ux/h43p7ux-01-200x200.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 900 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>New Channel Soundbar with Wireless Subwoofer</h5>
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>232121</span>
+                                                        </p>
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>26000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+
+                                                    <!-- Buttons -->
+                                                    <div class="my-mt-0 my-d-flex my-align-end my-justify-end">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/dahua/dhi-lm22-l200v/dhi-lm22-l200v-01-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 1200 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5> Soundbar with Wireless Subwoofer 2025</h5>
+
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>12332121</span>
+                                                        </p>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>29000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+                                                    <!-- Buttons -->
+                                                    <div
+                                                        class="add-to-cart my-d-flex my-justify-end my-mt-0 my-w-100 my-text-right">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/trendsonic/ts5322/ts5322-001-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 900 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>New Channel Soundbar with Wireless Subwoofer</h5>
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>232121</span>
+                                                        </p>
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+                                                    <!-- Buttons -->
+                                                    <div class="my-mt-0 my-d-flex my-align-end my-justify-end">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/aiwa/mf2219-b-/mf2219-b-001-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 1200 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5> Soundbar with Wireless Subwoofer 2025</h5>
+
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>12332121</span>
+                                                        </p>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+
+                                                    <!-- Buttons -->
+                                                    <div
+                                                        class="add-to-cart my-d-flex my-justify-end my-mt-0 my-w-100 my-text-right">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/lenovo/d19-10/d19-10-001-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 900 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>New Channel Soundbar with Wireless Subwoofer</h5>
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>232121</span>
+                                                        </p>
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+
+
+                                                    <!-- Buttons -->
+                                                    <div class="my-mt-0 my-d-flex my-align-end my-justify-end">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/trendsonic/ts5322/ts5322-001-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 1200 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5> Soundbar with Wireless Subwoofer 2025</h5>
+
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>12332121</span>
+                                                        </p>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+                                                    <!-- Buttons -->
+                                                    <div
+                                                        class="add-to-cart my-d-flex my-justify-end my-mt-0 my-w-100 my-text-right">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/trendsonic/ts5322/ts5322-001-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 900 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>New Channel Soundbar with Wireless Subwoofer</h5>
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>232121</span>
+                                                        </p>
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+
+                                                    <!-- Buttons -->
+                                                    <div class="my-mt-0 my-d-flex my-align-end my-justify-end">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/monitor/lenovo/d19-10/d19-10-001-228x228.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 1200 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5> Soundbar with Wireless Subwoofer 2025</h5>
+
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>12332121</span>
+                                                        </p>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+                                                    <!-- Buttons -->
+                                                    <div
+                                                        class="add-to-cart my-d-flex my-justify-end my-mt-0 my-w-100 my-text-right">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Product Cart 1 -->
+                                    <div class="product-cart-area  my-card">
+                                        <div class="product-cart">
+                                            <a href="./Pages/product.html" class="images">
+                                                <img class="display-image"
+                                                    src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/yoga-7-2-in-1-14ahp9/yoga-7-2-in-1-14ahp9-01-200x200.webp"
+                                                    loading="lazy" alt="product">
+                                            </a>
+
+                                            <!-- Hide icons -->
+                                            <ul class="hide-icons my-flex-column my-gap-1">
+                                                <li class="hide-icon my-tooltip my-flex-center quick-view-btn">
+                                                    <i class="fa fa-eye"></i>
+                                                    <div class="show-text">Quick View</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-random"></i>
+                                                    <div class="show-text">Compare Product</div>
+                                                </li>
+                                                <li class="hide-icon my-tooltip my-flex-center">
+                                                    <i class="fa fa-heart"></i>
+                                                    <div class="show-text">Add to Love List</div>
+                                                </li>
+                                            </ul>
+
+
+                                            <!-- discount -->
+                                            <div class="base save my-fs-xs">
+                                                Save 900 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                                for online order
+                                            </div>
+
+                                            <!-- Product Content -->
+                                            <div class="product-content">
+                                                <div class="my-mt-2 desc my-p-relative">
+                                                    <a href="./Pages/product.html" class="name">
+                                                        <h5>New Channel Soundbar with Wireless Subwoofer</h5>
+
+                                                        <p class="my-mt-1"><span class="">Product Id:</span>
+                                                            <span>232121</span>
+                                                        </p>
+
+                                                        <!-- <div class="show-desc ">
+                                                                                <p>HP M22F 21.5 Inch FHD IPS Monitor</p>
+                                                                                <p class="my-mt-1">Product Id: <span>#12332121</span></p>
+                                                                            </div> -->
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="my-w-100">
+
+                                                    <!-- Price -->
+                                                    <div class="price my-mt-0 my-d-flex my-align-center my-gap-2">
+                                                        <h4 class="new-price my-fw-bolder">
+                                                            <span>33000.00/-</span>
+                                                        </h4>
+                                                        <del class="old-price my-fs-sm">
+                                                            <span>34500.00/-</span>
+                                                        </del>
+                                                    </div>
+
+
+
+
+                                                    <!-- Buttons -->
+                                                    <div class="my-mt-0 my-d-flex my-align-end my-justify-end">
+                                                        <button class="my-btn my-primary-btn"><span>Buy
+                                                                Now</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Pagination -->
+                            <div class="pagination my-mt-5">
+                                <ul class="my-d-flex my-align-center my-gap-1 my-justify-end">
+                                    <li>
+                                        <a class="disable" href="#"> <i class="fa-solid fa-chevron-left"></i>
+                                            Previous</a>
+                                    </li>
+                                    <li class="active"><a class="" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">Next <i class="fa-solid fa-chevron-right"></i> </a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="my-mt-4 blogs-area">
-                        <div class="blogs my-grid-3 my-grid-md-2 my-grid-sm-1 my-gap-4">
 
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/IdeaPad-Slim-3i-15iRH8-Post-(7FLK)(760-x-428)-740x450w.jpg"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        সেরা পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
+                        <!--___________________  right side  ___________________-->
+                        <div class=" right-side my-flex-column my-gap-3">
+                            <div class=" my-card my-flex-column my-align-center">
+                                <div>
+                                    <img class="w-20"
+                                        src="https://www.globalbrand.com.bd/image/cache/catalog/globalbrand-buy-poduct-online-get-free-delivery-bangladesh-240x120h.gif"
+                                        alt="">
+                                </div>
+                                <div class="my-mt-6 my-text-center">
+                                    <h4 class="my-uppercase">Free delivary</h4>
+                                    <div class="my-mt-2">On order above TK 1200</div>
                                 </div>
                             </div>
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/IdeaPad-Slim-5i-AI-Powered-Social-Post-740x450w.png"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        সেরা পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
+                            <div class=" my-card my-flex-column my-align-center">
+                                <div>
+                                    <img class="w-15" src="../static/images/phone-call.png" alt="">
+                                </div>
+                                <div class="my-mt-6 my-text-center">
+                                    <h4 class="my-uppercase">Hot Line</h4>
+                                    <div class="my-mt-2">0145465554</div>
+                                    <div class="my-mt-1">0145465540</div>
                                 </div>
                             </div>
-
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/Cudy-Wi-Fi-7-Router-PR-740x450w.jpg"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        নতুন এআই সমৃদ্ধ IdeaPad Slim 5i: ক্রিয়েটিভ
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
+                            <div class=" my-card my-flex-column my-align-center">
+                                <div>
+                                    <img class="w-30"
+                                        src="https://www.globalbrand.com.bd/image/cache/catalog/globalbrand-buy-poduct-online-get-free-delivery-bangladesh-240x120h.gif"
+                                        alt="">
+                                </div>
+                                <div class="my-mt-6 my-text-center">
+                                    <h4 class="my-uppercase">Free delivary</h4>
+                                    <div class="my-mt-2">On order above TK 1200</div>
                                 </div>
                             </div>
-
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/01-Brother-740x450w.jpg"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        সাশ্রয়ী মূল্যের নতুন প্রিন্টার দেশের বাজারে উন্মোচন
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/IdeaPad-Slim-3i-15iRH8-Post-(7FLK)(760-x-428)-740x450w.jpg"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        সেরা পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/IdeaPad-Slim-5i-AI-Powered-Social-Post-740x450w.png"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        সেরা পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/Cudy-Wi-Fi-7-Router-PR-740x450w.jpg"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        নতুন এআই সমৃদ্ধ IdeaPad Slim 5i: ক্রিয়েটিভ
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- single blog -->
-                            <div class="blog my-bg-white my-shadow-1">
-                                <a href="./blog.html">
-                                    <img src="https://www.globalbrand.com.bd/image/cache/catalog/01-Brother-740x450w.jpg"
-                                        alt="" loading="lazy">
-                                </a>
-                                <div class="my-p-4 my-mt-2">
-                                    <h4>
-                                        সাশ্রয়ী মূল্যের নতুন প্রিন্টার দেশের বাজারে উন্মোচন
-                                    </h4>
-                                    <div class="my-mt-4 my-fs-lg">
-                                        <a class="my-fs-lg my-text-primary-hover" href="./blog.htm">Learn More <span
-                                                class="my-fs-sm"><i class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!--***************    Blog Category   **************** -->
-                        <div class="blog-category my-bg-white my-shadow-1">
-                            <div class="my-px-4 my-pt-3 my-pb-2">
-                                <h3>Blog Category</h3>
-                            </div>
-                            <ul>
-                                <li class="my-px-4 my-fs-md my-py-2 my-border-bottom"><a href="#">Press Release</a></li>
-                                <li class="my-px-4 my-fs-md my-py-2 my-border-bottom"><a href="#">Buying Guides</a></li>
-                                <li class="my-px-4 my-fs-md my-py-2 my-border-bottom"><a href="#">Technology</a></li>
-                                <li class="my-px-4 my-fs-md my-py-2 my-border-bottom"><a href="#">News</a></li>
-                                <li class="my-px-4 my-fs-md my-py-2 my-border-bottom"><a href="#">Other</a></li>
-                            </ul>
                         </div>
                     </div>
 
                 </div>
             </section>
-            <!-- ================================================================ -->
-            <!-- ==========    Product Detilas Main Section  End  Here   ======== -->
-            <!-- ================================================================ -->
+
+            <!-- ===================================================== -->
+            <!-- ==========    Shop Body Section  End  Here   ======== -->
+            <!-- ===================================================== -->
 
 
         </main>
@@ -1896,6 +2721,9 @@
 
 
 
+
+
+
         <!-- ____________ Message Button ___________ -->
         <div class="message-btn active my-flex-center ">
             <a class="my-flex-center" href="https://wa.me/01701957294" target="_blank">
@@ -1916,17 +2744,502 @@
 
 
 
+        <!-- ====================================================== -->
+        <!-- ==========    Quick View Modal  Start  Here   ======== -->
+        <!-- ====================================================== -->
+        <div class="my-modal qucik-view-modal">
+            <div class="modal-content lg  product-details-main">
+
+                <!-- close modal -->
+                <button class=" modal-close-btn my-primary-btn close-btn my-btn">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </button>
+
+                <div class="product-details-main-area my-grid-2 my-grid-md-1 my-gap-4 my-bg-white ">
+                    <!--______________  Image  _____________ -->
+                    <div class="my-w-100  image-area my-flex-column   my-p-4 my-p-3-sm ">
+                        <div class="image  ">
+                            <div class="big-image ">
+                                <img class="my-border" src="../static/images/product-img3.webp" id="big-img" alt="">
+                            </div>
+
+                            <!-- small images -->
+                            <div class="small-images my-d-flex my-align-center my-gap-2 my-mt-5 my-has-scrollbar-sm">
+                                <img class="w-20 my-p-1 my-border active"
+                                    src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                    alt="">
+                                <img class="w-20 my-p-1 my-border" src="../static/images/product-img3.webp" alt="">
+                                <img class="w-20 my-p-1 my-border" src="../static/images/product-img4.webp" alt="">
+                                <img class="w-20 my-p-1 my-border"
+                                    src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                    alt="">
+                                <img class="w-20 my-p-1 my-border active"
+                                    src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                    alt="">
+                                <img class="w-20 my-p-1 my-border" src="../static/images/product-img3.webp" alt="">
+                                <img class="w-20 my-p-1 my-border" src="../static/images/product-img4.webp" alt="">
+                                <img class="w-20 my-p-1 my-border"
+                                    src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                    alt="">
+                                <img class="w-20 my-p-1 my-border"
+                                    src="../static/images/safeway-veloce-pro-mtg-1925-mid-tower-black-atx-11655983223.webp"
+                                    alt="">
+                            </div>
+                        </div>
+
+
+                        <!-- Banner -->
+                        <div class="my-mt-50 my-flex-center product-banner my-w-100">
+                            <a href="#" class="my-flex-center">
+                                <img src="https://www.ryans.com/storage/media_gallery/Falgun-Fest-2025-Up-to-50000-tk-Discount-offer-head_1739005121.webp"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!--______________  Right Details  _____________ -->
+                    <div class="right-details my-p-5 my-p-3-sm  my-bg-white my-shadow-sm my-flex-column my-gap-6">
+                        <!-- title -->
+                        <h4>
+                            HP 15-fc0166AU AMD Ryzen 5 7520U 8GB DDR5, 512GB SSD 15.6 Inch FHD Display Moonlight
+                            Blue Laptop
+                        </h4>
+
+
+                        <div>
+                            <!-- Rating -->
+                            <div class="rating my-d-flex my-align-center my-gap-3">
+                                <a href="#" class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </a>
+                                <div>
+                                    <span>22 reviews</span>
+                                </div>
+                            </div>
+
+                            <!-- SKU -->
+                            <div
+                                class="my-d-flex my-gap-4 my-mt-2 my-fit-content my-align-center  my-radius-md sku-area">
+                                <div>
+                                    <strong>Product Id:</strong>
+                                    #4323423423
+                                </div>
+                            </div>
+                            <div class="instock tag my-mt-2">in stock</div>
+                        </div>
+
+
+
+                        <!-- Quick Detials -->
+                        <div class="quick-details my-mt-3">
+                            <h4>Quick Detials</h4>
+                            <ul class="my-mt-3">
+                                <li>Processor Type. - Ryzen 5</li>
+                                <li>Generation - Ryzen</li>
+                                <li>RAM - 8GB</li>
+                                <li>Storage - 512GB SSD</li>
+                                <li>Graphics Memory - Shared</li>
+                                <li>Display Size (Inch) - 15.6</li>
+                            </ul>
+
+                            <div class="my-fit-content">
+                                <div class="helpline my-mt-3 ">
+                                    <span class="my-fs-md"><i class=" fa-solid fa-headset"></i></span>
+                                    <div>
+                                        <div>Helpline</div>
+                                        <div class="my-mt-1">0665544144</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- price -->
+                        <div class="price my-mt-3">
+                            <!-- for ram , color , size -->
+                            <div class="">
+                                <h5>Ram</h5>
+                                <div class="varient-items my-d-flex my-align-center my-gap-2 my-mt-1">
+                                    <div class="item active">
+                                        4 GB
+                                    </div>
+                                    <div class="item">
+                                        16 GB
+                                    </div>
+                                    <div class="item">
+                                        32 GB
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- price sale and regular -->
+                            <div class="my-d-flex  price-area my-gap-2 my-mt-4">
+                                <!-- special price -->
+                                <div class="new-price my-fit-content my-px-4 my-bg-white-off my-p-2 my-radius-sm">
+                                    <p>Special Price </p>
+                                    <h4>TK <span>43,000</span></h4>
+                                </div>
+                                <div class="old-price  my-fit-content my-px-4 my-border my-p-2 my-radius-sm">
+                                    <p>Regular Price </p>
+                                    <del class="my-text-gray">TK <span>49,000</span></del>
+                                </div>
+                            </div>
+
+                            <div class="tag save my-bg-white-off my-text-gray  my-mt-4">Save Tk <span>3020</span> on
+                                online order
+                            </div>
+                        </div>
+
+
+                        <!-- Quantity -->
+                        <div class="btn-quantity my-mt-3">
+                            <div class="my-d-flex my-gap-6 my-align-center ">
+                                <!-- quantity buttons -->
+                                <div class="my-d-flex quantity-buttons">
+                                    <input type="button" value="-" id="minus-btn" class="minus-btn">
+                                    <input type="number" step="1" max="10" class="input-field" id="input-quantity"
+                                        value="1">
+                                    <input type="button" value="+" class="plus-btn" id="plus-btn">
+                                </div>
+
+                                <!-- compare and wishlist btn -->
+                                <div class="my-d-flex my-align-center my-gap-2 ">
+                                    <!-- compare button-->
+                                    <button class="my-btn overflow-unset my-btn-sm my-border2 my-tooltip">
+                                        Compare
+                                        <div class="show-text">Add to compare</div>
+                                    </button>
+
+                                    <!-- wishlist button -->
+                                    <button class="my-btn my-btn-sm overflow-unset  my-border2 my-tooltip">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <div class="show-text">Add to wishlist</div>
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+                            <div class="my-d-flex my-gap-3 my-mt-4">
+                                <!-- add to cart button -->
+                                <button class="my-btn  my-btn-outline my-bg-white-off">Add To
+                                    Cart</button>
+                                <!-- Buy Now -->
+                                <button class="my-btn my-secendary-btn buy-now-btn my-radius-sm  ">Buy
+                                    Now</button>
+                            </div>
+                        </div>
+
+                        <!-- Print and Mail Button share -->
+                        <div class="share">
+                            <h5 class="my-text-gray share-header"> Share
+                                <i class="fa-regular  fa-share-from-square"></i>
+                            </h5>
+                            <div class="my-d-flex my-align-center my-gap-2 my-my-2">
+                                <!-- gmail -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <div class="show-text">Gamil</div>
+                                </button>
+
+                                <!-- print -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                    id="print-btn">
+                                    <i class="fa-solid fa-print"></i>
+                                    <div class="show-text">Print Now</div>
+                                </button>
+
+                                <!-- what's app -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                    id="print-btn">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <div class="show-text">what's app</div>
+                                </button>
+
+                                <!-- messenger -->
+                                <button class="my-tooltip overflow-unset my-text-gray my-btn my-btn-sm my-btn-outline"
+                                    id="print-btn">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                    <div class="show-text">messenger</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="module">
-            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown, bigImageChangeF } from '../static/js/utilitis.js';
+            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown, quickViewF, bigImageChangeF } from '../static/js/utilitis.js';
 
             closeButtonF()
+            openSearchDropdown()
+            toggleF('mobile-search-input', 'mobile-search-btn')
 
             // shopping cart
             openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
 
 
+
+            document.addEventListener("DOMContentLoaded", function () {
+                new Swiper(".related-products", {
+                    slidesPerView: 1,  // Default: Show 1 slide on small screens
+                    spaceBetween: 20,  // Space between slides
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,   // Auto-slide every 3 seconds
+                        disableOnInteraction: false,
+                    },
+                    breakpoints: {
+                        768: { slidesPerView: 2 },  // Tablets (768px and above)
+                        1024: { slidesPerView: 3 }  // Desktops (1024px and above)
+                    }
+                });
+            });
+
+
+
+            // Quick View
+            quickViewF('.quick-view-btn')
+
+
+
+
+            // big image change
+            bigImageChangeF('big-img', '.small-images img')
+
+
+            // big image zoom in when hover
+            document.addEventListener("DOMContentLoaded", function () {
+                const bigImage = document.getElementById('big-img');
+
+                bigImage.addEventListener('mousemove', function (e) {
+                    const { left, top, width, height } = bigImage.getBoundingClientRect();
+                    const x = ((e.clientX - left) / width) * 100;
+                    const y = ((e.clientY - top) / height) * 100;
+
+                    bigImage.style.transformOrigin = `${x}% ${y}%`;
+                    bigImage.style.transform = "scale(2)"; // Zoom level
+                });
+
+                bigImage.addEventListener('mouseleave', function () {
+                    bigImage.style.transform = "scale(1)"; // Reset zoom
+                });
+            });
+
+
+
+
+
+
+            // Toggle category dropdowns and icon
+            document.querySelectorAll('.open-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const dropdown = this.nextElementSibling; // The dropdown div
+                    const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon
+
+                    // Close all other dropdowns and reset their icons
+                    document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active'); // Close other dropdowns
+                            const otherIcon = otherDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
+                            if (otherIcon) {
+                                otherIcon.classList.remove('fa-minus'); // Change icon to plus
+                                otherIcon.classList.add('fa-plus');
+                            }
+                        }
+                    });
+
+                    // Toggle the current dropdown
+                    dropdown.classList.toggle('active');
+
+                    // Toggle the icon for the current dropdown
+                    if (dropdown.classList.contains('active')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
+
+
+
+
+
+            // sidebar
+            toggleF('shop-page-sidebar', 'mobile-filter-btn');
+            const sidebar = document.getElementById('shop-page-sidebar');
+            if (sidebar) {
+                const closeBtn = sidebar.querySelector('.sidebar-close-btn');
+                const body = document.querySelector('body');
+
+                function toggleBodyScroll() {
+                    if (sidebar.classList.contains('active')) {
+                        body.style.overflow = 'hidden'; // Hide scrollbar
+                    } else {
+                        body.style.overflow = ''; // Restore scrollbar
+                    }
+                }
+
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', function () {
+                        sidebar.classList.remove('active');
+                        toggleBodyScroll(); // Update scrollbar state
+                    });
+                }
+
+                // Observe class changes dynamically
+                const observer = new MutationObserver(toggleBodyScroll);
+                observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+            }
+
+
+
+
+
+
+
+
+
+
+
+            document.querySelectorAll(".item-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    const item = this.closest(".item");
+                    item.classList.toggle("active");
+                });
+            });
+
+
+
+
+
+
+            toggleF('all-category', 'mobile-menu-icon');
+            openSearchDropdown()
+
+
+
+
+            // Price Range
+            const minRange = document.getElementById('min-price');
+            const maxRange = document.getElementById('max-price');
+            const minInput = document.getElementById('min-price-value');
+            const maxInput = document.getElementById('max-price-value');
+            const sliderTrack = document.querySelector('.slider-track');
+
+            function updateTrack() {
+                const minPercent = (minRange.value / minRange.max) * 100;
+                const maxPercent = (maxRange.value / maxRange.max) * 100;
+
+                sliderTrack.style.background = `linear-gradient(to right, #ccc ${minPercent}%, #1878F2 ${minPercent}%, #1878F2 ${maxPercent}%, #ccc ${maxPercent}%)`;
+            }
+
+            function syncInputs() {
+                minInput.value = minRange.value;
+                maxInput.value = maxRange.value;
+            }
+
+            function syncSliders() {
+                minRange.value = minInput.value;
+                maxRange.value = maxInput.value;
+                updateTrack();
+            }
+
+            minRange.addEventListener('input', () => {
+                if (parseInt(minRange.value) > parseInt(maxRange.value)) {
+                    minRange.value = maxRange.value;
+                }
+                syncInputs();
+                updateTrack();
+            });
+
+            maxRange.addEventListener('input', () => {
+                if (parseInt(maxRange.value) < parseInt(minRange.value)) {
+                    maxRange.value = minRange.value;
+                }
+                syncInputs();
+                updateTrack();
+            });
+
+            minInput.addEventListener('input', syncSliders);
+            maxInput.addEventListener('input', syncSliders);
+
+            updateTrack();
+
+
+
+
+            // Tabs grid and list view
+            function setupTabs(tabBtnSelector, tabContentSelector) {
+                document.querySelectorAll(tabBtnSelector).forEach(button => {
+                    button.addEventListener('click', () => {
+
+                        // Remove active class from all buttons
+                        document.querySelectorAll(tabBtnSelector).forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        // Remove active class from all tab contents
+                        document.querySelectorAll(tabContentSelector).forEach(content => {
+                            content.classList.remove('active');
+                        });
+
+                        // Get the tab ID from the button
+                        const tabId = button.getAttribute('data-tab');
+                        const selectedTabContent = document.getElementById(tabId);
+
+                        // Add active class to the corresponding tab content
+                        if (selectedTabContent) {
+                            selectedTabContent.classList.add('active');
+                        }
+                    });
+                });
+            }
+
+            setupTabs('.grid-btn', '.shop-content .products');
+
+
+
+
+
+            // update qty
+            function updateQty() {
+                const inputQuantity = document.getElementById('input-quantity')
+
+                if (inputQuantity) {
+                    document.getElementById('plus-btn').addEventListener('click', function () {
+                        updateQuantity(inputQuantity, 'increment')
+                        console.log('click')
+                    })
+                    document.getElementById('minus-btn').addEventListener('click', function () {
+                        updateQuantity(inputQuantity, 'decrement')
+                    })
+                }
+            }
+            updateQty()
+
+
+            // active class for varient ram
+            activeF('.varient-items .item')
 
         </script>
     </body>
