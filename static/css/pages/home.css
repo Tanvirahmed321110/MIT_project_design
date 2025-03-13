@@ -394,11 +394,11 @@ ________________________________*/
 
 
 .marqueeone img {
-    width: 80%;
-    max-width: 250px;
-    height: 80%;
+    width: 120px;
+    max-width: 200px;
     max-width: 240px;
     border-right: 1px solid var(--white-off);
+    padding: 0 12px;
 }
 
 .marquee div {

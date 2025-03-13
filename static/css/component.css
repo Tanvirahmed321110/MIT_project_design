@@ -1558,7 +1558,7 @@ input[type="radio"]:checked::after {
     z-index: 6;
     padding: 10px;
     transition: 1s ease-in-out;
-    background-color: gainsboro;
+    background-color: var(--before);
     top: 70%;
     transform: translateY(-70%);
     height: fit-content;
@@ -1584,7 +1584,7 @@ input[type="radio"]:checked::after {
 }
 
 .product-cart .hide-icon:hover {
-    background-color: var(--secondary-hover);
+    background-color: var(--primary-hover-color);
 }
 
 .product-cart:hover .hide-icons {
@@ -1671,6 +1671,13 @@ input[type="radio"]:checked::after {
     width: 100%;
 }
 
+.product-cart .show-text {
+    background-color: var(--primary-color);
+}
+
+.product-cart .show-text::after {
+    background-color: var(--primary-color) !important;
+}
 
 
 /*________________________________*\
