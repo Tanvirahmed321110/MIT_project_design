@@ -2909,7 +2909,13 @@ ___________________________________*/
         bottom: 214px;
         right: 4px;
     }
+
+    .product-cart .base.save {
+        width: 96%;
+        font-size: 12px;
+    }
 }
+
 
 /*________________________________*\
   ||     Responsive For 480px     ||

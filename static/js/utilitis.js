@@ -102,7 +102,7 @@ export function updateQuantity(inputField, operation) {
 
 
 // setup quantity
-function setupQuantityButtons() {
+export function setupQuantityButtons() {
     const allCartItems = document.querySelectorAll('.shopping-cart-modal .item');
 
     allCartItems.forEach((item) => {
@@ -123,8 +123,7 @@ function setupQuantityButtons() {
 
 }
 
-// Call setupQuantityButtons
-setupQuantityButtons();
+
 
 
 
@@ -301,6 +300,81 @@ dropdwonToggle('category-sticky')
 
 
 
+
+
+
+
+
+
+// Toggle category dropdowns and icon  for Mobile category
+document.querySelectorAll('.open-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const dropdown = this.nextElementSibling; // The dropdown div
+        const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon
+
+        // Close all other dropdowns and reset their icons
+        document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+                otherDropdown.classList.remove('active'); // Close other dropdowns
+                const otherIcon = otherDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
+                if (otherIcon) {
+                    otherIcon.classList.remove('fa-minus'); // Change icon to plus
+                    otherIcon.classList.add('fa-plus');
+                }
+            }
+        });
+
+        // Toggle the current dropdown
+        dropdown.classList.toggle('active');
+
+        // Toggle the icon for the current dropdown
+        if (dropdown.classList.contains('active')) {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+        } else {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+        }
+    });
+});
+
+
+
+// Toggle subcategory dropdowns and icon for Mobile category
+document.querySelectorAll('.subcategory-btn').forEach(subcategory => {
+    subcategory.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent navigation
+        const nestedDropdown = this.nextElementSibling; // The nested dropdown div
+        const icon = this.querySelector('.plus-minus-btn i'); // The plus/minus icon for nested dropdown
+
+        // Close all other nested dropdowns and reset their icons
+        document.querySelectorAll('.nested-dropdown').forEach(otherNestedDropdown => {
+            if (otherNestedDropdown !== nestedDropdown) {
+                otherNestedDropdown.classList.remove('active'); // Close other nested dropdowns
+                const otherIcon = otherNestedDropdown.previousElementSibling.querySelector('.plus-minus-btn i');
+                otherIcon.classList.remove('fa-minus');
+                otherIcon.classList.add('fa-plus');
+            }
+        });
+
+        // Toggle the current nested dropdown
+        nestedDropdown.classList.toggle('active');
+
+        // Toggle the icon for the current nested dropdown
+        if (nestedDropdown.classList.contains('active')) {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+        } else {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+        }
+    });
+});
+
+toggleF('all-category', 'mobile-menu-icon');
+
+
+
 const allCategoryClose = document.getElementById('all-category-close');
 const mobileMenuIcon = document.getElementById('mobile-menu-icon');
 
@@ -334,19 +408,22 @@ export function tabF(tabSelector, contentSelector) {
 
 
 
+// when page reload then show modal
+function pageReloadModal() {
+    const modal = document.getElementById('page-reload-modal');
 
+    if (!modal) return; // Exit if modal does not exist
 
-// Page Reload Modal
-window.addEventListener("load", function () {
-    setTimeout(() => {
-        const modal = this.document.getElementById('page-reload-modal')
-        if (modal) {
-            modal.classList.add('active')
-        }
-
+    window.addEventListener("load", function () {
         setTimeout(() => {
-            document.getElementById("page-reload-modal").style.display = "none";
-        }, 8000); // Hide after 5 seconds
+            modal.classList.add('active');
 
-    }, 1000); // Show after 2 seconds
-});
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 5000); // Hide after 5 seconds
+
+        }, 2000); // Show after 2 seconds
+    });
+}
+
+pageReloadModal();

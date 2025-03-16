@@ -1102,10 +1102,16 @@ ___________________________________*/
 }
 
 .contact-area .left i {
-    color: var(--gray);
+    color: var(--white);
 }
 
 
+.service-category .pages-text {
+    background-color: var(--primary-color);
+    padding: 10px 14px;
+    border-radius: 2px;
+    color: var(--white);
+}
 
 
 
@@ -1270,18 +1276,6 @@ ________________________________________________*/
         padding: 12px;
     }
 
-    /* .products-area-table .details {
-        width: 200px !important;
-        word-wrap: nowrap;
-        text-wrap: nowrap;
-    }
-
-    .products-area-table .col {
-        margin-right: 12px;
-        word-wrap: nowrap;
-        text-wrap: nowrap;
-        min-width: 140px;
-    } */
 
     .checkout-layout .my-input-control input {
         max-width: unset;
@@ -1296,5 +1290,12 @@ ________________________________________________*/
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
+    }
+
+
+    /* For our Team Page */
+    .social-contact.my-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }

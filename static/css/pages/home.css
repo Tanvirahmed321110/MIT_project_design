@@ -371,53 +371,9 @@ ________________________________________*/
 /*_______________________________
   ||     Brand Section Here     ||
 ________________________________*/
-
-.brand-section .my-container {
-    padding-bottom: 0;
-}
-
-.marquee .marqueeone {
-    animation: slider-animation 35s linear infinite;
-}
-
-.marquee {
-    height: 160px;
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-}
-
-
-.marqueeone img {
-    width: 120px;
-    max-width: 200px;
-    max-width: 240px;
-    border-right: 1px solid var(--white-off);
-    padding: 0 12px;
-}
-
-.marquee div {
-    position: absolute;
-    width: 100%;
-    left: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@keyframes slider-animation {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+.our-partners-area img {
+    margin: 0 auto;
+    width: 70%;
 }
 
 
@@ -471,14 +427,14 @@ _____________________________________*/
 }
 
 .feature-category-area .item {
-    width: 146px;
-    height: 138px;
-    /* border-radius: 50%; */
+    width: 244px;
+    height: 110px;
     background-color: var(--white-off);
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     transition: .2s linear;
+    box-shadow: var(--shadow-2);
 }
 
 .feature-category-area .item h5 {
@@ -651,8 +607,8 @@ _______________________________________*/
 
     /*_____ Feature _____ */
     .feature-category-area .item {
-        width: 110px;
-        height: 110px;
+        width: 170px;
+        /* height: 110px; */
     }
 
     .feature-category-area {

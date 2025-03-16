@@ -31,7 +31,7 @@ body {
     color: var(--secondary-color);
     background-color: var(--white-off);
     letter-spacing: .1px;
-    min-width: 360px;
+    min-width: 400px;
 }
 
 
@@ -1800,7 +1800,7 @@ tr {
 
 
 /*________  Responsive for xs  Device  ________*/
-@media (max-width:556px) {
+@media (max-width:480px) {
     .my-p-2-xs {
         padding: 8px;
     }

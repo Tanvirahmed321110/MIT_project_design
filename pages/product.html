@@ -3082,8 +3082,9 @@
 
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script type="module">
-            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown, quickViewF, bigImageChangeF } from '../static/js/utilitis.js';
+            import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown, quickViewF, bigImageChangeF, setupQuantityButtons } from '../static/js/utilitis.js';
 
+            // all modal close
             closeButtonF()
 
             // shopping cart
@@ -3139,6 +3140,9 @@
             updateQty()
 
 
+            // Call setupQuantityButtons
+            setupQuantityButtons();
+
 
 
 
@@ -3192,8 +3196,6 @@
 
 
             openSearchDropdown()
-
-
 
 
         </script>
