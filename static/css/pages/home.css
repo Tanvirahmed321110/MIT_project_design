@@ -208,27 +208,6 @@
 }
 
 
-
-
-
-/* banner slider */
-.slider-banner {
-    margin: auto;
-    position: relative;
-    height: 500px;
-    border-radius: 8px;
-    background-color: rgb(205, 203, 203);
-}
-
-
-
-/*_________  Banner _________ */
-.banner {
-    display: flex;
-    flex-grow: 1;
-    height: 484px;
-}
-
 .hero-area .category {
     width: 280px;
 }
@@ -243,10 +222,6 @@
 
 .hero-area .single-dept {
     width: 100%;
-}
-
-.hero-area .swiper-slide a {
-    transform: unset;
 }
 
 .category-content {
@@ -272,6 +247,34 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+
+/*_________  Banner _________ */
+.banner {
+    display: flex;
+    flex-grow: 1;
+    height: 484px;
+}
+
+
+/* banner slider */
+.slider-banner {
+    margin: auto;
+    position: relative;
+    height: 500px;
+    border-radius: 8px;
+    background-color: rgb(205, 203, 203);
+}
+
+
+.hero-area .swiper-slide a {
+    transform: unset;
+}
+
 
 .slider-banner {
     width: 100%;

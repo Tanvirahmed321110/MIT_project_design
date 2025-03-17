@@ -101,7 +101,7 @@ a {
     color: inherit;
     transition: color .1s linear;
     user-select: none;
-    font-size: inherit !important;
+    font-size: inherit;
 }
 
 button {
