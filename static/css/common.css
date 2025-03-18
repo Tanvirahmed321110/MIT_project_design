@@ -10,8 +10,8 @@ _______________________________*/
     padding: 0;
     color: var(--border-color);
     /* background-color: rgb(110 12 12); */
+    /* background-color: var(--primary-hover-color); */
     background-color: #033556;
-    background-color: var(--primary-hover-color);
 }
 
 .header-top .my-container {
@@ -58,6 +58,12 @@ header .my-tooltip .show-text::after {
     display: grid;
     grid-template-columns: 58% 40%;
     gap: 2%;
+}
+
+.header-medile .search .subcribe {
+    background-color: var(--white);
+    padding: 6px;
+    border-radius: 6px;
 }
 
 .search .subcribe {

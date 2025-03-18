@@ -2622,9 +2622,9 @@ ___________________________________*/
 
 .search .search-dropdown {
     position: absolute;
-    top: 52px;
+    top: 48px;
     left: -0px;
-    width: 130%;
+    width: 100%;
     max-height: 500px;
     background-color: var(--white);
     padding: 2px !important;
@@ -2634,6 +2634,29 @@ ___________________________________*/
     z-index: 5;
     overflow-y: scroll;
     display: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.search-dropdown h6 {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.search-dropdown h5 {
+    color: var(--red);
+    letter-spacing: .2px;
+}
+
+.search-dropdown h5 i {
+    margin-left: 1px;
+}
+
+.search .search-dropdown li a {
+    padding: 8px;
+    border-bottom: 1px solid var(--white-off);
 }
 
 .search .search-dropdown li a:hover {
@@ -2666,9 +2689,12 @@ ___________________________________*/
     display: block;
 }
 
+.search .search-dropdown .img {
+    width: 50px;
+}
+
 .search .search-dropdown img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
 }
 
 .search .search-dropdown .tag {
