@@ -403,6 +403,10 @@ tr {
     width: 200px;
 }
 
+.w-55 {
+    width: 220px;
+}
+
 .max-250 {
     max-width: 250px;
     width: 100%;
@@ -1151,6 +1155,10 @@ tr {
 
 .my-line-height-8 {
     line-height: 40px;
+}
+
+.my-cursor-pointer {
+    cursor: pointer;
 }
 
 

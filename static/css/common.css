@@ -6,6 +6,30 @@
 /*______________________________
   ||     Header Start Here     ||
 _______________________________*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+/* For mobile */
+.all-category {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--border-color);
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 5;
+    height: 100dvh;
+    overflow: auto;
+    transition: .3s linear;
+}
+
+
 .header-top {
     padding: 0;
     color: var(--border-color);
@@ -792,9 +816,15 @@ _______________________________________________________________*/
 }
 
 
-.price-area .new-price {
-    background-color: var(--secondary-color) !important;
-    color: var(--white);
+.price-area .cash-price,
+.price-area .emi-pirce {
+    border-color: var(--secondary-color);
+    border-width: 2px;
+}
+
+.price-area .cash-price:hover,
+.price-area .emi-pirce:hover {
+    border-color: var(--red);
 }
 
 .price-area .old-price {
@@ -1090,8 +1120,8 @@ footer .my-social li a {
     color: var(--primary-color) !important;
 }
 
-.btn-quantity .my-btn:hover {
-    background-color: var(--primary-hover-color) !important;
+.btn-quantity .my-btn-sm:hover {
+    background-color: var(--primary-color) !important;
     color: var(--white);
 }
 
@@ -1175,14 +1205,72 @@ footer .my-social li a {
 
 
 
+.emi-price-modal .modal-content {
+    max-width: 500px;
+    z-index: 13;
+}
+
+.emi-price-modal .bank-list {
+    height: 220px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+
+
+
+.emi-price-modal .bank-list .bank-name {
+    padding: 6px;
+    border-bottom: 1px solid var(--border-color2);
+    font-size: 12px;
+    background-color: var(--white-off);
+    cursor: pointer;
+}
+
+.emi-price-modal .bank-list .bank-name:hover {
+    background-color: var(--border-color2);
+}
+
+.emi-price-modal .bank-list .bank-name.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+
+
+.emi-price-modal .bank-list {
+    height: 220px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray) var(--secondary-color);
+}
+
+/* Webkit-based browsers (Chrome, Edge, Safari) */
+.emi-price-modal .bank-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.emi-price-modal .bank-list::-webkit-scrollbar-thumb {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: 1px slateblue solid;
+}
+
+.emi-price-modal .bank-list::-webkit-scrollbar-track {
+    box-shadow: none !important;
+}
 
 
 
 
 
 
-
-
+/*  cost-list */
+.cost-list .item {
+    padding: 4px;
+    border-bottom: 1px solid var(--white-off);
+    font-size: 13px;
+}
 
 
 
@@ -1256,18 +1344,6 @@ _________________________________________*/
         height: 300px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
