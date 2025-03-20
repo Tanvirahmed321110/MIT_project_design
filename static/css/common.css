@@ -33,8 +33,6 @@ header {
 .header-top {
     padding: 0;
     color: var(--border-color);
-    /* background-color: rgb(110 12 12); */
-    /* background-color: var(--primary-hover-color); */
     background-color: #033556;
 }
 
@@ -255,8 +253,10 @@ header .my-tooltip .show-text::after {
     max-width: 640px;
     z-index: 6;
     background-color: var(--white-off);
+    border-color: var(--primary-color);
+    border-width: 4px;
+    color: var(--dark);
 }
-
 
 
 
@@ -841,7 +841,6 @@ _______________________________________________________________*/
 /*______________________________
   ||     Footer Start Here     ||
 _______________________________*/
-
 footer {
     padding: 20px 0;
     padding-top: 0;
@@ -898,6 +897,8 @@ footer a {
     background-color: var(--white);
 }
 
+
+
 /*________________  contact-icon-wrapper  ________________*/
 .contact-icon-wrapper .my-social li a {
     width: 36px;
@@ -941,7 +942,6 @@ footer .call-items .item:hover {
 }
 
 .footer-area .contact-item {
-    /* background-color: var(--red); */
     border: 1px solid var(--primary-color);
     padding: 12px;
     border-radius: 8px;
@@ -998,11 +998,9 @@ footer .my-social li a {
 
 
 
-
-
-/*************************************
-****   Shopping Cart Start Here   ****
-**************************************/
+/*___________________________________
+  _____||  Shopping Cart Start  ||____
+___________________________________*/
 .my-modal.shopping-cart-modal {
     justify-content: end;
     right: 0%;
@@ -1195,16 +1193,14 @@ footer .my-social li a {
     color: var(--white);
 }
 
-/**********************************
-****   Shopping Cart End Here   ****
-***********************************/
 
 
 
 
 
-
-
+/*___________________________________
+  _____||  EMI Price Modal Start ||____
+___________________________________*/
 .emi-price-modal .modal-content {
     max-width: 500px;
     z-index: 13;
@@ -1261,10 +1257,6 @@ footer .my-social li a {
 }
 
 
-
-
-
-
 /*  cost-list */
 .cost-list .item {
     padding: 4px;
@@ -1282,9 +1274,7 @@ footer .my-social li a {
 
 
 
-/*________________________________________
-  ||     Responsive 1080px Start Here     ||
-_________________________________________*/
+/**************    Responsive For 1080px   **************/
 @media(max-width:1080px) {
     .header-medile-area {
         display: grid;
@@ -1313,51 +1303,7 @@ _________________________________________*/
 
 
 
-
-/* Responsive For 769px */
-@media (max-width:769px) {
-    .product-details-main {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .product-details-left .tab-buttons {
-        flex-direction: column !important;
-        margin-bottom: 24px;
-    }
-
-    .tab-buttons .tab-button a {
-        width: 300px;
-        text-align: center;
-    }
-
-
-    .question:first-child div {
-        width: 75%;
-    }
-
-    .profile-details {
-        width: 75%;
-    }
-
-    .p-video iframe {
-        height: 300px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/*________________________________________
-  ||     Responsive 991px Start Here     ||
-_________________________________________*/
+/**************    Responsive For 991px   **************/
 @media(max-width:991px) {
     body {
         margin-bottom: 40px;
@@ -1551,7 +1497,41 @@ _________________________________________*/
 
 
 
+
+
+
+
+/**************    Responsive For 769px   **************/
 @media(max-width:769px) {
+    .product-details-main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .product-details-left .tab-buttons {
+        flex-direction: column !important;
+        margin-bottom: 24px;
+    }
+
+    .tab-buttons .tab-button a {
+        width: 300px;
+        text-align: center;
+    }
+
+
+    .question:first-child div {
+        width: 75%;
+    }
+
+    .profile-details {
+        width: 75%;
+    }
+
+    .p-video iframe {
+        height: 300px;
+    }
+
+
 
     /* shopping cart */
     .my-modal.shopping-cart-modal .modal-content {
@@ -1589,19 +1569,23 @@ _________________________________________*/
     footer {
         padding-bottom: 24px;
     }
+
+    /* Special offer  */
+    .special-offer .item {
+        height: 180px;
+    }
 }
 
 
 
 
 
-/* Responsive For 556px */
+/**************    Responsive For 556px   **************/
 @media (max-width:556px) {
 
     .product-details-main .big-image img {
         height: unset;
     }
-
 
     .product-details-main-area .price-area {
         flex-direction: column;

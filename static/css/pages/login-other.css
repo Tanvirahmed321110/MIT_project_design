@@ -418,8 +418,8 @@ ________________________________________*/
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    z-index: 10;
     transition: opacity 0.3s ease-in-out;
+    z-index: 14;
 }
 
 .my-modal-new.active {
