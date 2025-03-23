@@ -504,7 +504,7 @@ ____||   Emi information  Page Start  ||____
 ___________________________________________*/
 .emi-area .question {
     padding: 12px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--white);
     text-transform: uppercase;
     font-size: var(--fs-lg);

@@ -75,9 +75,7 @@ h5 {
     line-height: 20px;
 }
 
-i {
-    display: block;
-}
+
 
 h6 {
     font-size: var(--fs-sm);
@@ -173,7 +171,9 @@ button {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-
+i {
+    display: block;
+}
 
 table {
     border-collapse: collapse;
@@ -267,7 +267,7 @@ tr {
 
 
 
-/* Border */
+/*________  Border  ________*/
 .my-border {
     border: 1px solid var(--border-color);
 }
@@ -287,6 +287,8 @@ tr {
 .my-border-right {
     border-right: 1px solid var(--border-color);
 }
+
+
 
 /*_____ Title  _____*/
 .my-section-title {
@@ -351,9 +353,6 @@ tr {
     width: 25%;
 }
 
-.my-width-50 {
-    width: 50px;
-}
 
 .my-fit-content {
     width: fit-content;
@@ -407,6 +406,10 @@ tr {
     width: 220px;
 }
 
+.w-60 {
+    width: 240px;
+}
+
 .max-250 {
     max-width: 250px;
     width: 100%;
@@ -432,7 +435,9 @@ tr {
     width: 100%;
 }
 
-/* wrap */
+
+
+/*______  wrap  ______*/
 .my-text-nowrap {
     text-wrap: nowrap;
 }
