@@ -385,7 +385,9 @@ ________________________________________*/
     border-radius: 8px;
     transition: .3s linear;
     overflow: hidden;
+    background-color: var(--white);
 }
+
 
 .happy-clients .happy-client-item::after {
     content: '';
