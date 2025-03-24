@@ -1509,6 +1509,7 @@ input[type="radio"]:checked::after {
 
 .tag.instock {
     background-color: var(--secondary-hover);
+    padding-bottom: 5px;
 }
 
 .product-cart .base.new {

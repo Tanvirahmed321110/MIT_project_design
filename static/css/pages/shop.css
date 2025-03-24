@@ -34,7 +34,7 @@
   ____||   Shop Body Start Here  ||____
 ______________________________________*/
 .shop-body {
-    background-color: var(--border-color);
+    background-color: var(--white-off);
 }
 
 .shop-body-area {
@@ -47,30 +47,44 @@ ______________________________________*/
     width: 100%;
 }
 
-.sidebar .item {
+.sidebar .item,
+.details .item {
     padding-bottom: 22px !important;
+}
+
+.details .item {
+    padding-bottom: 8px !important;
 }
 
 
 
-.sidebar .item-content {
+.sidebar .item-content,
+.details .item-content {
     max-height: 600px;
     transition: max-height 0.3s ease-in-out;
 }
 
-.sidebar .item.active .item-content {
+.sidebar .item.active .item-content,
+.details .item.active .item-content {
     max-height: 0px;
     overflow: hidden;
 }
 
-.sidebar .item-btn i {
+.sidebar .item-btn i,
+.details .item-btn i {
     transition: transform 0.3s ease-in-out;
 }
 
-.sidebar .item.active .item-btn i {
+.sidebar .item.active .item-btn i,
+.details .item.active .item-btn i {
     transform: rotate(270deg);
 }
 
+
+/* related-product-link */
+.related-product-link li .w-30 {
+    flex: 0 0 120px;
+}
 
 
 /* Shop Content */
@@ -144,7 +158,7 @@ ______________________________________*/
 }
 
 /*____________________  Shop Sidebar __________________ */
-.sidebar-area .item {
+.shop-body-area .item {
     padding: 12px 12px;
     background-color: var(--white);
     border-radius: 0;
