@@ -274,6 +274,25 @@ header .my-tooltip .show-text::after {
 
 
 
+/* hide and show category */
+.show-cateogry-btn {
+    transform: unset !important;
+}
+
+.hide-category {
+    display: none;
+}
+
+.hide-category.active {
+    padding: 4px;
+    padding-top: 0;
+    display: block;
+}
+
+.hide-category.active li {
+    padding-bottom: 6px;
+}
+
 
 
 
