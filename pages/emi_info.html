@@ -2422,45 +2422,7 @@
         <script type="module">
             import { openModalF, closeButtonF, updateQuantity, deleteF, toggleF, activeF, openSearchDropdown, setupQuantityButtons } from '../static/js/utilitis.js';
 
-            closeButtonF()
 
-            // shopping cart
-            openModalF('shopping-cart-modal', '.shopping-cart-modal-open')
-
-
-
-            // for search
-            openSearchDropdown()
-            toggleF('mobile-search-input', 'mobile-search-btn')
-
-
-            // for quantity
-            setupQuantityButtons()
-            // update qty
-            function updateQty() {
-                const inputQuantity = document.getElementById('input-quantity')
-
-                if (inputQuantity) {
-                    document.getElementById('plus-btn').addEventListener('click', function () {
-                        updateQuantity(inputQuantity, 'increment')
-                        console.log('click')
-                    })
-                    document.getElementById('minus-btn').addEventListener('click', function () {
-                        updateQuantity(inputQuantity, 'decrement')
-                    })
-                }
-            }
-            updateQty()
-
-
-            // For Question and ans
-            document.querySelectorAll('.question').forEach(question => {
-                question.addEventListener('click', function () {
-                    const ans = this.nextElementSibling;
-                    ans.classList.toggle('active')
-                    question.classList.toggle('active')
-                });
-            });
         </script>
     </body>
 

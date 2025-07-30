@@ -190,6 +190,16 @@ _______________________________________*/
 
 
 
+.my-input-control .blog-search-input {
+    border-radius: 6px;
+    padding-left: 6px;
+}
+
+.my-input-control .blog-search-input:hover,
+.my-input-control .blog-search-input:focus {
+    outline: none;
+    padding-left: 6px;
+}
 
 
 

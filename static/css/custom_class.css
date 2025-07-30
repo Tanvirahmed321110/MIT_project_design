@@ -622,6 +622,10 @@ tr {
     background-color: var(--white-off) !important;
 }
 
+.my-bg-white-off2 {
+    background-color: var(--white-off2);
+}
+
 .my-bg-blue {
     background-color: var(--blue)
 }
@@ -699,6 +703,10 @@ tr {
 /*______  Padding  ______*/
 .my-p-0 {
     padding: 0 !important;
+}
+
+.my-p-half {
+    padding: 2px;
 }
 
 .my-p-1 {
@@ -1247,6 +1255,10 @@ tr {
     display: flex;
 }
 
+.my-d-inline-flex {
+    display: inline-flex;
+}
+
 .my-flex-center {
     align-items: center;
     justify-content: center;
@@ -1320,6 +1332,10 @@ tr {
 
 
 /* Gap */
+.my-gap-half {
+    gap: 2px;
+}
+
 .my-gap-1 {
     gap: 4px;
 }
