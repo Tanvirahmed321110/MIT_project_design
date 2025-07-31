@@ -2,6 +2,12 @@ body {
     background-color: var(--white);
 }
 
+.account-btn-bold {
+    font-weight: bold;
+    font-size: var(--fs-lg);
+}
+
+
 .new-border-bottom {
     border-bottom: 1px solid #f1f1f1;
 }
@@ -19,6 +25,8 @@ body {
     transition: .2s linear;
     position: relative;
 }
+
+
 
 
 .account-page-nav .item i {
@@ -48,6 +56,10 @@ body {
 .account-page-nav .item.active i {
     color: var(--green);
     transition: .2s linear;
+}
+
+.other-card {
+    max-width: 600px;
 }
 
 /*===========  Account Page Here ============*/
@@ -91,4 +103,42 @@ body {
     background-color: #EBEDF8;
     color: var(--primary-color);
     font-size: var(--fs-lg);
+}
+
+
+.mit-point-area .my-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FDEDE9;
+}
+
+.mit-point-area .my-icon i {
+    display: block;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:991px) {
+    .account-tables li {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .account-tables li .left {
+        width: 100%;
+    }
+
+    .account-tables li .right {
+        width: 100%;
+        align-items: center;
+    }
 }

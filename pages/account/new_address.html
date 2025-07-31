@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Edit Account</title>
+        <title>New Address</title>
         <!--  common css -->
         <link rel="stylesheet" href="../../static/css/common.css">
         <link rel="stylesheet" href="../../static/css/pages/account.css">
@@ -1168,7 +1168,7 @@
                         <li><a href="../index.html">Home</a> </li>
                         <li><a href="../account/account.html">Account</a> </li>
                         <li>
-                            <h6>Edit Account</h6>
+                            <h6>New Address</h6>
                         </li>
                     </ul>
                 </div>
@@ -1221,7 +1221,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="item active" href="../account/edit_account.html">
+                                    <a class="item " href="../account/edit_account.html">
                                         <span><i class="fa-solid fa-user"></i></span>
                                         <span>Edit Account</span>
                                     </a>
@@ -1233,7 +1233,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="item " href="../account/new_address.html">
+                                    <a class="item active" href="../account/new_address.html">
                                         <span><i class="fa-solid fa-location-dot"></i></span>
                                         <span>Address</span>
                                     </a>
@@ -1251,7 +1251,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="item" href="../account/mit_point.html">
+                                    <a class="item " href="../account/mit_point.html">
                                         <span><i class="fa-solid fa-star"></i></span>
                                         <span>MIT Point</span>
                                     </a>
@@ -1261,21 +1261,44 @@
 
                         <div class="my-mt-8 ">
                             <div class="my-p-4 other-card my-flex-column my-pt-3  my-border my-radius-md">
-                                <h3 class="my-text-primary">My Account Information</h3>
+                                <h3 class="my-text-primary">Address</h3>
+                                <p class="my-text-gray my-fw-bold">Please enter the required details to add a new
+                                    address.</p>
 
-                                <form action="#" class="my-flex-column my-mt-5 my-gap-3">
-                                    <div class="my-input-control">
-                                        <input type="text" placeholder="Name">
+                                <form action="#" class="my-flex-column account-form my-mt-5 my-gap-3">
+                                    <div class="my-input-control my-grid-2 my-grid-md-1 my-gap-3">
+                                        <input type="text" placeholder="First Name">
+                                        <input type="text" placeholder="Last Name">
                                     </div>
                                     <div class="my-input-control">
-                                        <input type="number" placeholder="Phone">
+                                        <input type="text" placeholder="Address1">
                                     </div>
                                     <div class="my-input-control">
-                                        <input type="email" placeholder="Email">
+                                        <input type="text" placeholder="Address2">
+                                    </div>
+                                    <div class="my-input-control">
+                                        <input type="text" placeholder="Other Info">
+                                    </div>
+                                    <div class="my-input-control my-grid-2 my-grid-md-1 my-gap-3">
+                                        <input type="text" placeholder="City">
+                                        <input type="text" placeholder="Post Code">
+                                    </div>
+                                    <div>
+                                        <p class="my-fw-bold">Default Address</p>
+                                        <div>
+                                            <div class="my-d-flex my-gap-2  my-align-center my-mt-2">
+                                                <input name="default" id="default_yes" type="radio">
+                                                <label for="default_yes">Yes</label>
+                                            </div>
+                                            <div class="my-d-flex my-gap-2 my-align-center my-mt-2">
+                                                <input name="default" id="default_no" type="radio">
+                                                <label for="default_no">No</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div>
                                         <button
-                                            class="my-btn my-mt-1  account-btn-bold  my-primary-btn my-fs-lg ">SAVE</button>
+                                            class="my-btn my-mt-1  my-primary-btn my-fs-lg account-btn-bold">SAVE</button>
                                     </div>
                                 </form>
                             </div>

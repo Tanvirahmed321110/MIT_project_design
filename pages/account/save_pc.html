@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Edit Account</title>
+        <title>Save PC</title>
         <!--  common css -->
         <link rel="stylesheet" href="../../static/css/common.css">
         <link rel="stylesheet" href="../../static/css/pages/account.css">
@@ -1168,7 +1168,7 @@
                         <li><a href="../index.html">Home</a> </li>
                         <li><a href="../account/account.html">Account</a> </li>
                         <li>
-                            <h6>Edit Account</h6>
+                            <h6>Save PC</h6>
                         </li>
                     </ul>
                 </div>
@@ -1221,7 +1221,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="item active" href="../account/edit_account.html">
+                                    <a class="item " href="../account/edit_account.html">
                                         <span><i class="fa-solid fa-user"></i></span>
                                         <span>Edit Account</span>
                                     </a>
@@ -1245,7 +1245,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="item" href="../account/save_pc.html">
+                                    <a class="item active" href="../account/save_pc.html">
                                         <span><i class="fa-solid fa-laptop"></i></span>
                                         <span>Save PC</span>
                                     </a>
@@ -1260,24 +1260,57 @@
                         </div>
 
                         <div class="my-mt-8 ">
-                            <div class="my-p-4 other-card my-flex-column my-pt-3  my-border my-radius-md">
-                                <h3 class="my-text-primary">My Account Information</h3>
+                            <div class="">
+                                <h3 class="my-text-primary">Save PC</h3>
+                                <!-- if empty then show this text -->
+                                <p class="my-fs-md my-text-gray2">
+                                    You have not save any PC
+                                </p>
 
-                                <form action="#" class="my-flex-column my-mt-5 my-gap-3">
-                                    <div class="my-input-control">
-                                        <input type="text" placeholder="Name">
-                                    </div>
-                                    <div class="my-input-control">
-                                        <input type="number" placeholder="Phone">
-                                    </div>
-                                    <div class="my-input-control">
-                                        <input type="email" placeholder="Email">
-                                    </div>
-                                    <div>
-                                        <button
-                                            class="my-btn my-mt-1  account-btn-bold  my-primary-btn my-fs-lg ">SAVE</button>
-                                    </div>
-                                </form>
+                                <div class="my-mt-5 account-tables">
+                                    <ul>
+                                        <li
+                                            class="my-d-flex my-gap-4 my-border-bottom account-tables my-flex-between my-flex-sm-column  my-py-3">
+                                            <!-- left -->
+                                            <a href="./product.html" class="left">
+                                                <div class="my-d-flex my-align-center my-gap-4 col name-img">
+                                                    <img class="w-15 my-border"
+                                                        src="../../static/images/product-img4.webp" alt="">
+                                                    <div>
+                                                        <h5 class="text-hover-primary my-fw-medium">New gaming pc for
+                                                            Bangladesh New
+                                                            gamin
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!-- right -->
+                                            <div class="my-d-flex my-gap-6 my-align-center right ">
+                                                <!-- Date -->
+                                                <div class="my-flex-column details my-gap-0 col">
+                                                    <p class="my-fw-bold my-text-gray">Date Added</p>
+                                                    <div class="my-text-gray2 my-fs-xs">
+                                                        20 jan 2025 <span>11:44:22</span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="my-d-flex my-gap-2 my-align-center buttons col">
+                                                    <button class="my-btn my-primary-btn my-btn-sm">View</button>
+                                                </div>
+
+                                                <div>
+                                                    <!-- delete button -->
+                                                    <button
+                                                        class="my-text-gray2 my-fs-md text-hover-primary delete-btn"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
                     </div>

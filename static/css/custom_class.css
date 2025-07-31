@@ -580,6 +580,10 @@ tr {
     color: #5a5959;
 }
 
+.my-text-gray2 {
+    color: var(--gray);
+}
+
 .my-text-red {
     color: var(--red);
 }
@@ -1728,6 +1732,10 @@ tr {
 
     .my-mt-sm-6 {
         margin-top: 24px;
+    }
+
+    .my-p-sm-0 {
+        padding: 0;
     }
 
     .my-p-2-sm {
